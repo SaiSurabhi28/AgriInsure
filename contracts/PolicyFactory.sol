@@ -283,8 +283,8 @@ contract PolicyFactory is Ownable, ReentrancyGuard, Pausable {
         // Read cumulative index from OracleAdapter for the active period
         uint64 indexValue = oracle.sumInWindow(policy.startTs, endTime);
         
-        // Parametric trigger: if index < threshold → payout
-        bool shouldPayout = (indexValue < policy.threshold);
+        // Parametric trigger: if index > threshold → payout (damage insurance)
+        bool shouldPayout = (indexValue > policy.threshold);
         
         if (shouldPayout) {
             policy.status = Status.PaidOut;
@@ -305,7 +305,7 @@ contract PolicyFactory is Ownable, ReentrancyGuard, Pausable {
                 emit PolicyFinalized(policyId, policy.holder, indexValue, false, 0);
             } else {
                 // Policy still active and conditions not met - reject finalization
-                revert("Conditions not met: cumulative rainfall is above threshold and policy has not expired yet");
+                revert("Conditions not met: cumulative rainfall has not exceeded threshold and policy has not expired yet");
             }
         }
     }

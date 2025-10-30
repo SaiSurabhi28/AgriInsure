@@ -14,7 +14,7 @@ You can test the complete flow in about **2 minutes** by using the existing Demo
 1. Go to **Create Policy** page
 2. Select **"Demo - Free Insurance"** (Product ID 1)
 3. Set **Duration**: `1` day (minimum allowed)
-4. Set **Threshold**: `1` mm or `0` mm (very low - will trigger payout)
+4. Set **Threshold**: `100` mm (very high - will trigger payout if rainfall > 100mm)
 5. Click **"Create Policy"** (0 ETH - completely free!)
 6. Wait for MetaMask transaction to complete
 
@@ -26,7 +26,7 @@ You can test the complete flow in about **2 minutes** by using the existing Demo
 1. Go to **My Policies** page
 2. Find your newly created policy
 3. Click **"Finalize Policy"** button
-4. Policy will check if cumulative rainfall < threshold
+4. Policy will check if cumulative rainfall > threshold (flood/damage insurance)
 5. If yes → **PaidOut** status ✅
 6. If no → **Expired** status (after 1 day)
 
@@ -41,13 +41,14 @@ You can test the complete flow in about **2 minutes** by using the existing Demo
 
 ### Scenario 1: Trigger Payout (Recommended for First Test)
 - **Duration**: 1 day
-- **Threshold**: 1mm or 0mm
-- **Expected**: Payout triggers immediately when you click Finalize
+- **Threshold**: 1mm or 10mm (very low - will trigger if oracle shows higher rainfall)
+- **Expected**: Payout triggers if cumulative rainfall > threshold
 - **Time**: ~2 minutes total
+- **Note**: Check current oracle data to ensure rainfall is above your threshold
 
 ### Scenario 2: Let Policy Expire
 - **Duration**: 1 day  
-- **Threshold**: 100mm (very high)
+- **Threshold**: 1000mm (very high - unlikely to be exceeded)
 - **Expected**: Policy expires after 1 day, no payout
 - **Time**: Wait 1 day (86400 seconds)
 - **Result**: Premium stays with insurance company (Account 1)
@@ -113,8 +114,8 @@ If you want a dedicated "Quick Test" product:
 - **Solution**: Go to My Policies and finalize your existing policy first
 
 **Problem**: Payout doesn't trigger
-- **Cause**: Oracle data might be above your threshold
-- **Solution**: Use threshold of 1mm or 0mm for guaranteed payout
+- **Cause**: Oracle data might be below your threshold
+- **Solution**: Use threshold of 1mm or 10mm and check oracle data to ensure rainfall is higher
 
 **Problem**: Can't see policies
 - **Solution**: Refresh the page or click the refresh button
@@ -126,7 +127,7 @@ If you want a dedicated "Quick Test" product:
 
 ✅ **You CAN test the complete flow in 60 seconds (after policy start)**  
 ✅ **Use 1 day duration (minimum in contract)**  
-✅ **Use 0-1mm threshold for guaranteed payout**  
+✅ **Use low threshold (1-10mm) and check oracle data for guaranteed payout**  
 ✅ **All features work as expected**  
 ✅ **Demo is completely free (0 ETH)**
 

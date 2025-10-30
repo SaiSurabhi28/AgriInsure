@@ -217,17 +217,17 @@ const MyPolicies = () => {
         
         errorMessage += '📋 Policy Details:\n';
         errorMessage += `   • Policy ID: #${policy.policyId}\n`;
-        errorMessage += `   • Threshold: ${threshold}mm (cumulative rainfall must be BELOW this)\n`;
+        errorMessage += `   • Threshold: ${threshold}mm (cumulative rainfall must EXCEED this)\n`;
         errorMessage += `   • Start Date: ${new Date(startTs * 1000).toLocaleString()}\n`;
         errorMessage += `   • End Date: ${new Date(endTs * 1000).toLocaleString()}\n`;
         errorMessage += `   • Current Status: ${isExpired ? 'EXPIRED' : 'ACTIVE'}\n\n`;
         
         errorMessage += '❌ Why Finalization Failed:\n';
-        errorMessage += '   The cumulative rainfall during the policy period is ABOVE your threshold.\n';
+        errorMessage += '   The cumulative rainfall during the policy period is BELOW your threshold.\n';
         errorMessage += '   This means payout conditions are NOT satisfied.\n\n';
         
         errorMessage += '✅ When You CAN Finalize:\n';
-        errorMessage += '   1. If cumulative rainfall < threshold → Payout will be processed\n';
+        errorMessage += '   1. If cumulative rainfall > threshold → Payout will be processed\n';
         errorMessage += '   2. If policy has expired (even if conditions not met) → Policy expires, no payout\n\n';
         
         if (!isExpired) {
@@ -244,8 +244,8 @@ const MyPolicies = () => {
         }
         
         errorMessage += '💡 What This Means:\n';
-        errorMessage += '   Your insurance protects against LOW rainfall (drought conditions).\n';
-        errorMessage += '   Since rainfall is above the threshold, no payout is due.\n';
+        errorMessage += '   Your insurance protects against HIGH rainfall (flood/damage conditions).\n';
+        errorMessage += '   Since rainfall is below the threshold, no payout is due.\n';
         errorMessage += '   If the policy expires without payout, your premium stays with the insurance company.';
       } else {
         errorMessage += `Error: ${errorMsg || 'Unknown error'}\n\n`;
