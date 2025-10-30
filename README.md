@@ -521,9 +521,7 @@ We welcome contributions to AgriInsure! Please follow these guidelines:
 - Testing and documentation
 - Security audits
 
-## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 🙏 Acknowledgments
 
@@ -533,25 +531,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **React**: For frontend framework
 - **Material-UI**: For UI components
 
-## 📞 Support
 
-- **Documentation**: [Wiki](https://github.com/SaiSurabhi28/AgriInsure/wiki)
-- **Issues**: [GitHub Issues](https://github.com/SaiSurabhi28/AgriInsure/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/SaiSurabhi28/AgriInsure/discussions)
-- **Email**: [Contact through GitHub](https://github.com/SaiSurabhi28)
 
-## 📊 Project Status
 
-![GitHub last commit](https://img.shields.io/github/last-commit/SaiSurabhi28/AgriInsure)
-![GitHub issues](https://img.shields.io/github/issues/SaiSurabhi28/AgriInsure)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/SaiSurabhi28/AgriInsure)
-![GitHub license](https://img.shields.io/github/license/SaiSurabhi28/AgriInsure)
 
----
-
-**Built with ❤️ for farmers worldwide**
-
-*Empowering agriculture through blockchain technology*
 
 
 
