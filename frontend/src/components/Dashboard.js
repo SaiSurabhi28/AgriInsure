@@ -22,7 +22,11 @@ const Dashboard = () => {
       
       if (data.success && data.data) {
         const policies = data.data; // Backend returns data.data
+        console.log('📊 Dashboard - Received policies:', policies.length);
+        console.log('📊 Dashboard - All policies:', policies.map(p => ({ id: p.policyId, status: p.statusString, statusCode: p.status })));
+        
         const active = policies.filter(p => p.status === 0 || p.statusString === 'Active').length;
+        console.log('📊 Dashboard - Active policies:', active);
         const totalPremium = policies.reduce((sum, p) => {
           const premium = p.premiumPaid ? parseFloat(p.premiumPaid) / 1e18 : 0;
           return sum + premium;

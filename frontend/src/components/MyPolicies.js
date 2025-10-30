@@ -14,7 +14,13 @@ const MyPolicies = () => {
     console.log('🔍 MyPolicies - Account:', account);
     console.log('🔍 MyPolicies - Policies data:', policiesData);
     if (policiesData) {
-      console.log('🔍 MyPolicies - Number of policies:', (policiesData.data || policiesData.policies || []).length);
+      const allPolicies = policiesData.data || policiesData.policies || [];
+      console.log('🔍 MyPolicies - Total policies from backend:', allPolicies.length);
+      console.log('🔍 MyPolicies - All policies:', allPolicies.map(p => ({ id: p.policyId, status: p.statusString, statusCode: p.status })));
+      
+      const activePolicies = allPolicies.filter(p => p.status === 0 || p.statusString === 'Active');
+      console.log('🔍 MyPolicies - Active policies:', activePolicies.length);
+      console.log('🔍 MyPolicies - Active policy IDs:', activePolicies.map(p => p.policyId));
     }
   }, [account, policiesData]);
   
