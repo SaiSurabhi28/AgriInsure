@@ -12,7 +12,32 @@ const Dashboard = () => {
     policies: []
   });
   const [showFinalized, setShowFinalized] = useState(false);
+  const [weatherData, setWeatherData] = useState({
+    rainfall: '--',
+    temperature: '--',
+    soilMoisture: '--'
+  });
   
+  const fetchWeatherData = async () => {
+    try {
+      const response = await fetch(`http://localhost:3001/api/oracle/weather?t=${Date.now()}`);
+      if (response.ok) {
+        const data = await response.json();
+        // Get latest weather data
+        if (data.data && data.data.length > 0) {
+          const latest = data.data[data.data.length - 1];
+          setWeatherData({
+            rainfall: parseFloat(latest.value).toFixed(1),
+            temperature: '--', // Oracle only provides rainfall, not temperature
+            soilMoisture: '--' // Oracle only provides rainfall, not soil moisture
+          });
+        }
+      }
+    } catch (err) {
+      console.error('Error fetching weather data:', err);
+    }
+  };
+
   const fetchStats = async () => {
     if (!account || !isConnected) return;
     
@@ -58,6 +83,7 @@ const Dashboard = () => {
 
   useEffect(() => {
     fetchStats();
+    fetchWeatherData(); // Fetch weather data on mount
     
     // Listen for policy creation and finalization events
     const handlePolicyEvent = async () => {
@@ -74,6 +100,13 @@ const Dashboard = () => {
       window.removeEventListener('policyFinalized', handlePolicyEvent);
     };
   }, [account, isConnected]);
+
+  // Separate useEffect for periodic weather updates
+  useEffect(() => {
+    // Update weather every 30 seconds
+    const weatherInterval = setInterval(fetchWeatherData, 30000);
+    return () => clearInterval(weatherInterval);
+  }, []);
 
   return (
     <div className="dashboard">
@@ -153,15 +186,15 @@ const Dashboard = () => {
           <div className="weather-data">
             <div className="weather-item">
               <span>Rainfall:</span>
-              <span>20.2mm</span>
+              <span>{weatherData.rainfall}mm</span>
             </div>
             <div className="weather-item">
               <span>Temperature:</span>
-              <span>27.3°C</span>
+              <span>{weatherData.temperature}</span>
             </div>
             <div className="weather-item">
               <span>Soil Moisture:</span>
-              <span>41.4%</span>
+              <span>{weatherData.soilMoisture}</span>
             </div>
           </div>
         </div>
