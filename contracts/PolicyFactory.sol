@@ -268,6 +268,9 @@ contract PolicyFactory is Ownable, ReentrancyGuard, Pausable {
         Policy storage policy = policies[policyId];
         require(policy.status == Status.Active, "Policy not active");
         
+        // Only the policy holder can finalize their own policy
+        require(msg.sender == policy.holder, "Only policy holder can finalize");
+        
         // Require that policy has started
         require(block.timestamp >= policy.startTs, "Policy has not started yet");
         
