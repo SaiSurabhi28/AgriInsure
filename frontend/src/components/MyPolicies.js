@@ -50,7 +50,7 @@ const MyPolicies = () => {
   const fetchAllPolicies = async () => {
     setAllPoliciesLoading(true);
     try {
-      const res = await fetch('http://localhost:3001/api/policies/all');
+      const res = await fetch(`http://localhost:3001/api/policies/all?t=${Date.now()}`);
       const data = await res.json();
       if (data.success && data.data) {
         setAllPoliciesData(data.data);
