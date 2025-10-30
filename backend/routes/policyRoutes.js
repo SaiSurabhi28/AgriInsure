@@ -186,7 +186,27 @@ router.get('/:policyId/events', async (req, res) => {
   }
 });
 
-// Get all policies (for admin)
+// Get all policies from blockchain (all active policies regardless of owner)
+router.get('/all', async (req, res) => {
+  try {
+    console.log('📥 GET /all called - fetching all policies');
+    const policies = await blockchainService.getAllPolicies();
+    console.log('📤 Returning all policies:', policies.length);
+
+    res.json({
+      success: true,
+      data: policies
+    });
+  } catch (error) {
+    console.error('Get all policies error:', error);
+    res.status(500).json({
+      error: 'Failed to get all policies',
+      message: error.message
+    });
+  }
+});
+
+// Get all policies (for admin - legacy endpoint)
 router.get('/', async (req, res) => {
   try {
     const { limit = 10, offset = 0 } = req.query;

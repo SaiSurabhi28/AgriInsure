@@ -302,6 +302,34 @@ class BlockchainService {
     }
   }
 
+  async getAllPolicies() {
+    try {
+      if (!this.contracts.PolicyFactory) {
+        await this.initializeContracts();
+      }
+
+      const policyCount = await this.contracts.PolicyFactory.policyCounter();
+      console.log('🔍 Total policies in contract:', policyCount.toString());
+      
+      const allPolicies = [];
+      for (let i = 1; i <= policyCount; i++) {
+        try {
+          const status = await this.getPolicyStatus(i.toString());
+          allPolicies.push(status);
+          console.log(`✅ Policy ${i} loaded successfully`);
+        } catch (error) {
+          console.error(`❌ Failed to get status for policy ${i}:`, error);
+        }
+      }
+
+      console.log(`📊 Returning ${allPolicies.length} total policies`);
+      return allPolicies;
+    } catch (error) {
+      console.error('Failed to get all policies:', error);
+      throw error;
+    }
+  }
+
   async getBlockchainStatus() {
     try {
       const network = await this.provider.getNetwork();
