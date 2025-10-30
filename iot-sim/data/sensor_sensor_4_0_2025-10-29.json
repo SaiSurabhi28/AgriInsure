@@ -1,0 +1,7814 @@
+[
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 24.43,
+    "timestamp": "2025-10-29T15:54:52.801Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 30.06,
+    "timestamp": "2025-10-29T15:55:02.839Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 28.2,
+    "timestamp": "2025-10-29T15:55:12.839Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 49.03,
+    "timestamp": "2025-10-29T15:55:22.834Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 39.97,
+    "timestamp": "2025-10-29T15:55:32.838Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 34.46,
+    "timestamp": "2025-10-29T15:55:42.839Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 13.21,
+    "timestamp": "2025-10-29T15:55:52.837Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 39.44,
+    "timestamp": "2025-10-29T15:56:02.841Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 33.62,
+    "timestamp": "2025-10-29T15:56:12.838Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 40.99,
+    "timestamp": "2025-10-29T15:56:22.838Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 26.83,
+    "timestamp": "2025-10-29T15:56:32.837Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 48.84,
+    "timestamp": "2025-10-29T15:56:42.846Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 11.42,
+    "timestamp": "2025-10-29T15:56:52.836Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 34.28,
+    "timestamp": "2025-10-29T15:57:02.840Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 13.13,
+    "timestamp": "2025-10-29T15:57:12.841Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 20.12,
+    "timestamp": "2025-10-29T15:57:22.843Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 12.97,
+    "timestamp": "2025-10-29T15:57:32.845Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 25.62,
+    "timestamp": "2025-10-29T15:57:42.849Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 27.11,
+    "timestamp": "2025-10-29T15:57:52.839Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 26.77,
+    "timestamp": "2025-10-29T15:58:02.844Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 44.57,
+    "timestamp": "2025-10-29T15:58:12.845Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 42.39,
+    "timestamp": "2025-10-29T15:58:22.850Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 1.67,
+    "timestamp": "2025-10-29T15:58:32.853Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 28.2,
+    "timestamp": "2025-10-29T15:58:42.844Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 8.14,
+    "timestamp": "2025-10-29T15:58:52.850Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 8.93,
+    "timestamp": "2025-10-29T15:59:02.848Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 15.85,
+    "timestamp": "2025-10-29T15:59:12.941Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 34.41,
+    "timestamp": "2025-10-29T15:59:22.861Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 41.25,
+    "timestamp": "2025-10-29T19:09:20.988Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 6.25,
+    "timestamp": "2025-10-29T19:09:31.031Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 35.05,
+    "timestamp": "2025-10-29T19:09:41.030Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 22.65,
+    "timestamp": "2025-10-29T19:09:51.026Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 20.16,
+    "timestamp": "2025-10-29T19:10:01.039Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 32.44,
+    "timestamp": "2025-10-29T19:10:11.041Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 26.16,
+    "timestamp": "2025-10-29T19:10:21.038Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 47.05,
+    "timestamp": "2025-10-29T19:10:31.036Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 46.93,
+    "timestamp": "2025-10-29T19:10:41.039Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 38.32,
+    "timestamp": "2025-10-29T19:10:51.040Z",
+    "unit": "mm",
+    "faulty": true
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 2.06,
+    "timestamp": "2025-10-29T19:11:01.042Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 46.77,
+    "timestamp": "2025-10-29T19:11:11.043Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 19.34,
+    "timestamp": "2025-10-29T19:11:21.048Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 6.33,
+    "timestamp": "2025-10-29T19:11:31.046Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 7.98,
+    "timestamp": "2025-10-29T19:11:41.048Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 12.85,
+    "timestamp": "2025-10-29T19:11:51.049Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 1.79,
+    "timestamp": "2025-10-29T19:12:01.043Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 46.05,
+    "timestamp": "2025-10-29T19:12:11.051Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 11.74,
+    "timestamp": "2025-10-29T19:12:21.055Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 3.86,
+    "timestamp": "2025-10-29T19:12:31.051Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 26.52,
+    "timestamp": "2025-10-29T19:12:41.053Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 14.03,
+    "timestamp": "2025-10-29T19:12:51.051Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 48.5,
+    "timestamp": "2025-10-29T19:13:01.056Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 21.61,
+    "timestamp": "2025-10-29T19:13:11.064Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 30.29,
+    "timestamp": "2025-10-29T19:13:21.060Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 26.36,
+    "timestamp": "2025-10-29T19:13:31.062Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 26.57,
+    "timestamp": "2025-10-29T19:13:41.084Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 13.84,
+    "timestamp": "2025-10-29T19:13:51.068Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 15.65,
+    "timestamp": "2025-10-29T19:14:01.062Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 9.89,
+    "timestamp": "2025-10-29T19:14:11.073Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 1.37,
+    "timestamp": "2025-10-29T19:14:21.071Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 0.83,
+    "timestamp": "2025-10-29T19:14:31.062Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 32.56,
+    "timestamp": "2025-10-29T19:14:41.069Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 2.78,
+    "timestamp": "2025-10-29T19:14:51.057Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 44.59,
+    "timestamp": "2025-10-29T19:15:01.070Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 25.36,
+    "timestamp": "2025-10-29T19:15:11.080Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 3.73,
+    "timestamp": "2025-10-29T19:15:21.072Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 19.63,
+    "timestamp": "2025-10-29T19:15:31.065Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 20.69,
+    "timestamp": "2025-10-29T19:15:41.076Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 0.29,
+    "timestamp": "2025-10-29T19:15:51.075Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 5.58,
+    "timestamp": "2025-10-29T19:16:01.071Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 81.14,
+    "timestamp": "2025-10-29T19:16:11.073Z",
+    "unit": "mm",
+    "faulty": true
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 31.5,
+    "timestamp": "2025-10-29T19:16:21.068Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 20.82,
+    "timestamp": "2025-10-29T19:16:31.077Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 15.29,
+    "timestamp": "2025-10-29T19:16:41.079Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 45.68,
+    "timestamp": "2025-10-29T19:16:51.079Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 40.65,
+    "timestamp": "2025-10-29T19:17:01.073Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 24.8,
+    "timestamp": "2025-10-29T19:17:11.083Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 2.19,
+    "timestamp": "2025-10-29T19:17:21.084Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 28.79,
+    "timestamp": "2025-10-29T19:17:31.092Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 39.35,
+    "timestamp": "2025-10-29T19:17:41.090Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 33.45,
+    "timestamp": "2025-10-29T19:17:51.088Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 36.33,
+    "timestamp": "2025-10-29T19:18:01.087Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 26.42,
+    "timestamp": "2025-10-29T19:18:11.089Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 47.67,
+    "timestamp": "2025-10-29T19:18:21.099Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 4.17,
+    "timestamp": "2025-10-29T19:18:31.095Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 15.41,
+    "timestamp": "2025-10-29T19:18:41.091Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 23.74,
+    "timestamp": "2025-10-29T19:18:51.091Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 1.451,
+    "timestamp": "2025-10-29T19:19:01.097Z",
+    "unit": "mm",
+    "faulty": true
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 6.17,
+    "timestamp": "2025-10-29T19:19:11.102Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 21.49,
+    "timestamp": "2025-10-29T19:19:21.103Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 28.37,
+    "timestamp": "2025-10-29T19:19:31.101Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 32.57,
+    "timestamp": "2025-10-29T19:19:41.100Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 2.32,
+    "timestamp": "2025-10-29T19:19:51.107Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 18.13,
+    "timestamp": "2025-10-29T19:20:01.103Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 34.12,
+    "timestamp": "2025-10-29T19:20:11.109Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 7.54,
+    "timestamp": "2025-10-29T19:20:21.162Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 23.01,
+    "timestamp": "2025-10-29T19:20:31.115Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 27.8,
+    "timestamp": "2025-10-29T19:20:41.114Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 19.72,
+    "timestamp": "2025-10-29T19:20:51.108Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 11.1,
+    "timestamp": "2025-10-29T19:21:01.115Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 23.12,
+    "timestamp": "2025-10-29T19:21:11.116Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 6.73,
+    "timestamp": "2025-10-29T19:21:21.117Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 26.09,
+    "timestamp": "2025-10-29T19:21:31.121Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 41.15,
+    "timestamp": "2025-10-29T19:21:41.114Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 37.4,
+    "timestamp": "2025-10-29T19:21:51.150Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 12.59,
+    "timestamp": "2025-10-29T19:22:01.126Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 45.49,
+    "timestamp": "2025-10-29T19:22:11.127Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 24.57,
+    "timestamp": "2025-10-29T19:22:21.119Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 39.05,
+    "timestamp": "2025-10-29T19:22:31.129Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 24.52,
+    "timestamp": "2025-10-29T19:22:41.133Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 20.28,
+    "timestamp": "2025-10-29T19:22:51.140Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 24.99,
+    "timestamp": "2025-10-29T19:23:01.138Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 13.51,
+    "timestamp": "2025-10-29T19:23:11.139Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 10.03,
+    "timestamp": "2025-10-29T19:23:21.139Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 39.45,
+    "timestamp": "2025-10-29T19:23:31.221Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 5.21,
+    "timestamp": "2025-10-29T19:23:41.139Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 40.61,
+    "timestamp": "2025-10-29T19:23:51.141Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 0.84,
+    "timestamp": "2025-10-29T19:24:01.138Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 1.25,
+    "timestamp": "2025-10-29T19:24:11.161Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 48.83,
+    "timestamp": "2025-10-29T19:24:21.144Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 1.25,
+    "timestamp": "2025-10-29T19:24:31.151Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 4.46,
+    "timestamp": "2025-10-29T19:24:41.146Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 23.37,
+    "timestamp": "2025-10-29T19:24:51.150Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 21.96,
+    "timestamp": "2025-10-29T19:25:01.150Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 34.63,
+    "timestamp": "2025-10-29T19:25:11.146Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 23.53,
+    "timestamp": "2025-10-29T19:25:21.149Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 30.44,
+    "timestamp": "2025-10-29T19:25:31.151Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 15.07,
+    "timestamp": "2025-10-29T19:25:41.155Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 15.72,
+    "timestamp": "2025-10-29T19:25:51.156Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 17.86,
+    "timestamp": "2025-10-29T19:26:01.156Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 15.97,
+    "timestamp": "2025-10-29T19:26:11.161Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 1.82,
+    "timestamp": "2025-10-29T19:26:21.162Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 30.39,
+    "timestamp": "2025-10-29T19:26:31.192Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 44.25,
+    "timestamp": "2025-10-29T19:26:41.163Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 23.12,
+    "timestamp": "2025-10-29T19:26:51.159Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 21.84,
+    "timestamp": "2025-10-29T19:27:01.163Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 33.26,
+    "timestamp": "2025-10-29T19:27:11.166Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 47.39,
+    "timestamp": "2025-10-29T19:27:21.166Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 0.08,
+    "timestamp": "2025-10-29T19:27:31.168Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 11.6,
+    "timestamp": "2025-10-29T19:27:41.163Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 2.8,
+    "timestamp": "2025-10-29T19:27:51.165Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 31.41,
+    "timestamp": "2025-10-29T19:28:01.169Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 48.82,
+    "timestamp": "2025-10-29T19:28:11.171Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 30.17,
+    "timestamp": "2025-10-29T19:28:21.176Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 20.36,
+    "timestamp": "2025-10-29T19:28:31.181Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 47.42,
+    "timestamp": "2025-10-29T19:28:41.175Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 26.98,
+    "timestamp": "2025-10-29T19:28:51.186Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 15.86,
+    "timestamp": "2025-10-29T19:29:01.197Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 3.05,
+    "timestamp": "2025-10-29T19:29:11.183Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 29.94,
+    "timestamp": "2025-10-29T19:29:21.177Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 19.3,
+    "timestamp": "2025-10-29T19:29:31.181Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 7.8,
+    "timestamp": "2025-10-29T19:29:41.182Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 23.06,
+    "timestamp": "2025-10-29T19:29:51.172Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 19.77,
+    "timestamp": "2025-10-29T19:30:01.183Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 18.7,
+    "timestamp": "2025-10-29T19:30:11.186Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 0.4,
+    "timestamp": "2025-10-29T19:30:21.176Z",
+    "unit": "mm",
+    "faulty": true
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 11.6,
+    "timestamp": "2025-10-29T19:30:31.182Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 45.29,
+    "timestamp": "2025-10-29T19:30:41.188Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 23.24,
+    "timestamp": "2025-10-29T19:30:51.186Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 48.22,
+    "timestamp": "2025-10-29T19:31:01.189Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 43.9,
+    "timestamp": "2025-10-29T19:31:11.193Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 37.08,
+    "timestamp": "2025-10-29T19:31:21.189Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 16.07,
+    "timestamp": "2025-10-29T19:31:31.194Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 0.76,
+    "timestamp": "2025-10-29T19:31:41.198Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 5.6,
+    "timestamp": "2025-10-29T19:31:51.188Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 5.01,
+    "timestamp": "2025-10-29T19:32:01.202Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 11.64,
+    "timestamp": "2025-10-29T19:32:11.199Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 41.31,
+    "timestamp": "2025-10-29T19:32:21.194Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 37.92,
+    "timestamp": "2025-10-29T19:32:31.209Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 30.92,
+    "timestamp": "2025-10-29T19:32:41.204Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 22.7,
+    "timestamp": "2025-10-29T19:32:51.212Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 39.31,
+    "timestamp": "2025-10-29T19:33:01.212Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 35.24,
+    "timestamp": "2025-10-29T19:33:11.210Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 45.9,
+    "timestamp": "2025-10-29T19:33:21.210Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 15.73,
+    "timestamp": "2025-10-29T19:33:31.212Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 0.87,
+    "timestamp": "2025-10-29T19:33:41.221Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 28.07,
+    "timestamp": "2025-10-29T19:33:51.215Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 15.96,
+    "timestamp": "2025-10-29T19:34:01.217Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 1.14,
+    "timestamp": "2025-10-29T19:34:11.209Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 30.92,
+    "timestamp": "2025-10-29T19:34:21.210Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 32.63,
+    "timestamp": "2025-10-29T19:34:31.219Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 34.18,
+    "timestamp": "2025-10-29T19:34:41.226Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 36.98,
+    "timestamp": "2025-10-29T19:34:51.224Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 7.74,
+    "timestamp": "2025-10-29T19:35:01.223Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 43.12,
+    "timestamp": "2025-10-29T19:35:11.226Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 26.6,
+    "timestamp": "2025-10-29T19:35:21.227Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 35.76,
+    "timestamp": "2025-10-29T19:35:31.236Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 9.9,
+    "timestamp": "2025-10-29T19:35:41.245Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 8.33,
+    "timestamp": "2025-10-29T19:35:51.238Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 30.26,
+    "timestamp": "2025-10-29T19:36:01.238Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 29.03,
+    "timestamp": "2025-10-29T19:36:11.244Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 22.23,
+    "timestamp": "2025-10-29T19:36:21.238Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 26.51,
+    "timestamp": "2025-10-29T19:36:31.241Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 5.97,
+    "timestamp": "2025-10-29T19:36:41.244Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 7.53,
+    "timestamp": "2025-10-29T19:36:51.245Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 39.37,
+    "timestamp": "2025-10-29T19:37:01.249Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 24.18,
+    "timestamp": "2025-10-29T19:37:11.233Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 2.07,
+    "timestamp": "2025-10-29T19:37:21.251Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 36.37,
+    "timestamp": "2025-10-29T19:37:31.245Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 1.64,
+    "timestamp": "2025-10-29T19:37:41.249Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 20.55,
+    "timestamp": "2025-10-29T19:37:51.243Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 48.44,
+    "timestamp": "2025-10-29T19:38:01.256Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 31.11,
+    "timestamp": "2025-10-29T19:38:11.251Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 29.76,
+    "timestamp": "2025-10-29T19:38:21.245Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 30.16,
+    "timestamp": "2025-10-29T19:38:31.211Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 15.88,
+    "timestamp": "2025-10-29T19:38:41.207Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 39.95,
+    "timestamp": "2025-10-29T19:38:51.211Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 31.09,
+    "timestamp": "2025-10-29T19:39:01.207Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 4.03,
+    "timestamp": "2025-10-29T19:39:11.206Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 1.03,
+    "timestamp": "2025-10-29T19:39:21.209Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 0.792,
+    "timestamp": "2025-10-29T19:39:31.207Z",
+    "unit": "mm",
+    "faulty": true
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 9.91,
+    "timestamp": "2025-10-29T19:39:41.210Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 39.6,
+    "timestamp": "2025-10-29T19:39:51.220Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 8.13,
+    "timestamp": "2025-10-29T19:40:01.218Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 17.68,
+    "timestamp": "2025-10-29T19:40:11.215Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 44.98,
+    "timestamp": "2025-10-29T19:40:21.215Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 4.47,
+    "timestamp": "2025-10-29T19:40:31.214Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 45.61,
+    "timestamp": "2025-10-29T19:40:41.216Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 30.81,
+    "timestamp": "2025-10-29T19:40:51.220Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 21.18,
+    "timestamp": "2025-10-29T19:41:01.218Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 5.03,
+    "timestamp": "2025-10-29T19:41:11.227Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 47.22,
+    "timestamp": "2025-10-29T19:41:21.217Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 15.52,
+    "timestamp": "2025-10-29T19:55:26.155Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 39.49,
+    "timestamp": "2025-10-29T19:55:36.213Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 29.33,
+    "timestamp": "2025-10-29T19:55:46.227Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 13.19,
+    "timestamp": "2025-10-29T19:55:56.228Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 33.61,
+    "timestamp": "2025-10-29T19:56:06.234Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 3.98,
+    "timestamp": "2025-10-29T19:56:16.226Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 8.66,
+    "timestamp": "2025-10-29T19:56:26.231Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 6.37,
+    "timestamp": "2025-10-29T19:56:36.229Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 22.03,
+    "timestamp": "2025-10-29T19:56:46.230Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 30.36,
+    "timestamp": "2025-10-29T19:56:56.230Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 9.13,
+    "timestamp": "2025-10-29T19:57:06.236Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 37.02,
+    "timestamp": "2025-10-29T19:57:16.233Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 21.21,
+    "timestamp": "2025-10-29T19:57:26.242Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 39.74,
+    "timestamp": "2025-10-29T19:57:36.239Z",
+    "unit": "mm",
+    "faulty": true
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 46.87,
+    "timestamp": "2025-10-29T19:57:46.248Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 1.75,
+    "timestamp": "2025-10-29T19:57:56.235Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 46.04,
+    "timestamp": "2025-10-29T19:58:06.239Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 43.43,
+    "timestamp": "2025-10-29T19:58:16.239Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 45.87,
+    "timestamp": "2025-10-29T19:58:26.249Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 47.98,
+    "timestamp": "2025-10-29T19:58:36.252Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 36.19,
+    "timestamp": "2025-10-29T19:58:46.242Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 30.69,
+    "timestamp": "2025-10-29T19:58:56.248Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 7.32,
+    "timestamp": "2025-10-29T19:59:06.243Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 14.54,
+    "timestamp": "2025-10-29T19:59:16.252Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 48.06,
+    "timestamp": "2025-10-29T19:59:26.235Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 43.14,
+    "timestamp": "2025-10-29T19:59:36.254Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 4.18,
+    "timestamp": "2025-10-29T19:59:46.273Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 25.31,
+    "timestamp": "2025-10-29T19:59:56.260Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 37.1,
+    "timestamp": "2025-10-29T20:00:06.257Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 2.72,
+    "timestamp": "2025-10-29T20:00:16.256Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 0.3918018739789537,
+    "timestamp": "2025-10-29T20:00:26.277Z",
+    "unit": "mm",
+    "extreme": true
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 1.7435668154480939,
+    "timestamp": "2025-10-29T20:00:36.257Z",
+    "unit": "mm",
+    "extreme": true
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 1.8293952096571269,
+    "timestamp": "2025-10-29T20:00:46.265Z",
+    "unit": "mm",
+    "extreme": true
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 0.5759309855599335,
+    "timestamp": "2025-10-29T20:00:56.261Z",
+    "unit": "mm",
+    "extreme": true
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 1.3280053104025118,
+    "timestamp": "2025-10-29T20:01:06.254Z",
+    "unit": "mm",
+    "extreme": true
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 1.213827909914272,
+    "timestamp": "2025-10-29T20:01:16.265Z",
+    "unit": "mm",
+    "extreme": true
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 39.17,
+    "timestamp": "2025-10-29T20:01:26.264Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 25.12,
+    "timestamp": "2025-10-29T20:01:36.260Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 31.3,
+    "timestamp": "2025-10-29T20:01:46.264Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 0,
+    "timestamp": "2025-10-29T20:01:56.268Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 26.79,
+    "timestamp": "2025-10-29T20:02:06.265Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 24.89,
+    "timestamp": "2025-10-29T20:02:16.266Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 1.16,
+    "timestamp": "2025-10-29T20:02:26.272Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 19.41,
+    "timestamp": "2025-10-29T20:02:36.280Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 26.73,
+    "timestamp": "2025-10-29T20:02:46.271Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 15.02,
+    "timestamp": "2025-10-29T20:02:56.295Z",
+    "unit": "mm",
+    "faulty": true
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 34.87,
+    "timestamp": "2025-10-29T20:03:06.264Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 36.09,
+    "timestamp": "2025-10-29T20:03:16.278Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 10.24,
+    "timestamp": "2025-10-29T20:03:26.271Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 16.83,
+    "timestamp": "2025-10-29T20:03:36.272Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 15.92,
+    "timestamp": "2025-10-29T20:03:46.266Z",
+    "unit": "mm",
+    "faulty": true
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 29.05,
+    "timestamp": "2025-10-29T20:03:56.269Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 41.15,
+    "timestamp": "2025-10-29T20:04:06.275Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 41.22,
+    "timestamp": "2025-10-29T20:04:16.279Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 12.07,
+    "timestamp": "2025-10-29T20:04:26.280Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 19.73,
+    "timestamp": "2025-10-29T20:04:36.282Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 10.97,
+    "timestamp": "2025-10-29T20:04:46.280Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 48.83,
+    "timestamp": "2025-10-29T20:04:56.376Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 3.43,
+    "timestamp": "2025-10-29T20:05:06.285Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 12.84,
+    "timestamp": "2025-10-29T20:05:16.290Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 1.642884608023466,
+    "timestamp": "2025-10-29T20:05:26.280Z",
+    "unit": "mm",
+    "extreme": true
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 1.060679811776172,
+    "timestamp": "2025-10-29T20:05:36.284Z",
+    "unit": "mm",
+    "extreme": true
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 1.252742490503944,
+    "timestamp": "2025-10-29T20:05:46.292Z",
+    "unit": "mm",
+    "extreme": true
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 1.1214282209973048,
+    "timestamp": "2025-10-29T20:05:56.280Z",
+    "unit": "mm",
+    "extreme": true
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 1.2001981815704894,
+    "timestamp": "2025-10-29T20:06:06.290Z",
+    "unit": "mm",
+    "extreme": true
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 0.526555106915142,
+    "timestamp": "2025-10-29T20:06:16.288Z",
+    "unit": "mm",
+    "extreme": true
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 8.2,
+    "timestamp": "2025-10-29T20:06:26.288Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 31.87,
+    "timestamp": "2025-10-29T20:06:36.289Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 7.32,
+    "timestamp": "2025-10-29T20:06:46.292Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 41.08,
+    "timestamp": "2025-10-29T20:06:56.286Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 14.52,
+    "timestamp": "2025-10-29T20:07:06.292Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 47.6,
+    "timestamp": "2025-10-29T20:07:16.299Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 34.33,
+    "timestamp": "2025-10-29T20:07:26.300Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 48.2,
+    "timestamp": "2025-10-29T20:07:36.296Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 3.94,
+    "timestamp": "2025-10-29T20:07:46.304Z",
+    "unit": "mm",
+    "faulty": true
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 79.14,
+    "timestamp": "2025-10-29T20:07:56.292Z",
+    "unit": "mm",
+    "faulty": true
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 0.23,
+    "timestamp": "2025-10-29T20:08:06.320Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 12.49,
+    "timestamp": "2025-10-29T20:08:16.306Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 48.88,
+    "timestamp": "2025-10-29T20:08:26.304Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 12.01,
+    "timestamp": "2025-10-29T20:08:36.313Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 41.91,
+    "timestamp": "2025-10-29T20:08:46.314Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 28.58,
+    "timestamp": "2025-10-29T20:08:56.309Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 12.65,
+    "timestamp": "2025-10-29T20:09:06.314Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 48.45,
+    "timestamp": "2025-10-29T20:09:16.306Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 47.37,
+    "timestamp": "2025-10-29T20:09:26.309Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 10.01,
+    "timestamp": "2025-10-29T20:09:36.302Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 39.88,
+    "timestamp": "2025-10-29T20:09:46.311Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 24.88,
+    "timestamp": "2025-10-29T20:09:56.311Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 33.01,
+    "timestamp": "2025-10-29T20:10:06.310Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 48.71,
+    "timestamp": "2025-10-29T20:10:16.316Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 37.28,
+    "timestamp": "2025-10-29T20:10:26.307Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 10.75,
+    "timestamp": "2025-10-29T20:10:36.309Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 18.15,
+    "timestamp": "2025-10-29T20:10:46.318Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 38.58,
+    "timestamp": "2025-10-29T20:10:56.322Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 47.9,
+    "timestamp": "2025-10-29T20:11:06.331Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 41.21,
+    "timestamp": "2025-10-29T20:11:16.326Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 19.78,
+    "timestamp": "2025-10-29T20:11:26.318Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 48.9,
+    "timestamp": "2025-10-29T20:11:36.328Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 3.63,
+    "timestamp": "2025-10-29T20:11:46.318Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 17.89,
+    "timestamp": "2025-10-29T20:11:56.327Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 27.07,
+    "timestamp": "2025-10-29T20:12:06.375Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 38.75,
+    "timestamp": "2025-10-29T20:12:16.364Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 29.66,
+    "timestamp": "2025-10-29T20:12:26.374Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 17.46,
+    "timestamp": "2025-10-29T20:12:36.367Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 47.85,
+    "timestamp": "2025-10-29T20:12:46.379Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 6.13,
+    "timestamp": "2025-10-29T20:12:56.386Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 15.62,
+    "timestamp": "2025-10-29T20:13:06.380Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 46.63,
+    "timestamp": "2025-10-29T20:13:16.373Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 34.57,
+    "timestamp": "2025-10-29T20:13:26.388Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 28.45,
+    "timestamp": "2025-10-29T20:16:17.664Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 18.23,
+    "timestamp": "2025-10-29T20:16:27.749Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 3.01,
+    "timestamp": "2025-10-29T20:16:37.747Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 47.65,
+    "timestamp": "2025-10-29T20:16:47.758Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 36.13,
+    "timestamp": "2025-10-29T20:16:57.750Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 0.048,
+    "timestamp": "2025-10-29T20:17:07.754Z",
+    "unit": "mm",
+    "faulty": true
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 29.24,
+    "timestamp": "2025-10-29T20:17:17.749Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 17.8,
+    "timestamp": "2025-10-29T20:17:27.738Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 3.9600000000000004,
+    "timestamp": "2025-10-29T20:17:37.753Z",
+    "unit": "mm",
+    "faulty": true
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 2.36,
+    "timestamp": "2025-10-29T20:17:47.746Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 48.58,
+    "timestamp": "2025-10-29T20:17:57.751Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 47.56,
+    "timestamp": "2025-10-29T20:18:07.758Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 13.65,
+    "timestamp": "2025-10-29T20:18:17.758Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 26.96,
+    "timestamp": "2025-10-29T20:18:27.759Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 43.69,
+    "timestamp": "2025-10-29T20:18:37.761Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 3.14,
+    "timestamp": "2025-10-29T20:18:47.762Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 48.01,
+    "timestamp": "2025-10-29T20:18:57.753Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 6.36,
+    "timestamp": "2025-10-29T20:19:07.757Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 58.86,
+    "timestamp": "2025-10-29T20:19:17.768Z",
+    "unit": "mm",
+    "faulty": true
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 34.44,
+    "timestamp": "2025-10-29T20:19:27.765Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 6.76,
+    "timestamp": "2025-10-29T20:19:37.761Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 34.07,
+    "timestamp": "2025-10-29T20:19:47.761Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 18.84,
+    "timestamp": "2025-10-29T20:19:57.759Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 46.98,
+    "timestamp": "2025-10-29T20:20:07.755Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 31.44,
+    "timestamp": "2025-10-29T20:20:17.767Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 38.68,
+    "timestamp": "2025-10-29T20:20:27.765Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 45.3,
+    "timestamp": "2025-10-29T20:20:37.772Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 7.97,
+    "timestamp": "2025-10-29T20:20:47.773Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 0.78,
+    "timestamp": "2025-10-29T20:20:57.763Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 33.05,
+    "timestamp": "2025-10-29T20:21:07.764Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 37.29,
+    "timestamp": "2025-10-29T20:21:17.777Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 8.99,
+    "timestamp": "2025-10-29T20:21:27.769Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 11.08,
+    "timestamp": "2025-10-29T20:21:37.778Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 22.95,
+    "timestamp": "2025-10-29T20:21:47.779Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 14.11,
+    "timestamp": "2025-10-29T20:21:57.780Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 11.3,
+    "timestamp": "2025-10-29T20:22:07.768Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 0.58,
+    "timestamp": "2025-10-29T20:22:17.788Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 41.89,
+    "timestamp": "2025-10-29T20:22:27.780Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 12.23,
+    "timestamp": "2025-10-29T20:22:37.787Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 13.98,
+    "timestamp": "2025-10-29T20:22:47.789Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 23.42,
+    "timestamp": "2025-10-29T20:22:57.792Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 39.32,
+    "timestamp": "2025-10-29T20:23:07.789Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 30.09,
+    "timestamp": "2025-10-29T20:23:17.792Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 49.1,
+    "timestamp": "2025-10-29T20:23:27.785Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 3.74,
+    "timestamp": "2025-10-29T20:23:37.789Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 34.6,
+    "timestamp": "2025-10-29T20:23:47.800Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 26.79,
+    "timestamp": "2025-10-29T20:23:57.790Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 32,
+    "timestamp": "2025-10-29T20:24:07.787Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 18.99,
+    "timestamp": "2025-10-29T20:24:17.789Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 20.63,
+    "timestamp": "2025-10-29T20:24:27.790Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 1.44,
+    "timestamp": "2025-10-29T20:24:37.801Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 32.16,
+    "timestamp": "2025-10-29T20:24:47.804Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 38.93,
+    "timestamp": "2025-10-29T20:24:57.805Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 8.47,
+    "timestamp": "2025-10-29T20:25:07.792Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 13.66,
+    "timestamp": "2025-10-29T20:25:17.805Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 22.4,
+    "timestamp": "2025-10-29T20:25:27.808Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 13.64,
+    "timestamp": "2025-10-29T20:25:37.806Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 12.22,
+    "timestamp": "2025-10-29T20:25:47.804Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 38.38,
+    "timestamp": "2025-10-29T20:25:57.805Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 7.96,
+    "timestamp": "2025-10-29T20:26:07.801Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 1.5564348371754348,
+    "timestamp": "2025-10-29T20:26:17.811Z",
+    "unit": "mm",
+    "extreme": true
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 0.1006200596299443,
+    "timestamp": "2025-10-29T20:26:27.816Z",
+    "unit": "mm",
+    "extreme": true,
+    "faulty": true
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 1.2398580564981825,
+    "timestamp": "2025-10-29T20:26:37.810Z",
+    "unit": "mm",
+    "extreme": true
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 1.335246648642763,
+    "timestamp": "2025-10-29T20:26:47.823Z",
+    "unit": "mm",
+    "extreme": true
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 1.4681426835992692,
+    "timestamp": "2025-10-29T20:26:57.815Z",
+    "unit": "mm",
+    "extreme": true
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 0.8062274240580942,
+    "timestamp": "2025-10-29T20:27:07.820Z",
+    "unit": "mm",
+    "extreme": true
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 2.31,
+    "timestamp": "2025-10-29T20:27:17.800Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 40.34,
+    "timestamp": "2025-10-29T20:27:27.807Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 45.85,
+    "timestamp": "2025-10-29T20:27:37.818Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 23.04,
+    "timestamp": "2025-10-29T20:27:47.818Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 0.52,
+    "timestamp": "2025-10-29T20:27:57.814Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 4.08,
+    "timestamp": "2025-10-29T20:28:07.818Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 11.55,
+    "timestamp": "2025-10-29T20:28:17.824Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 1.68,
+    "timestamp": "2025-10-29T20:28:27.808Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 22.75,
+    "timestamp": "2025-10-29T20:28:37.809Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 91.5,
+    "timestamp": "2025-10-29T20:28:47.823Z",
+    "unit": "mm",
+    "faulty": true
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 6.34,
+    "timestamp": "2025-10-29T20:28:57.822Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 13.34,
+    "timestamp": "2025-10-29T20:29:07.822Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 18.47,
+    "timestamp": "2025-10-29T20:29:17.825Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 37.18,
+    "timestamp": "2025-10-29T20:29:27.828Z",
+    "unit": "mm",
+    "faulty": true
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 49.64,
+    "timestamp": "2025-10-29T20:29:37.833Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 14.71,
+    "timestamp": "2025-10-29T20:29:47.833Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 39.48,
+    "timestamp": "2025-10-29T20:29:57.830Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 32.14,
+    "timestamp": "2025-10-29T20:30:07.838Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 47.92,
+    "timestamp": "2025-10-29T20:30:17.838Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 26.29,
+    "timestamp": "2025-10-29T20:30:27.850Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 1,
+    "timestamp": "2025-10-29T20:30:37.854Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 24.35,
+    "timestamp": "2025-10-29T20:30:47.821Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 44.79,
+    "timestamp": "2025-10-29T20:30:57.826Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 41.43,
+    "timestamp": "2025-10-29T20:31:07.844Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 25.68,
+    "timestamp": "2025-10-29T20:31:17.847Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 34.74,
+    "timestamp": "2025-10-29T20:31:27.846Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 39.86,
+    "timestamp": "2025-10-29T20:31:37.828Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 48.27,
+    "timestamp": "2025-10-29T20:31:47.847Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 44.17,
+    "timestamp": "2025-10-29T20:31:57.864Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 30.09,
+    "timestamp": "2025-10-29T20:32:07.850Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 22.46,
+    "timestamp": "2025-10-29T20:32:17.850Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 78.26,
+    "timestamp": "2025-10-29T20:32:27.849Z",
+    "unit": "mm",
+    "faulty": true
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 19.19,
+    "timestamp": "2025-10-29T20:32:37.842Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 9.48,
+    "timestamp": "2025-10-29T20:32:47.855Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 2.03,
+    "timestamp": "2025-10-29T20:32:57.862Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 23.83,
+    "timestamp": "2025-10-29T20:33:07.860Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 25.56,
+    "timestamp": "2025-10-29T20:33:17.848Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 47.96,
+    "timestamp": "2025-10-29T20:33:27.858Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 7.4,
+    "timestamp": "2025-10-29T20:33:37.851Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 0.01,
+    "timestamp": "2025-10-29T20:33:47.881Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 0.66,
+    "timestamp": "2025-10-29T20:33:57.864Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 32.34,
+    "timestamp": "2025-10-29T20:34:07.852Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 4.795000000000001,
+    "timestamp": "2025-10-29T20:34:17.868Z",
+    "unit": "mm",
+    "faulty": true
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 29.27,
+    "timestamp": "2025-10-29T20:34:27.925Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 35.17,
+    "timestamp": "2025-10-29T20:34:37.857Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 42.66,
+    "timestamp": "2025-10-29T20:34:47.870Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 95.2,
+    "timestamp": "2025-10-29T20:34:57.882Z",
+    "unit": "mm",
+    "faulty": true
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 47.47,
+    "timestamp": "2025-10-29T20:35:07.863Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 23.24,
+    "timestamp": "2025-10-29T20:35:17.881Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 15.6,
+    "timestamp": "2025-10-29T20:35:27.891Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 34.86,
+    "timestamp": "2025-10-29T20:35:37.885Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 3.7,
+    "timestamp": "2025-10-29T20:35:47.892Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 39.35,
+    "timestamp": "2025-10-29T20:35:57.888Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 17.99,
+    "timestamp": "2025-10-29T20:36:07.887Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 26.96,
+    "timestamp": "2025-10-29T20:36:17.870Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 37.51,
+    "timestamp": "2025-10-29T20:36:27.872Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 2.34,
+    "timestamp": "2025-10-29T20:36:37.890Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 44.66,
+    "timestamp": "2025-10-29T20:36:47.873Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 38.64,
+    "timestamp": "2025-10-29T20:36:57.894Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 38.29,
+    "timestamp": "2025-10-29T20:37:07.877Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 21.39,
+    "timestamp": "2025-10-29T20:37:17.892Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 37.81,
+    "timestamp": "2025-10-29T20:37:27.908Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 38.99,
+    "timestamp": "2025-10-29T20:37:37.897Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 24.08,
+    "timestamp": "2025-10-29T20:37:47.890Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 3.57,
+    "timestamp": "2025-10-29T20:37:57.891Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 34.36,
+    "timestamp": "2025-10-29T20:38:07.881Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 41.47,
+    "timestamp": "2025-10-29T20:38:17.895Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 1.46,
+    "timestamp": "2025-10-29T20:38:27.907Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 14.35,
+    "timestamp": "2025-10-29T20:38:37.893Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 46.87,
+    "timestamp": "2025-10-29T20:38:47.883Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 7.88,
+    "timestamp": "2025-10-29T20:38:57.900Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 24.57,
+    "timestamp": "2025-10-29T20:39:07.902Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 4.56,
+    "timestamp": "2025-10-29T20:39:17.907Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 43.05,
+    "timestamp": "2025-10-29T20:39:27.904Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 7.01,
+    "timestamp": "2025-10-29T20:39:37.892Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 18.41,
+    "timestamp": "2025-10-29T20:39:47.917Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 0.08,
+    "timestamp": "2025-10-29T20:39:57.903Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 29.49,
+    "timestamp": "2025-10-29T20:40:07.898Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 36.39,
+    "timestamp": "2025-10-29T20:40:17.899Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 1.45,
+    "timestamp": "2025-10-29T20:40:27.910Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 17.57,
+    "timestamp": "2025-10-29T20:40:37.901Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 18.27,
+    "timestamp": "2025-10-29T20:40:47.906Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 14.63,
+    "timestamp": "2025-10-29T20:40:57.910Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 20.41,
+    "timestamp": "2025-10-29T20:41:07.915Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 34.8,
+    "timestamp": "2025-10-29T20:41:17.908Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 37.22,
+    "timestamp": "2025-10-29T20:41:27.896Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 21.04,
+    "timestamp": "2025-10-29T20:41:37.898Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 4.62,
+    "timestamp": "2025-10-29T20:41:47.908Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 3.375,
+    "timestamp": "2025-10-29T20:41:57.921Z",
+    "unit": "mm",
+    "faulty": true
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 37.52,
+    "timestamp": "2025-10-29T20:42:07.937Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 19.33,
+    "timestamp": "2025-10-29T20:42:17.927Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 20.2,
+    "timestamp": "2025-10-29T20:42:27.930Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 27.38,
+    "timestamp": "2025-10-29T20:42:37.929Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 7.27,
+    "timestamp": "2025-10-29T20:42:47.930Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 1.03,
+    "timestamp": "2025-10-29T20:42:57.939Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 34.85,
+    "timestamp": "2025-10-29T20:43:07.933Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 10.09,
+    "timestamp": "2025-10-29T20:43:17.934Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 46.27,
+    "timestamp": "2025-10-29T20:43:27.939Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 48.47,
+    "timestamp": "2025-10-29T20:43:37.937Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 9.06,
+    "timestamp": "2025-10-29T20:43:47.939Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 13.97,
+    "timestamp": "2025-10-29T20:43:57.938Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 15.59,
+    "timestamp": "2025-10-29T20:44:07.920Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 10.93,
+    "timestamp": "2025-10-29T20:44:17.920Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 11.35,
+    "timestamp": "2025-10-29T20:44:27.931Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 41.48,
+    "timestamp": "2025-10-29T20:44:37.930Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 17.36,
+    "timestamp": "2025-10-29T20:44:47.938Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 19.56,
+    "timestamp": "2025-10-29T20:44:57.945Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 18.88,
+    "timestamp": "2025-10-29T20:45:07.930Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 12.56,
+    "timestamp": "2025-10-29T20:45:17.947Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 39.69,
+    "timestamp": "2025-10-29T20:45:27.947Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 27.33,
+    "timestamp": "2025-10-29T20:45:37.940Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 15.39,
+    "timestamp": "2025-10-29T20:45:47.942Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 0.52,
+    "timestamp": "2025-10-29T20:45:57.951Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 54.1,
+    "timestamp": "2025-10-29T20:46:07.949Z",
+    "unit": "mm",
+    "faulty": true
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 49.63,
+    "timestamp": "2025-10-29T20:46:17.953Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 46.25,
+    "timestamp": "2025-10-29T20:46:27.949Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 23.99,
+    "timestamp": "2025-10-29T20:46:37.952Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 0.003,
+    "timestamp": "2025-10-29T20:46:47.962Z",
+    "unit": "mm",
+    "faulty": true
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 40.69,
+    "timestamp": "2025-10-29T20:46:57.959Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 28.05,
+    "timestamp": "2025-10-29T20:47:07.960Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 28.6,
+    "timestamp": "2025-10-29T20:47:17.952Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 18.31,
+    "timestamp": "2025-10-29T20:47:27.960Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 4.96,
+    "timestamp": "2025-10-29T20:47:37.940Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 5.91,
+    "timestamp": "2025-10-29T20:47:47.943Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 22.06,
+    "timestamp": "2025-10-29T20:47:57.957Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 5.1,
+    "timestamp": "2025-10-29T20:48:07.958Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 22.07,
+    "timestamp": "2025-10-29T20:48:17.960Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 12.26,
+    "timestamp": "2025-10-29T20:48:27.955Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 42.63,
+    "timestamp": "2025-10-29T20:48:37.956Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 31.48,
+    "timestamp": "2025-10-29T20:48:47.966Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 12.22,
+    "timestamp": "2025-10-29T20:48:57.960Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 29.92,
+    "timestamp": "2025-10-29T20:49:07.966Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 37.29,
+    "timestamp": "2025-10-29T20:49:17.963Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 35.94,
+    "timestamp": "2025-10-29T20:49:27.968Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 31.21,
+    "timestamp": "2025-10-29T20:49:37.964Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 4.559,
+    "timestamp": "2025-10-29T20:49:47.961Z",
+    "unit": "mm",
+    "faulty": true
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 13.49,
+    "timestamp": "2025-10-29T20:49:57.956Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 14.54,
+    "timestamp": "2025-10-29T20:50:07.964Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 48.2,
+    "timestamp": "2025-10-29T20:50:17.974Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 19.12,
+    "timestamp": "2025-10-29T20:50:27.978Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 36.47,
+    "timestamp": "2025-10-29T20:50:37.991Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 5.4,
+    "timestamp": "2025-10-29T20:50:47.979Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 6.18,
+    "timestamp": "2025-10-29T20:50:57.982Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 7.59,
+    "timestamp": "2025-10-29T20:51:07.988Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 44.37,
+    "timestamp": "2025-10-29T20:51:17.985Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 21.31,
+    "timestamp": "2025-10-29T20:51:27.991Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 21.11,
+    "timestamp": "2025-10-29T20:51:37.994Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 39.96,
+    "timestamp": "2025-10-29T20:51:47.996Z",
+    "unit": "mm",
+    "faulty": true
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 41,
+    "timestamp": "2025-10-29T20:51:57.989Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 9.11,
+    "timestamp": "2025-10-29T20:52:07.991Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 43.19,
+    "timestamp": "2025-10-29T20:52:17.971Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 47.57,
+    "timestamp": "2025-10-29T20:52:27.980Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 29.08,
+    "timestamp": "2025-10-29T20:52:37.989Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 0.34,
+    "timestamp": "2025-10-29T20:52:47.995Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 20.5,
+    "timestamp": "2025-10-29T20:52:57.988Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 6.73,
+    "timestamp": "2025-10-29T20:53:07.989Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 0.49,
+    "timestamp": "2025-10-29T20:53:17.989Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 22.86,
+    "timestamp": "2025-10-29T20:53:27.990Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 14.42,
+    "timestamp": "2025-10-29T20:53:38.005Z",
+    "unit": "mm",
+    "faulty": true
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 23.99,
+    "timestamp": "2025-10-29T20:53:48.002Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 34.62,
+    "timestamp": "2025-10-29T20:53:57.983Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 0.271,
+    "timestamp": "2025-10-29T20:54:08.001Z",
+    "unit": "mm",
+    "faulty": true
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 24.86,
+    "timestamp": "2025-10-29T20:54:18.011Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 13.62,
+    "timestamp": "2025-10-29T20:54:28.007Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 43.29,
+    "timestamp": "2025-10-29T20:54:37.994Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 45.92,
+    "timestamp": "2025-10-29T20:54:48.003Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 14.43,
+    "timestamp": "2025-10-29T20:54:58.006Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 88.64,
+    "timestamp": "2025-10-29T20:55:08.016Z",
+    "unit": "mm",
+    "faulty": true
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 40.26,
+    "timestamp": "2025-10-29T20:55:18.002Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 44.04,
+    "timestamp": "2025-10-29T20:55:28.008Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 33.47,
+    "timestamp": "2025-10-29T20:55:37.997Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 3.36,
+    "timestamp": "2025-10-29T20:55:48.026Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 19.9,
+    "timestamp": "2025-10-29T20:55:58.013Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 41.07,
+    "timestamp": "2025-10-29T20:56:08.010Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 48.02,
+    "timestamp": "2025-10-29T20:56:18.015Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 22.49,
+    "timestamp": "2025-10-29T20:56:28.035Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 5.65,
+    "timestamp": "2025-10-29T20:56:38.021Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 15.29,
+    "timestamp": "2025-10-29T20:56:48.020Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 2.87,
+    "timestamp": "2025-10-29T20:56:58.022Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 43.71,
+    "timestamp": "2025-10-29T20:57:08.027Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 5.81,
+    "timestamp": "2025-10-29T20:57:18.008Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 36.48,
+    "timestamp": "2025-10-29T20:57:28.025Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 35.47,
+    "timestamp": "2025-10-29T20:57:38.023Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 19.01,
+    "timestamp": "2025-10-29T20:57:48.027Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 3.57,
+    "timestamp": "2025-10-29T20:57:58.022Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 42.07,
+    "timestamp": "2025-10-29T20:58:08.016Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 29.08,
+    "timestamp": "2025-10-29T20:58:18.018Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 6.06,
+    "timestamp": "2025-10-29T20:58:28.032Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 27.15,
+    "timestamp": "2025-10-29T20:58:38.033Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 4.88,
+    "timestamp": "2025-10-29T20:58:48.028Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 0.91,
+    "timestamp": "2025-10-29T20:58:58.035Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 34.59,
+    "timestamp": "2025-10-29T20:59:08.038Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 24.02,
+    "timestamp": "2025-10-29T20:59:18.038Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 12.45,
+    "timestamp": "2025-10-29T20:59:28.038Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 43.62,
+    "timestamp": "2025-10-29T20:59:38.031Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 9.43,
+    "timestamp": "2025-10-29T20:59:48.043Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 14.09,
+    "timestamp": "2025-10-29T20:59:58.042Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 0.44,
+    "timestamp": "2025-10-29T21:00:08.040Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 9.74,
+    "timestamp": "2025-10-29T21:00:18.043Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 2.95,
+    "timestamp": "2025-10-29T21:00:28.029Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 33.79,
+    "timestamp": "2025-10-29T21:00:38.025Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 23.24,
+    "timestamp": "2025-10-29T21:00:48.031Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 8.79,
+    "timestamp": "2025-10-29T21:00:58.040Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 4.02,
+    "timestamp": "2025-10-29T21:01:08.048Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 0.92,
+    "timestamp": "2025-10-29T21:01:18.042Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 5.32,
+    "timestamp": "2025-10-29T21:01:28.042Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 17.06,
+    "timestamp": "2025-10-29T21:01:38.037Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 34.54,
+    "timestamp": "2025-10-29T21:01:48.031Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 5.4,
+    "timestamp": "2025-10-29T21:01:58.052Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 8.19,
+    "timestamp": "2025-10-29T21:02:08.058Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 37.06,
+    "timestamp": "2025-10-29T21:02:18.055Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 43.5,
+    "timestamp": "2025-10-29T21:02:28.049Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 15.31,
+    "timestamp": "2025-10-29T21:02:38.045Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 17.93,
+    "timestamp": "2025-10-29T21:02:48.059Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 6.5,
+    "timestamp": "2025-10-29T21:02:58.040Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 8.42,
+    "timestamp": "2025-10-29T21:03:08.060Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 6.91,
+    "timestamp": "2025-10-29T21:03:18.054Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 48.72,
+    "timestamp": "2025-10-29T21:03:28.056Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 22.2,
+    "timestamp": "2025-10-29T21:03:38.064Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 2.962,
+    "timestamp": "2025-10-29T21:03:48.062Z",
+    "unit": "mm",
+    "faulty": true
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 49.4,
+    "timestamp": "2025-10-29T21:03:58.059Z",
+    "unit": "mm",
+    "faulty": true
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 47.54,
+    "timestamp": "2025-10-29T21:04:08.066Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 31.46,
+    "timestamp": "2025-10-29T21:04:18.061Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 2.77,
+    "timestamp": "2025-10-29T21:04:28.124Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 4.44,
+    "timestamp": "2025-10-29T21:04:38.061Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 20.32,
+    "timestamp": "2025-10-29T21:04:48.066Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 24,
+    "timestamp": "2025-10-29T21:04:58.069Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 1.44,
+    "timestamp": "2025-10-29T21:05:08.065Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 21.35,
+    "timestamp": "2025-10-29T21:05:18.074Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 8.64,
+    "timestamp": "2025-10-29T21:05:28.074Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 35.21,
+    "timestamp": "2025-10-29T21:05:38.059Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 5.34,
+    "timestamp": "2025-10-29T21:05:48.063Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 7,
+    "timestamp": "2025-10-29T21:05:58.069Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 27.3,
+    "timestamp": "2025-10-29T21:06:08.082Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 25.8,
+    "timestamp": "2025-10-29T21:06:18.078Z",
+    "unit": "mm",
+    "faulty": true
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 21.19,
+    "timestamp": "2025-10-29T21:06:28.057Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 46.07,
+    "timestamp": "2025-10-29T21:06:38.068Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 44.89,
+    "timestamp": "2025-10-29T21:06:48.077Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 25.52,
+    "timestamp": "2025-10-29T21:06:58.085Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 28.39,
+    "timestamp": "2025-10-29T21:07:08.080Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 31.52,
+    "timestamp": "2025-10-29T21:07:18.085Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 23.68,
+    "timestamp": "2025-10-29T21:07:28.065Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 18.67,
+    "timestamp": "2025-10-29T21:07:38.071Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 0.33,
+    "timestamp": "2025-10-29T21:07:48.091Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 45.02,
+    "timestamp": "2025-10-29T21:07:58.079Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 37.9,
+    "timestamp": "2025-10-29T21:08:08.098Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 9.17,
+    "timestamp": "2025-10-29T21:08:18.084Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 49.56,
+    "timestamp": "2025-10-29T21:08:28.095Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 30.58,
+    "timestamp": "2025-10-29T21:08:38.089Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 22.81,
+    "timestamp": "2025-10-29T21:08:48.099Z",
+    "unit": "mm"
+  },
+  {
+    "sensorId": "sensor_4_0",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "rainfall",
+    "value": 21.05,
+    "timestamp": "2025-10-29T21:08:58.095Z",
+    "unit": "mm"
+  }
+]

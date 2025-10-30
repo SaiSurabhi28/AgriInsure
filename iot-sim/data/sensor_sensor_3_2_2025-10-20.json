@@ -1,0 +1,3112 @@
+[
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 22.9,
+    "timestamp": "2025-10-20T20:15:21.043Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 26.26,
+    "timestamp": "2025-10-20T20:15:31.085Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 27.61,
+    "timestamp": "2025-10-20T20:15:41.093Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 71.39,
+    "timestamp": "2025-10-20T20:15:51.091Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 37.91,
+    "timestamp": "2025-10-20T20:16:01.090Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 31.84,
+    "timestamp": "2025-10-20T20:16:11.091Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 29.08,
+    "timestamp": "2025-10-20T20:16:21.094Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 62.13,
+    "timestamp": "2025-10-20T20:16:31.095Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 56.16,
+    "timestamp": "2025-10-20T20:16:41.095Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 32.19,
+    "timestamp": "2025-10-20T20:16:51.093Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 71.75,
+    "timestamp": "2025-10-20T20:17:01.100Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 32.8,
+    "timestamp": "2025-10-20T20:17:11.104Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 25.13,
+    "timestamp": "2025-10-20T20:17:21.106Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 51.79,
+    "timestamp": "2025-10-20T20:17:31.102Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 36.19,
+    "timestamp": "2025-10-20T20:17:41.100Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 60.43,
+    "timestamp": "2025-10-20T20:17:51.103Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 45.55,
+    "timestamp": "2025-10-20T20:18:01.105Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 55.13,
+    "timestamp": "2025-10-20T20:18:11.101Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 37.25,
+    "timestamp": "2025-10-20T20:18:21.109Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 31.67,
+    "timestamp": "2025-10-20T20:18:31.107Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 78.97,
+    "timestamp": "2025-10-20T20:18:41.108Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 71.12,
+    "timestamp": "2025-10-20T20:18:51.116Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 55.35,
+    "timestamp": "2025-10-20T20:19:01.113Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 56.73,
+    "timestamp": "2025-10-20T20:19:11.111Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 30.56,
+    "timestamp": "2025-10-20T20:19:21.116Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 35.28,
+    "timestamp": "2025-10-20T20:19:31.116Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 43.7,
+    "timestamp": "2025-10-20T20:19:41.114Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 72.88,
+    "timestamp": "2025-10-20T20:19:51.118Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 51.37,
+    "timestamp": "2025-10-20T20:20:01.124Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 24.15,
+    "timestamp": "2025-10-20T20:20:11.176Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 23.64,
+    "timestamp": "2025-10-20T20:20:21.134Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 57.2,
+    "timestamp": "2025-10-20T20:20:31.135Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 57.92,
+    "timestamp": "2025-10-20T20:20:41.127Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 23.77,
+    "timestamp": "2025-10-20T20:20:51.134Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 64.74,
+    "timestamp": "2025-10-20T20:21:01.136Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 31.06,
+    "timestamp": "2025-10-20T20:21:11.136Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 77.24,
+    "timestamp": "2025-10-20T20:21:21.139Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 35.63,
+    "timestamp": "2025-10-20T20:21:31.140Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 21.56,
+    "timestamp": "2025-10-20T20:21:41.137Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 59.82,
+    "timestamp": "2025-10-20T20:21:51.131Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 41.12,
+    "timestamp": "2025-10-20T20:22:01.132Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 63.9,
+    "timestamp": "2025-10-20T20:22:11.139Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 74.23,
+    "timestamp": "2025-10-20T20:22:21.133Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 40.02,
+    "timestamp": "2025-10-20T20:22:31.136Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 67.68,
+    "timestamp": "2025-10-20T20:22:41.140Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 25.79,
+    "timestamp": "2025-10-20T20:22:51.150Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 24.07,
+    "timestamp": "2025-10-20T20:23:01.149Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 37.21,
+    "timestamp": "2025-10-20T20:23:11.147Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 48.39,
+    "timestamp": "2025-10-20T20:23:21.149Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 45.15,
+    "timestamp": "2025-10-20T20:23:31.148Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 56.33,
+    "timestamp": "2025-10-20T20:23:41.152Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 23.52,
+    "timestamp": "2025-10-20T20:23:51.151Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 73.39,
+    "timestamp": "2025-10-20T20:24:01.156Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 52.8,
+    "timestamp": "2025-10-20T20:24:11.160Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 74.05,
+    "timestamp": "2025-10-20T20:24:21.151Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 28.97,
+    "timestamp": "2025-10-20T20:24:31.160Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 24.41,
+    "timestamp": "2025-10-20T20:24:41.154Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 48.77,
+    "timestamp": "2025-10-20T20:24:51.164Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 50.9,
+    "timestamp": "2025-10-20T20:25:01.158Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 58.96,
+    "timestamp": "2025-10-20T20:25:11.157Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 6.196000000000001,
+    "timestamp": "2025-10-20T20:25:21.159Z",
+    "unit": "%",
+    "faulty": true
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 79.34,
+    "timestamp": "2025-10-20T20:25:31.165Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 47.83,
+    "timestamp": "2025-10-20T20:25:41.166Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 23.63,
+    "timestamp": "2025-10-20T20:25:51.167Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 45.79,
+    "timestamp": "2025-10-20T20:26:01.167Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 29.2,
+    "timestamp": "2025-10-20T20:26:11.169Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 53.32,
+    "timestamp": "2025-10-20T20:26:21.168Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 65.84,
+    "timestamp": "2025-10-20T20:26:31.169Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 65.52,
+    "timestamp": "2025-10-20T20:26:41.171Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 70.87,
+    "timestamp": "2025-10-20T20:26:51.171Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 71.17,
+    "timestamp": "2025-10-20T20:27:01.173Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 71.74,
+    "timestamp": "2025-10-20T20:27:11.175Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 57.13,
+    "timestamp": "2025-10-20T20:27:21.174Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 24.26,
+    "timestamp": "2025-10-20T20:27:31.177Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 49.13,
+    "timestamp": "2025-10-20T20:27:41.179Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 57.4,
+    "timestamp": "2025-10-20T20:27:51.180Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 49.92,
+    "timestamp": "2025-10-20T20:28:01.178Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 45.78,
+    "timestamp": "2025-10-20T20:28:11.180Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 34.53,
+    "timestamp": "2025-10-20T20:28:21.183Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 67.16,
+    "timestamp": "2025-10-20T20:28:31.178Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 46.45,
+    "timestamp": "2025-10-20T20:28:41.188Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 51.11,
+    "timestamp": "2025-10-20T20:28:51.188Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 60.78,
+    "timestamp": "2025-10-20T20:29:01.186Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 27.43,
+    "timestamp": "2025-10-20T20:29:11.188Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 36.72,
+    "timestamp": "2025-10-20T20:29:21.190Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 48.38,
+    "timestamp": "2025-10-20T20:29:31.190Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 59.82,
+    "timestamp": "2025-10-20T20:29:41.191Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 48.33,
+    "timestamp": "2025-10-20T20:29:51.193Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 33.04,
+    "timestamp": "2025-10-20T20:30:01.194Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 26.21,
+    "timestamp": "2025-10-20T20:30:11.195Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 69.54,
+    "timestamp": "2025-10-20T20:30:21.196Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 30.96,
+    "timestamp": "2025-10-20T20:30:31.200Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 58.84,
+    "timestamp": "2025-10-20T20:30:41.197Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 69.13,
+    "timestamp": "2025-10-20T20:30:51.204Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 32.63,
+    "timestamp": "2025-10-20T20:31:01.199Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 24.67,
+    "timestamp": "2025-10-20T20:31:11.201Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 75.73,
+    "timestamp": "2025-10-20T20:31:21.202Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 20.15,
+    "timestamp": "2025-10-20T20:31:31.208Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 31.34,
+    "timestamp": "2025-10-20T20:31:41.204Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 4.24,
+    "timestamp": "2025-10-20T20:31:51.206Z",
+    "unit": "%",
+    "faulty": true
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 63.11,
+    "timestamp": "2025-10-20T20:32:01.206Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 7.004000000000001,
+    "timestamp": "2025-10-20T20:32:11.207Z",
+    "unit": "%",
+    "faulty": true
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 51.59,
+    "timestamp": "2025-10-20T20:32:21.205Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 36.65,
+    "timestamp": "2025-10-20T20:32:31.209Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 39.3,
+    "timestamp": "2025-10-20T20:32:41.210Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 37.9,
+    "timestamp": "2025-10-20T20:32:51.209Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 79.45,
+    "timestamp": "2025-10-20T20:33:01.212Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 62.72,
+    "timestamp": "2025-10-20T20:33:11.212Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 25.74,
+    "timestamp": "2025-10-20T20:33:21.214Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 38.09,
+    "timestamp": "2025-10-20T20:33:31.213Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 35.52,
+    "timestamp": "2025-10-20T20:33:41.213Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 70.13,
+    "timestamp": "2025-10-20T20:33:51.218Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 26.96,
+    "timestamp": "2025-10-20T20:34:01.220Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 24.2,
+    "timestamp": "2025-10-20T20:34:11.224Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 37.69,
+    "timestamp": "2025-10-20T20:34:21.222Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 35.69,
+    "timestamp": "2025-10-20T20:34:31.222Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 23.81,
+    "timestamp": "2025-10-20T20:34:41.226Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 40.37,
+    "timestamp": "2025-10-20T20:34:51.223Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 34.05,
+    "timestamp": "2025-10-20T20:35:01.229Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 65.61,
+    "timestamp": "2025-10-20T20:35:11.227Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 56.28,
+    "timestamp": "2025-10-20T20:35:21.227Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 78.17,
+    "timestamp": "2025-10-20T20:35:31.229Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 52.38,
+    "timestamp": "2025-10-20T20:35:41.229Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 61.21,
+    "timestamp": "2025-10-20T20:35:51.236Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 22.46,
+    "timestamp": "2025-10-20T20:36:01.241Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 45.8,
+    "timestamp": "2025-10-20T20:36:11.230Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 59.17,
+    "timestamp": "2025-10-20T20:36:21.233Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 53.25,
+    "timestamp": "2025-10-20T20:36:31.237Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 78.57,
+    "timestamp": "2025-10-20T20:36:41.234Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 38.8,
+    "timestamp": "2025-10-20T20:36:51.234Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 43.4,
+    "timestamp": "2025-10-20T20:37:01.237Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 52.57,
+    "timestamp": "2025-10-20T20:37:11.241Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 62.08,
+    "timestamp": "2025-10-20T20:37:21.239Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 154,
+    "timestamp": "2025-10-20T20:37:31.238Z",
+    "unit": "%",
+    "faulty": true
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 35.48,
+    "timestamp": "2025-10-20T20:37:41.236Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 72.88,
+    "timestamp": "2025-10-20T20:37:51.239Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 74.34,
+    "timestamp": "2025-10-20T20:38:01.239Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 44.76,
+    "timestamp": "2025-10-20T20:38:11.246Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 45.02,
+    "timestamp": "2025-10-20T20:38:21.242Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 30.46,
+    "timestamp": "2025-10-20T20:38:31.246Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 54.02,
+    "timestamp": "2025-10-20T20:38:41.246Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 49.67,
+    "timestamp": "2025-10-20T20:38:51.246Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 24.64,
+    "timestamp": "2025-10-20T20:39:01.248Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 27.08,
+    "timestamp": "2025-10-20T20:39:11.247Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 71.42,
+    "timestamp": "2025-10-20T20:39:21.251Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 24.57,
+    "timestamp": "2025-10-20T20:39:31.248Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 62.67,
+    "timestamp": "2025-10-20T20:39:41.251Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 55.24,
+    "timestamp": "2025-10-20T20:39:51.252Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 67.9,
+    "timestamp": "2025-10-20T20:40:01.259Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 32.53,
+    "timestamp": "2025-10-20T20:40:11.256Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 41.78,
+    "timestamp": "2025-10-20T20:40:21.258Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 71.87,
+    "timestamp": "2025-10-20T20:40:31.264Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 46.46,
+    "timestamp": "2025-10-20T20:40:41.269Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 37.74,
+    "timestamp": "2025-10-20T20:40:51.265Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 2.543,
+    "timestamp": "2025-10-20T20:41:01.255Z",
+    "unit": "%",
+    "faulty": true
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 33.24,
+    "timestamp": "2025-10-20T20:41:11.279Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 23.74,
+    "timestamp": "2025-10-20T20:41:21.267Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 68.76,
+    "timestamp": "2025-10-20T20:41:31.268Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 62.67,
+    "timestamp": "2025-10-20T20:41:41.267Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 71.51,
+    "timestamp": "2025-10-20T20:41:51.271Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 63.45,
+    "timestamp": "2025-10-20T20:42:01.269Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 54.06,
+    "timestamp": "2025-10-20T20:42:11.271Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 57.76,
+    "timestamp": "2025-10-20T20:42:21.276Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 20.19,
+    "timestamp": "2025-10-20T20:42:31.274Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 75.93,
+    "timestamp": "2025-10-20T20:42:41.275Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 45.76,
+    "timestamp": "2025-10-20T20:42:51.277Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 74.15,
+    "timestamp": "2025-10-20T20:43:01.275Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 31.35,
+    "timestamp": "2025-10-20T20:43:11.277Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 31.09,
+    "timestamp": "2025-10-20T20:43:21.278Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 50.96,
+    "timestamp": "2025-10-20T20:43:31.277Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 37.89,
+    "timestamp": "2025-10-20T20:43:41.278Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 69.62,
+    "timestamp": "2025-10-20T20:43:51.278Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 3.936,
+    "timestamp": "2025-10-20T20:44:01.279Z",
+    "unit": "%",
+    "faulty": true
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 68.68,
+    "timestamp": "2025-10-20T20:44:11.280Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 43.79,
+    "timestamp": "2025-10-20T20:44:21.281Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 65.52,
+    "timestamp": "2025-10-20T20:44:31.283Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 43.41,
+    "timestamp": "2025-10-20T20:44:41.285Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 38.46,
+    "timestamp": "2025-10-20T20:44:51.287Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 28.45,
+    "timestamp": "2025-10-20T20:45:01.286Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 78.34,
+    "timestamp": "2025-10-20T20:45:11.280Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 65.93,
+    "timestamp": "2025-10-20T20:45:21.288Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 22.59,
+    "timestamp": "2025-10-20T20:45:31.288Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 32.4,
+    "timestamp": "2025-10-20T20:45:41.285Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 44.48,
+    "timestamp": "2025-10-20T20:45:51.291Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 38.86,
+    "timestamp": "2025-10-20T20:46:01.293Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 71.28,
+    "timestamp": "2025-10-20T20:46:11.296Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 33.55,
+    "timestamp": "2025-10-20T20:46:21.301Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 74.52,
+    "timestamp": "2025-10-20T20:46:31.295Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 67,
+    "timestamp": "2025-10-20T20:46:41.302Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 24.08,
+    "timestamp": "2025-10-20T20:46:51.297Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 21.28,
+    "timestamp": "2025-10-20T20:47:01.286Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 51.28,
+    "timestamp": "2025-10-20T20:47:11.288Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 7.7170000000000005,
+    "timestamp": "2025-10-20T20:47:21.282Z",
+    "unit": "%",
+    "faulty": true
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 30.91,
+    "timestamp": "2025-10-20T20:47:31.278Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 22.08,
+    "timestamp": "2025-10-20T20:47:41.276Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 35.07,
+    "timestamp": "2025-10-20T20:47:51.282Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 53.83,
+    "timestamp": "2025-10-20T20:48:01.282Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 40.88,
+    "timestamp": "2025-10-20T20:48:11.279Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 51.27,
+    "timestamp": "2025-10-20T20:48:21.279Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 121.52,
+    "timestamp": "2025-10-20T20:48:31.279Z",
+    "unit": "%",
+    "faulty": true
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 46.95,
+    "timestamp": "2025-10-20T20:48:41.271Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 51.08,
+    "timestamp": "2025-10-20T20:48:51.279Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 51.5,
+    "timestamp": "2025-10-20T20:49:01.284Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 70.14,
+    "timestamp": "2025-10-20T20:49:11.287Z",
+    "unit": "%",
+    "faulty": true
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 27.46,
+    "timestamp": "2025-10-20T20:49:21.289Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 23.52,
+    "timestamp": "2025-10-20T20:49:31.291Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 24.8,
+    "timestamp": "2025-10-20T20:49:41.290Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 42.71,
+    "timestamp": "2025-10-20T20:49:51.291Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 36.56,
+    "timestamp": "2025-10-20T20:50:01.292Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 48.59,
+    "timestamp": "2025-10-20T20:50:11.291Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 75.77,
+    "timestamp": "2025-10-20T20:50:21.296Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 42.64,
+    "timestamp": "2025-10-20T20:50:31.294Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 68.96,
+    "timestamp": "2025-10-20T20:50:41.295Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 65.27,
+    "timestamp": "2025-10-20T20:50:51.296Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 20.05,
+    "timestamp": "2025-10-20T20:51:01.295Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 55.24,
+    "timestamp": "2025-10-20T20:51:11.295Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 36.72,
+    "timestamp": "2025-10-20T20:51:21.303Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 32.72,
+    "timestamp": "2025-10-20T20:51:31.300Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 70.34,
+    "timestamp": "2025-10-20T20:51:41.296Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 38.43,
+    "timestamp": "2025-10-20T20:51:51.290Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 79,
+    "timestamp": "2025-10-20T20:52:01.302Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 66.96,
+    "timestamp": "2025-10-20T20:52:11.306Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 54.9,
+    "timestamp": "2025-10-20T20:52:21.304Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 66.58,
+    "timestamp": "2025-10-20T20:52:31.302Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 55.66,
+    "timestamp": "2025-10-20T20:52:41.305Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 38.9,
+    "timestamp": "2025-10-20T20:52:51.305Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 156.6,
+    "timestamp": "2025-10-20T20:53:01.307Z",
+    "unit": "%",
+    "faulty": true
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 47.8,
+    "timestamp": "2025-10-20T20:53:11.308Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 47.03,
+    "timestamp": "2025-10-20T20:53:21.306Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 59.15,
+    "timestamp": "2025-10-20T20:53:31.308Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 40.49,
+    "timestamp": "2025-10-20T20:53:41.310Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 49.74,
+    "timestamp": "2025-10-20T20:53:51.307Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 65.66,
+    "timestamp": "2025-10-20T20:54:01.313Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 23.37,
+    "timestamp": "2025-10-20T20:54:11.313Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 64.72,
+    "timestamp": "2025-10-20T20:54:21.313Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 68.84,
+    "timestamp": "2025-10-20T20:54:31.318Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 69.28,
+    "timestamp": "2025-10-20T20:54:41.309Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 36.45,
+    "timestamp": "2025-10-20T20:54:51.304Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 40.62,
+    "timestamp": "2025-10-20T20:55:01.350Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 6.98,
+    "timestamp": "2025-10-20T20:55:11.311Z",
+    "unit": "%",
+    "faulty": true
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 69.87,
+    "timestamp": "2025-10-20T20:55:21.315Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 156.7,
+    "timestamp": "2025-10-20T20:55:31.315Z",
+    "unit": "%",
+    "faulty": true
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 49.74,
+    "timestamp": "2025-10-20T20:55:41.320Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 54.01,
+    "timestamp": "2025-10-20T20:55:51.320Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 30.35,
+    "timestamp": "2025-10-20T20:56:01.319Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 61.48,
+    "timestamp": "2025-10-20T20:56:11.321Z",
+    "unit": "%",
+    "faulty": true
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 48.14,
+    "timestamp": "2025-10-20T20:56:21.327Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 75.33,
+    "timestamp": "2025-10-20T20:56:31.322Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 55.1,
+    "timestamp": "2025-10-20T20:56:41.323Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 58.67,
+    "timestamp": "2025-10-20T20:56:51.331Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 39.28,
+    "timestamp": "2025-10-20T20:57:01.330Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 43.01,
+    "timestamp": "2025-10-20T20:57:11.330Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 138.72,
+    "timestamp": "2025-10-20T20:57:21.333Z",
+    "unit": "%",
+    "faulty": true
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 66.83,
+    "timestamp": "2025-10-20T20:57:31.330Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 60.85,
+    "timestamp": "2025-10-20T20:57:41.332Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 42.99,
+    "timestamp": "2025-10-20T20:57:51.333Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 35.73,
+    "timestamp": "2025-10-20T20:58:01.336Z",
+    "unit": "%"
+  },
+  {
+    "sensorId": "sensor_3_2",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "soil_moisture",
+    "value": 55.05,
+    "timestamp": "2025-10-20T20:58:11.337Z",
+    "unit": "%"
+  }
+]
