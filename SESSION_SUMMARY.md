@@ -1,6 +1,6 @@
 # AgriInsure Development Session Summary
 
-## Date: $(date)
+## Date: 2025-10-31
 
 ## Key Changes Made:
 
@@ -25,6 +25,7 @@
 #### Dashboard.js
 - **Auto-refresh**: Listens for policy events and refreshes stats automatically
 - **Event listeners**: Responds to `policyCreated` and `policyFinalized` events
+- **Build label**: Shows `Build: <id>` in header for version tracking
 
 #### WeatherFeed.js
 - **Refresh interval**: Changed to 30 seconds (was 10 seconds, caused rate limit issues)
@@ -32,9 +33,9 @@
 - **Better error messages**: Shows rate limit errors clearly
 
 ### 3. Backend Updates (index.js)
-- **Rate limiting fix**: Excluded `/api/oracle/weather` endpoint from rate limiting
-- **Conditional rate limiting**: Weather endpoint can be polled frequently without hitting limits
-- **Location**: `backend/index.js` lines 29-37
+- **Rate limiting**: 100 requests per 15 minutes applied to `/api/*`
+- **Weather feed**: Served at `/api/oracle/weather`; frontend polls every 30s to respect limits
+- **CORS**: `FRONTEND_URL` env supported (set to `http://localhost:3010` in this session)
 
 ## Important Notes:
 
@@ -51,6 +52,34 @@ npx hardhat run scripts/deploy.js --network localhost
 ```bash
 cd AgriInsure-main/backend
 npm start
+```
+
+### Current Runtime Status (this session)
+- **Frontend**: http://localhost:3020 (clean worktree from `origin/main`)
+- **Backend**: http://localhost:3001/health
+- **Oracle**: http://localhost:3002/api/oracle/health
+- **Hardhat node**: 127.0.0.1:8545 (chainId 1337)
+- **Deployments**: `deployments/localhost.json` (treasury funded; products added via `scripts/setup-demo.js`)
+
+### Quick Start (reproduce this setup)
+```bash
+# from repo root
+npx hardhat node &
+sleep 2
+npm run deploy-local
+npx hardhat run scripts/setup-demo.js --network localhost
+
+# backend (CORS for 3010)
+cd backend && FRONTEND_URL=http://localhost:3010 PORT=3001 npm start &
+
+# oracle and iot simulators
+cd ../oracle && npm start &
+cd ../iot-sim && npm start &
+
+# frontend on port 3020 (clean worktree)
+cd '../../AgriInsure-remote-main/frontend' && PORT=3020 npm start
+
+# Note: Removed legacy folder `agriinsure/` to avoid confusion
 ```
 
 ### Key Features Working:

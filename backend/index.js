@@ -28,12 +28,13 @@ const limiter = rateLimit({
 
 // Apply rate limiting conditionally - skip for weather endpoint
 app.use('/api/', (req, res, next) => {
-  const path = req.path || req.url;
-  const fullUrl = req.originalUrl || req.url;
-  // Skip rate limiting for weather endpoint (data feed needs frequent polling)
-  // Check both path and fullUrl to handle different route matching scenarios
-  if (path.includes('/oracle/weather') || fullUrl.includes('/oracle/weather')) {
-    console.log('🌤️ Skipping rate limit for weather endpoint');
+  const originalUrl = req.originalUrl || '';
+  const path = req.path || req.url || '';
+  // When mounted at '/api/', req.path is relative (e.g., '/oracle/weather')
+  if (
+    originalUrl.includes('/api/oracle/weather') ||
+    path.startsWith('/oracle/weather')
+  ) {
     return next();
   }
   return limiter(req, res, next);

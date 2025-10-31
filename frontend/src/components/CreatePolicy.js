@@ -234,7 +234,7 @@ const CreatePolicy = () => {
               onChange={(e) => setFormData(prev => ({ ...prev, threshold: e.target.value }))}
               required
             />
-            <small>Payout triggered if cumulative rainfall exceeds this threshold (flood/damage protection)</small>
+            <small>Payout triggered if cumulative rainfall falls below this threshold</small>
           </div>
 
           <div className="form-group">

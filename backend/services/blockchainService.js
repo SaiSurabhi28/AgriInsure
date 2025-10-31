@@ -279,53 +279,21 @@ class BlockchainService {
         await this.initializeContracts();
       }
 
-      console.log('🔍 getFarmerPolicies called for address:', farmerAddress);
       const policyIds = await this.contracts.PolicyFactory.getHolderPolicies(farmerAddress);
-      console.log('📋 Found policy IDs:', policyIds.map(id => id.toString()));
       
       const policies = [];
       for (const policyId of policyIds) {
         try {
           const status = await this.getPolicyStatus(policyId.toString());
           policies.push(status);
-          console.log(`✅ Policy ${policyId.toString()} loaded successfully`);
         } catch (error) {
-          console.error(`❌ Failed to get status for policy ${policyId}:`, error);
+          console.error(`Failed to get status for policy ${policyId}:`, error);
         }
       }
 
-      console.log(`📊 Returning ${policies.length} policies`);
       return policies;
     } catch (error) {
       console.error('Failed to get farmer policies:', error);
-      throw error;
-    }
-  }
-
-  async getAllPolicies() {
-    try {
-      if (!this.contracts.PolicyFactory) {
-        await this.initializeContracts();
-      }
-
-      const policyCount = await this.contracts.PolicyFactory.policyCounter();
-      console.log('🔍 Total policies in contract:', policyCount.toString());
-      
-      const allPolicies = [];
-      for (let i = 1; i <= policyCount; i++) {
-        try {
-          const status = await this.getPolicyStatus(i.toString());
-          allPolicies.push(status);
-          console.log(`✅ Policy ${i} loaded successfully`);
-        } catch (error) {
-          console.error(`❌ Failed to get status for policy ${i}:`, error);
-        }
-      }
-
-      console.log(`📊 Returning ${allPolicies.length} total policies`);
-      return allPolicies;
-    } catch (error) {
-      console.error('Failed to get all policies:', error);
       throw error;
     }
   }

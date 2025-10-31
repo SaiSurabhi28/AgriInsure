@@ -5,11 +5,6 @@ const blockchainService = require('../services/blockchainService');
 const fs = require('fs-extra');
 const path = require('path');
 
-// Keep track of current position in dataset for simulating live updates
-// Use timestamp-based offset so it cycles through smoothly without getting stuck
-let lastRefreshTime = Date.now();
-let refreshCount = 0;
-
 // Send weather data to oracle
 router.post('/data', async (req, res) => {
   try {
@@ -186,126 +181,7 @@ router.get('/stats', async (req, res) => {
 // Get weather data from dataset files
 router.get('/weather', async (req, res) => {
   try {
-    // First, try to load Kaggle CSV dataset if available
-    const kaggleFile = process.env.KAGGLE_DATA_FILE || path.join(__dirname, '..', '..', 'archive (1) 2', 'weather_prediction_dataset.csv');
-    
-    if (await fs.pathExists(kaggleFile)) {
-      try {
-        console.log('Loading weather data from Kaggle CSV:', kaggleFile);
-        const csvText = await fs.readFile(kaggleFile, 'utf8');
-        const lines = csvText.split(/\r?\n/).filter(l => l.trim().length > 0);
-        
-        if (lines.length < 2) {
-          throw new Error('CSV file is empty or has no data rows');
-        }
-
-        // Parse header
-        const header = lines[0].split(',').map(h => h.trim());
-        
-        // Find DATE column index
-        const dateIdx = header.findIndex(h => h.toUpperCase() === 'DATE');
-        
-        // Find all precipitation columns (columns containing 'precipitation')
-        const precipCols = header.map((col, idx) => {
-          if (col.toLowerCase().includes('precipitation')) {
-            return { name: col, index: idx };
-          }
-          return null;
-        }).filter(col => col !== null);
-
-        if (precipCols.length === 0) {
-          throw new Error('No precipitation columns found in CSV');
-        }
-
-        // Parse rows and calculate average precipitation across all cities
-        const limit = Math.max(1, Math.min(parseInt(req.query.limit) || 500, 1000));
-        const dataRows = lines.slice(1);
-        const weatherRounds = [];
-        
-        // Use sliding window approach: each refresh returns the next window of data
-        // This simulates live updates by cycling through the dataset
-        const windowSize = 20; // Show 20 data points at a time
-        const totalDataPoints = dataRows.length;
-        
-        // Use time-based offset calculation that changes smoothly over time
-        // This ensures the dataset cycles through without getting stuck
-        refreshCount++;
-        const now = Date.now();
-        const timeSinceStart = now - lastRefreshTime;
-        
-        // Calculate offset based on time (changes every 5 seconds to simulate real-time updates)
-        // This cycles through the entire dataset over time
-        const offsetInterval = 5000; // Change offset every 5 seconds
-        const offsetFromTime = Math.floor(timeSinceStart / offsetInterval) % totalDataPoints;
-        
-        // Update last refresh time if it's been more than a minute (to prevent overflow)
-        if (timeSinceStart > 60000) {
-          lastRefreshTime = now;
-        }
-        
-        const datasetOffset = offsetFromTime;
-        
-        console.log(`📊 Dataset offset: ${datasetOffset}/${totalDataPoints} (refresh #${refreshCount})`);
-        
-        // Get a window of data starting from current offset
-        for (let i = 0; i < windowSize; i++) {
-          const idx = (datasetOffset + i) % totalDataPoints;
-          const cols = dataRows[idx].split(',');
-          
-          // Calculate average precipitation across all cities
-          let totalPrecip = 0;
-          let precipCount = 0;
-          
-          precipCols.forEach(col => {
-            const val = parseFloat((cols[col.index] || '').trim());
-            if (!Number.isNaN(val) && val >= 0) {
-              totalPrecip += val;
-              precipCount++;
-            }
-          });
-
-          if (precipCount === 0) continue;
-
-          const avgPrecip = totalPrecip / precipCount;
-          
-          // Calculate round ID - use total data points minus index for descending order
-          const roundId = totalDataPoints - idx;
-          
-          // Use current time for "latest" data, with each prior data point being hours apart
-          // This simulates recent weather updates
-          const hoursAgo = windowSize - i - 1;
-          const timestamp = Math.floor(Date.now() / 1000) - (hoursAgo * 3600);
-          const isoDate = new Date(timestamp * 1000).toISOString();
-
-          weatherRounds.push({
-            roundId: roundId,
-            value: avgPrecip.toFixed(2),
-            timestamp: timestamp,
-            time: isoDate
-          });
-        }
-        
-        // Sort by timestamp descending to show most recent first
-        weatherRounds.sort((a, b) => b.roundId - a.roundId);
-
-        if (weatherRounds.length > 0) {
-          return res.json({
-            success: true,
-            data: weatherRounds,
-            source: 'kaggle_dataset',
-            file: kaggleFile,
-            timestamp: new Date().toISOString(),
-            citiesAveraged: precipCols.length,
-            offset: datasetOffset
-          });
-        }
-      } catch (kaggleError) {
-        console.warn('Failed to load Kaggle CSV, falling back to IoT data:', kaggleError.message);
-        // Fall through to IoT data fallback
-      }
-    }
-    
-    // Fallback: Try IoT simulation data
+    // Prefer IoT simulation data (updates live via simulator)
     const dataPath = path.join(__dirname, '..', '..', 'iot-sim', 'data');
     
     // Check if IoT data directory exists
@@ -320,18 +196,114 @@ router.get('/weather', async (req, res) => {
       .sort()
       .reverse();
     
-    if (aggregatedFiles.length === 0) {
-      // Fallback: try to get from oracle service or return mock data
-      try {
-        const result = await oracleService.getWeatherData();
-        return res.json(result);
-      } catch (error) {
-        return res.status(404).json({
-          success: false,
-          error: 'No dataset files found',
-          message: 'No aggregated weather data files available'
+    if (aggregatedFiles.length > 0) {
+      // Read the most recent aggregated file
+      const mostRecentFile = aggregatedFiles[0];
+      const filePath = path.join(dataPath, mostRecentFile);
+      const rawData = await fs.readJson(filePath);
+      
+      // Transform dataset to match WeatherFeed component format
+      const weatherRounds = [];
+      let roundId = 1;
+      const dataByTimestamp = {};
+      rawData.forEach(entry => {
+        const timestamp = entry.timestamp;
+        if (!dataByTimestamp[timestamp]) {
+          dataByTimestamp[timestamp] = [];
+        }
+        dataByTimestamp[timestamp].push(entry);
+      });
+      
+      Object.keys(dataByTimestamp).sort().forEach((timestamp) => {
+        const entries = dataByTimestamp[timestamp];
+        const rainfallEntries = entries.filter(e => e.sensorType === 'rainfall');
+        if (rainfallEntries.length > 0) {
+          const avgRainfall = rainfallEntries.reduce((sum, e) => sum + e.value, 0) / rainfallEntries.length;
+          const ts = new Date(timestamp).getTime() / 1000;
+          weatherRounds.push({
+            roundId: roundId++,
+            value: avgRainfall.toFixed(2),
+            timestamp: Math.floor(ts),
+            time: timestamp
+          });
+        }
+      });
+      
+      if (weatherRounds.length > 0) {
+        return res.json({
+          success: true,
+          data: weatherRounds,
+          source: 'dataset',
+          file: mostRecentFile,
+          timestamp: new Date().toISOString()
         });
       }
+    }
+
+    // Fallback: Try Kaggle CSV dataset if available
+    const kaggleFile = process.env.KAGGLE_DATA_FILE || path.join(__dirname, '..', '..', 'archive (1) 2', 'weather_prediction_dataset.csv');
+    if (await fs.pathExists(kaggleFile)) {
+      try {
+        console.log('Loading weather data from Kaggle CSV:', kaggleFile);
+        const csvText = await fs.readFile(kaggleFile, 'utf8');
+        const lines = csvText.split(/\r?\n/).filter(l => l.trim().length > 0);
+        if (lines.length >= 2) {
+          const header = lines[0].split(',').map(h => h.trim());
+          const dateIdx = header.findIndex(h => h.toUpperCase() === 'DATE');
+          const precipCols = header.map((col, idx) => col.toLowerCase().includes('precipitation') ? { name: col, index: idx } : null).filter(Boolean);
+          const limit = Math.max(1, Math.min(parseInt(req.query.limit) || 500, 1000));
+          const dataRows = lines.slice(1);
+          const weatherRounds = [];
+          let roundId = 1;
+          const start = Math.max(0, dataRows.length - limit);
+          for (let i = start; i < dataRows.length; i++) {
+            const cols = dataRows[i].split(',');
+            let totalPrecip = 0;
+            let precipCount = 0;
+            precipCols.forEach(col => {
+              const val = parseFloat((cols[col.index] || '').trim());
+              if (!Number.isNaN(val) && val >= 0) { totalPrecip += val; precipCount++; }
+            });
+            if (precipCount === 0) continue;
+            const avgPrecip = totalPrecip / precipCount;
+            let timestamp = Math.floor(Date.now() / 1000) - (dataRows.length - i) * 86400;
+            let isoDate = new Date(timestamp * 1000).toISOString();
+            if (dateIdx !== -1 && cols[dateIdx] && cols[dateIdx].trim().length === 8) {
+              const dateStr = cols[dateIdx].trim();
+              const year = parseInt(dateStr.substring(0, 4));
+              const month = parseInt(dateStr.substring(4, 6)) - 1;
+              const day = parseInt(dateStr.substring(6, 8));
+              const parsedDate = new Date(Date.UTC(year, month, day));
+              if (!Number.isNaN(parsedDate.getTime())) { timestamp = Math.floor(parsedDate.getTime() / 1000); isoDate = parsedDate.toISOString(); }
+            }
+            weatherRounds.push({ roundId: roundId++, value: avgPrecip.toFixed(2), timestamp, time: isoDate });
+          }
+          if (weatherRounds.length > 0) {
+            return res.json({ success: true, data: weatherRounds, source: 'kaggle_dataset', file: kaggleFile, timestamp: new Date().toISOString(), citiesAveraged: precipCols.length });
+          }
+        }
+      } catch (kaggleError) {
+        console.warn('Failed to load Kaggle CSV, falling back to oracle service:', kaggleError.message);
+      }
+    }
+
+    // Final fallback: proxy to oracle service (simulated dynamic data)
+    try {
+      const result = await oracleService.getWeatherData();
+      // Normalize oracle response to rounds array for the frontend
+      if (result && result.data && !Array.isArray(result.data)) {
+        const nowTs = Math.floor(Date.now() / 1000);
+        const value = typeof result.data.rainfall === 'number' ? result.data.rainfall : 0;
+        return res.json({
+          success: true,
+          data: [{ roundId: nowTs, value: value.toFixed(2), timestamp: nowTs, time: new Date(nowTs * 1000).toISOString() }],
+          source: result.source || 'oracle_consensus',
+          timestamp: new Date().toISOString()
+        });
+      }
+      return res.json(result);
+    } catch (error) {
+      return res.status(404).json({ success: false, error: 'No weather data available' });
     }
     
     // Read the most recent aggregated file
@@ -517,6 +489,7 @@ router.get('/weather/kaggle', async (req, res) => {
 });
 
 module.exports = router;
+
 
 
 

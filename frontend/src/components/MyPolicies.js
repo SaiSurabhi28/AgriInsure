@@ -8,24 +8,6 @@ const MyPolicies = () => {
   const { data: policiesData, loading, refetch } = useApi(account ? `/api/policies/farmer/${account}` : null);
   const [processing, setProcessing] = useState(false);
   const [refreshKey, setRefreshKey] = useState(0);
-  const [showAllPolicies, setShowAllPolicies] = useState(false);
-  const [allPoliciesData, setAllPoliciesData] = useState(null);
-  const [allPoliciesLoading, setAllPoliciesLoading] = useState(false);
-  
-  // Debug: Log account and policies data
-  useEffect(() => {
-    console.log('🔍 MyPolicies - Account:', account);
-    console.log('🔍 MyPolicies - Policies data:', policiesData);
-    if (policiesData) {
-      const allPolicies = policiesData.data || policiesData.policies || [];
-      console.log('🔍 MyPolicies - Total policies from backend:', allPolicies.length);
-      console.log('🔍 MyPolicies - All policies:', allPolicies.map(p => ({ id: p.policyId, status: p.statusString, statusCode: p.status })));
-      
-      const activePolicies = allPolicies.filter(p => p.status === 0 || p.statusString === 'Active');
-      console.log('🔍 MyPolicies - Active policies:', activePolicies.length);
-      console.log('🔍 MyPolicies - Active policy IDs:', activePolicies.map(p => p.policyId));
-    }
-  }, [account, policiesData]);
   
   // Listen for policy creation events and auto-refresh
   useEffect(() => {
@@ -47,30 +29,8 @@ const MyPolicies = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []); // Empty deps - only set up listener once
   
-  const fetchAllPolicies = async () => {
-    setAllPoliciesLoading(true);
-    try {
-      const res = await fetch(`http://localhost:3001/api/policies/all?t=${Date.now()}`);
-      const data = await res.json();
-      if (data.success && data.data) {
-        setAllPoliciesData(data.data);
-      }
-    } catch (err) {
-      console.error('Error loading all policies:', err);
-    } finally {
-      setAllPoliciesLoading(false);
-    }
-  };
-
   const handleViewDetails = (policyId) => {
     alert(`Policy Details:\nID: ${policyId}\n\nThis feature will show detailed policy information in a modal.\nCurrently under development.`);
-  };
-  
-  const handleViewAllPolicies = () => {
-    setShowAllPolicies(true);
-    if (!allPoliciesData) {
-      fetchAllPolicies();
-    }
   };
   
   const handleCheckPayout = async (policy) => {
@@ -217,17 +177,17 @@ const MyPolicies = () => {
         
         errorMessage += '📋 Policy Details:\n';
         errorMessage += `   • Policy ID: #${policy.policyId}\n`;
-        errorMessage += `   • Threshold: ${threshold}mm (cumulative rainfall must EXCEED this)\n`;
+        errorMessage += `   • Threshold: ${threshold}mm (cumulative rainfall must be BELOW this)\n`;
         errorMessage += `   • Start Date: ${new Date(startTs * 1000).toLocaleString()}\n`;
         errorMessage += `   • End Date: ${new Date(endTs * 1000).toLocaleString()}\n`;
         errorMessage += `   • Current Status: ${isExpired ? 'EXPIRED' : 'ACTIVE'}\n\n`;
         
         errorMessage += '❌ Why Finalization Failed:\n';
-        errorMessage += '   The cumulative rainfall during the policy period is BELOW your threshold.\n';
+        errorMessage += '   The cumulative rainfall during the policy period is ABOVE your threshold.\n';
         errorMessage += '   This means payout conditions are NOT satisfied.\n\n';
         
         errorMessage += '✅ When You CAN Finalize:\n';
-        errorMessage += '   1. If cumulative rainfall > threshold → Payout will be processed\n';
+        errorMessage += '   1. If cumulative rainfall < threshold → Payout will be processed\n';
         errorMessage += '   2. If policy has expired (even if conditions not met) → Policy expires, no payout\n\n';
         
         if (!isExpired) {
@@ -244,8 +204,8 @@ const MyPolicies = () => {
         }
         
         errorMessage += '💡 What This Means:\n';
-        errorMessage += '   Your insurance protects against HIGH rainfall (flood/damage conditions).\n';
-        errorMessage += '   Since rainfall is below the threshold, no payout is due.\n';
+        errorMessage += '   Your insurance protects against LOW rainfall (drought conditions).\n';
+        errorMessage += '   Since rainfall is above the threshold, no payout is due.\n';
         errorMessage += '   If the policy expires without payout, your premium stays with the insurance company.';
       } else {
         errorMessage += `Error: ${errorMsg || 'Unknown error'}\n\n`;
@@ -273,122 +233,13 @@ const MyPolicies = () => {
 
   return (
     <div className="my-policies">
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px' }}>
-        <h2 style={{ margin: 0 }}>📋 My Policies</h2>
-        <button 
-          onClick={showAllPolicies ? () => setShowAllPolicies(false) : handleViewAllPolicies}
-          style={{
-            background: '#9c27b0',
-            color: 'white',
-            border: 'none',
-            padding: '10px 20px',
-            borderRadius: '4px',
-            cursor: 'pointer',
-            fontSize: '14px'
-          }}
-        >
-          {showAllPolicies ? '← Back to My Policies' : '🌐 View All Policies'}
-        </button>
-      </div>
+      <h2>📋 My Policies</h2>
       
-      {showAllPolicies ? (
-        // Show all policies from all accounts
-        <div className="all-policies-section">
-          <h3>🌐 All Active Policies (All Accounts)</h3>
-          {allPoliciesLoading ? (
-            <div className="loading">Loading all policies...</div>
-          ) : allPoliciesData && allPoliciesData.length > 0 ? (
-            <div className="policies-list">
-              {allPoliciesData
-                .filter(p => p.status === 0 || p.statusString === 'Active')
-                .sort((a, b) => b.policyId - a.policyId)
-                .map((policy, index) => {
-                  // Check if this policy belongs to the connected account
-                  const isMyPolicy = policy.holder && account && policy.holder.toLowerCase() === account.toLowerCase();
-                  
-                  return (
-                    <div key={`all-${policy.policyId}-${index}`} className="policy-card" style={{ borderLeft: `4px solid ${isMyPolicy ? '#4CAF50' : '#9c27b0'}` }}>
-                      <div className="policy-header">
-                        <div>
-                          <h3>Policy #{policy.policyId}</h3>
-                          {isMyPolicy && <span style={{ fontSize: '12px', color: '#4CAF50' }}>(Your Policy)</span>}
-                        </div>
-                        <span className={`status ${policy.statusString === 'Active' || policy.status === 0 ? 'active' : 'inactive'}`}>
-                          {policy.statusString || (policy.status === 0 ? 'Active' : policy.status === 1 ? 'PaidOut' : 'Inactive')}
-                        </span>
-                      </div>
-                      
-                      <div className="policy-details">
-                        <div className="detail-row">
-                          <span>Owner:</span>
-                          <span>{policy.holder ? `${policy.holder.slice(0, 6)}...${policy.holder.slice(-4)}` : 'N/A'}</span>
-                        </div>
-                        <div className="detail-row">
-                          <span>Product:</span>
-                          <span>{policy.productName || 'N/A'}</span>
-                        </div>
-                        <div className="detail-row">
-                          <span>Premium:</span>
-                          <span>{policy.premiumPaid ? ethers.formatEther(policy.premiumPaid) : '0'} ETH</span>
-                        </div>
-                        <div className="detail-row">
-                          <span>Payout:</span>
-                          <span>{policy.payoutAmount ? ethers.formatEther(policy.payoutAmount) : '0'} ETH</span>
-                        </div>
-                        <div className="detail-row">
-                          <span>Threshold:</span>
-                          <span>{policy.threshold}mm</span>
-                        </div>
-                        <div className="detail-row">
-                          <span>Duration:</span>
-                          <span>{policy.startTs && policy.endTs ? Math.floor((policy.endTs - policy.startTs) / 86400) : 'N/A'} days</span>
-                        </div>
-                        <div className="detail-row">
-                          <span>Status:</span>
-                          <span>{policy.statusString || (policy.status === 0 ? 'Active' : policy.status === 1 ? 'PaidOut' : 'Expired')}</span>
-                        </div>
-                        <div className="detail-row">
-                          <span>Created:</span>
-                          <span>{policy.startTs ? new Date(policy.startTs * 1000).toLocaleDateString() : 'Invalid Date'}</span>
-                        </div>
-                        <div className="detail-row">
-                          <span>Expires:</span>
-                          <span>{policy.endTs ? new Date(policy.endTs * 1000).toLocaleDateString() : 'Invalid Date'}</span>
-                        </div>
-                      </div>
-
-                      <div className="policy-actions">
-                        <button className="action-btn" onClick={() => handleViewDetails(policy.policyId)}>View Details</button>
-                        {isMyPolicy && (
-                          <button 
-                            className="action-btn" 
-                            onClick={() => handleCheckPayout(policy)}
-                            disabled={processing || policy.statusString === 'PaidOut' || policy.statusString === 'Expired'}
-                          >
-                            {processing ? 'Processing...' : (policy.statusString === 'Active' ? 'Finalize Policy' : 'Already Finalized')}
-                          </button>
-                        )}
-                        <button className="action-btn" onClick={fetchAllPolicies}>Refresh</button>
-                      </div>
-                    </div>
-                  );
-                })}
-            </div>
-          ) : (
-            <div className="no-policies">
-              <p>No active policies found in the system.</p>
-              <button className="action-btn" onClick={fetchAllPolicies}>Refresh</button>
-            </div>
-          )}
-        </div>
-      ) : loading ? (
+      {loading ? (
         <div className="loading">Loading policies...</div>
       ) : policiesData && ((policiesData.data && policiesData.data.length > 0) || (policiesData.policies && policiesData.policies.length > 0)) ? (
         <div className="policies-list">
-          {(policiesData.data || policiesData.policies || [])
-            .filter(p => p.status === 0 || p.statusString === 'Active') // Only show active policies
-            .sort((a, b) => b.policyId - a.policyId) // Sort by policy ID descending (most recent first)
-            .map((policy, index) => (
+          {(policiesData.data || policiesData.policies || []).map((policy, index) => (
             <div key={`${policy.policyId}-${refreshKey}`} className="policy-card">
               <div className="policy-header">
                 <h3>Policy #{policy.policyId}</h3>
@@ -446,30 +297,12 @@ const MyPolicies = () => {
             </div>
           ))}
         </div>
-      ) : (() => {
-        const allPolicies = policiesData?.data || policiesData?.policies || [];
-        const hasAnyPolicies = allPolicies.length > 0;
-        const hasActivePolicies = allPolicies.filter(p => p.status === 0 || p.statusString === 'Active').length > 0;
-        
-        if (hasAnyPolicies && !hasActivePolicies) {
-          return (
-            <div className="no-policies">
-              <p>No active policies. Your existing policies have been finalized.</p>
-              <p style={{ fontSize: '14px', color: '#666', marginTop: '10px' }}>
-                View finalized policies in the Dashboard
-              </p>
-              <button className="action-btn" onClick={refetch}>Refresh</button>
-            </div>
-          );
-        }
-        
-        return (
-          <div className="no-policies">
-            <p>No policies found. Create your first policy to get started!</p>
-            <button className="action-btn" onClick={refetch}>Refresh</button>
-          </div>
-        );
-      })()}
+      ) : (
+        <div className="no-policies">
+          <p>No policies found. Create your first policy to get started!</p>
+          <button className="action-btn" onClick={refetch}>Refresh</button>
+        </div>
+      )}
     </div>
   );
 };

@@ -169,8 +169,8 @@ Payout    Monitoring
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/SaiSurabhi28/AgriInsure.git
-   cd AgriInsure
+   git clone https://github.com/your-username/agriinsure.git
+   cd agriinsure
    ```
 
 2. **Install dependencies**
@@ -521,7 +521,9 @@ We welcome contributions to AgriInsure! Please follow these guidelines:
 - Testing and documentation
 - Security audits
 
+## 📄 License
 
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 🙏 Acknowledgments
 
@@ -531,10 +533,25 @@ We welcome contributions to AgriInsure! Please follow these guidelines:
 - **React**: For frontend framework
 - **Material-UI**: For UI components
 
+## 📞 Support
 
+- **Documentation**: [Wiki](https://github.com/your-username/agriinsure/wiki)
+- **Issues**: [GitHub Issues](https://github.com/your-username/agriinsure/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/your-username/agriinsure/discussions)
+- **Email**: support@agriinsure.com
 
+## 📊 Project Status
 
+![GitHub last commit](https://img.shields.io/github/last-commit/your-username/agriinsure)
+![GitHub issues](https://img.shields.io/github/issues/your-username/agriinsure)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/your-username/agriinsure)
+![GitHub license](https://img.shields.io/github/license/your-username/agriinsure)
 
+---
+
+**Built with ❤️ for farmers worldwide**
+
+*Empowering agriculture through blockchain technology*
 
 
 

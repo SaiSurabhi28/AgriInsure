@@ -6,37 +6,37 @@ const WeatherFeed = () => {
   const [dataSource, setDataSource] = useState('unknown');
   const [error, setError] = useState(null);
 
-  const fetchWeatherData = async () => {
-    try {
-      // Fetch from backend which now uses dataset files
-      // Add cache-busting query parameter to force fresh data
-      const response = await fetch(`http://localhost:3001/api/oracle/weather?t=${Date.now()}`);
-      if (response.ok) {
-        const data = await response.json();
-        setWeatherData(data);
-        setDataSource(data.source || 'oracle');
-        setError(null);
-      } else {
-        const errorData = await response.json().catch(() => ({ error: 'Unknown error' }));
-        throw new Error(errorData.error || 'Backend not available');
-      }
-    } catch (error) {
-      console.error('Error fetching weather data:', error);
-      // Check if it's a rate limit error
-      if (error.message.includes('Failed to fetch') || error.message.includes('429') || error.message.includes('Too many requests')) {
-        setError('Backend rate limit reached. Please wait a moment or restart the backend server.');
-      } else {
-        setError(error.message || 'Failed to fetch weather data');
-      }
-      // Don't use random data - show error instead
-      setWeatherData(null);
-      setDataSource('error');
-    } finally {
-      setLoading(false);
-    }
-  };
-
   useEffect(() => {
+    const fetchWeatherData = async () => {
+      try {
+        // Fetch from backend which now uses dataset files
+        // Add cache-busting query parameter to force fresh data
+        const response = await fetch(`http://localhost:3001/api/oracle/weather?t=${Date.now()}`);
+        if (response.ok) {
+          const data = await response.json();
+          setWeatherData(data);
+          setDataSource(data.source || 'oracle');
+          setError(null);
+        } else {
+          const errorData = await response.json().catch(() => ({ error: 'Unknown error' }));
+          throw new Error(errorData.error || 'Backend not available');
+        }
+      } catch (error) {
+        console.error('Error fetching weather data:', error);
+        // Check if it's a rate limit error
+        if (error.message.includes('Failed to fetch') || error.message.includes('429') || error.message.includes('Too many requests')) {
+          setError('Backend rate limit reached. Please wait a moment or restart the backend server.');
+        } else {
+          setError(error.message || 'Failed to fetch weather data');
+        }
+        // Don't use random data - show error instead
+        setWeatherData(null);
+        setDataSource('error');
+      } finally {
+        setLoading(false);
+      }
+    };
+
     fetchWeatherData();
     // Update every 30 seconds (rate limit safe - backend allows 100 requests per 15 minutes)
     const interval = setInterval(fetchWeatherData, 30000);
@@ -55,24 +55,7 @@ const WeatherFeed = () => {
 
   return (
     <div className="weather-feed">
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px' }}>
-        <h2 style={{ margin: 0 }}>🌤️ Live Weather Feed</h2>
-        <button 
-          onClick={() => { setLoading(true); fetchWeatherData(); }}
-          style={{
-            background: '#2196F3',
-            color: 'white',
-            border: 'none',
-            padding: '10px 20px',
-            borderRadius: '4px',
-            cursor: 'pointer',
-            fontSize: '14px'
-          }}
-          disabled={loading}
-        >
-          {loading ? '⏳ Refreshing...' : '🔄 Refresh Data'}
-        </button>
-      </div>
+      <h2>🌤️ Live Weather Feed</h2>
 
       {/* Error message */}
       {error && (

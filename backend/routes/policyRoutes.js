@@ -106,9 +106,7 @@ router.get('/farmer/:farmerAddress', async (req, res) => {
       });
     }
 
-    console.log('📥 GET /farmer/:farmerAddress called with:', farmerAddress);
     const policies = await blockchainService.getFarmerPolicies(farmerAddress);
-    console.log('📤 Returning policies:', policies.length);
 
     res.json({
       success: true,
@@ -186,19 +184,57 @@ router.get('/:policyId/events', async (req, res) => {
   }
 });
 
-// Get all policies from blockchain (all active policies regardless of owner)
+// Get all policies with details (for admin/overview)
 router.get('/all', async (req, res) => {
   try {
-    console.log('📥 GET /all called - fetching all policies');
-    const policies = await blockchainService.getAllPolicies();
-    console.log('📤 Returning all policies:', policies.length);
+    const { limit = 100, offset = 0 } = req.query;
+
+    // Fetch all PolicyCreated events
+    const events = await blockchainService.getContractEvents(
+      'PolicyFactory',
+      'PolicyCreated',
+      0,
+      'latest'
+    );
+
+    // Extract unique policyIds in creation order
+    const seen = new Set();
+    const policyIds = [];
+    for (const ev of events) {
+      const id = ev.args?.policyId?.toString?.() || ev.args?.policyId;
+      if (id && !seen.has(id)) {
+        seen.add(id);
+        policyIds.push(id);
+      }
+    }
+
+    // Fetch detailed status for each policyId
+    const details = [];
+    for (const id of policyIds) {
+      try {
+        const status = await blockchainService.getPolicyStatus(id);
+        details.push(status);
+      } catch (e) {
+        // Skip policies that cannot be fetched
+      }
+    }
+
+    // Apply pagination on detailed list
+    const start = Math.max(0, parseInt(offset) || 0);
+    const end = start + (parseInt(limit) || 100);
+    const page = details.slice(start, end);
 
     res.json({
       success: true,
-      data: policies
+      data: page,
+      pagination: {
+        total: details.length,
+        limit: parseInt(limit),
+        offset: parseInt(offset)
+      }
     });
   } catch (error) {
-    console.error('Get all policies error:', error);
+    console.error('All policies (detailed) error:', error);
     res.status(500).json({
       error: 'Failed to get all policies',
       message: error.message
@@ -206,7 +242,7 @@ router.get('/all', async (req, res) => {
   }
 });
 
-// Get all policies (for admin - legacy endpoint)
+// Get all policies (for admin)
 router.get('/', async (req, res) => {
   try {
     const { limit = 10, offset = 0 } = req.query;
