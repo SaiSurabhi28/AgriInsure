@@ -1,0 +1,1209 @@
+[
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 31.29,
+    "timestamp": "2025-10-22T16:13:02.721Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 32.76,
+    "timestamp": "2025-10-22T16:13:12.756Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 16.55,
+    "timestamp": "2025-10-22T16:13:22.756Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 17.21,
+    "timestamp": "2025-10-22T16:13:32.760Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 32.46,
+    "timestamp": "2025-10-22T16:13:42.762Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 18.32,
+    "timestamp": "2025-10-22T16:13:52.777Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 28.7,
+    "timestamp": "2025-10-22T16:14:02.765Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 28.81,
+    "timestamp": "2025-10-22T16:14:12.760Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 19.45,
+    "timestamp": "2025-10-22T16:14:22.761Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 18.24,
+    "timestamp": "2025-10-22T16:14:32.766Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 34.39,
+    "timestamp": "2025-10-22T16:14:42.767Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 3.4530000000000003,
+    "timestamp": "2025-10-22T16:14:52.768Z",
+    "unit": "°C",
+    "faulty": true
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 25.43,
+    "timestamp": "2025-10-22T16:15:02.769Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 26.65,
+    "timestamp": "2025-10-22T16:15:12.770Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 20.7,
+    "timestamp": "2025-10-22T16:15:22.773Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 28.85,
+    "timestamp": "2025-10-22T16:15:32.780Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 32.5,
+    "timestamp": "2025-10-22T16:15:42.773Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 17.16,
+    "timestamp": "2025-10-22T16:15:52.771Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 31.65,
+    "timestamp": "2025-10-22T16:16:02.771Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 33.42,
+    "timestamp": "2025-10-22T16:16:12.778Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 24.92,
+    "timestamp": "2025-10-22T16:16:22.776Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 23.95,
+    "timestamp": "2025-10-22T16:16:32.773Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 33.34,
+    "timestamp": "2025-10-22T16:16:42.778Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 22.51,
+    "timestamp": "2025-10-22T16:16:52.770Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 41.78,
+    "timestamp": "2025-10-22T16:17:02.789Z",
+    "unit": "°C",
+    "faulty": true
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 21.65,
+    "timestamp": "2025-10-22T16:17:12.779Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 33.19,
+    "timestamp": "2025-10-22T16:17:22.783Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 28.01,
+    "timestamp": "2025-10-22T16:17:32.806Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 23.59,
+    "timestamp": "2025-10-22T16:17:42.785Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 24.12,
+    "timestamp": "2025-10-22T16:17:52.789Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 26.33,
+    "timestamp": "2025-10-22T16:34:23.478Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 16.2,
+    "timestamp": "2025-10-22T16:43:18.897Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 32.82,
+    "timestamp": "2025-10-22T16:43:28.903Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 22.94,
+    "timestamp": "2025-10-22T16:43:38.901Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 32.4,
+    "timestamp": "2025-10-22T16:43:48.906Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 23.6,
+    "timestamp": "2025-10-22T16:43:58.903Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 20.22,
+    "timestamp": "2025-10-22T16:44:08.905Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 26.47,
+    "timestamp": "2025-10-22T16:44:18.901Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 25.91,
+    "timestamp": "2025-10-22T16:44:28.909Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 17.47,
+    "timestamp": "2025-10-22T16:44:38.907Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 21.88,
+    "timestamp": "2025-10-22T16:44:48.902Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 31.88,
+    "timestamp": "2025-10-22T16:44:58.909Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 48.56,
+    "timestamp": "2025-10-22T16:45:08.910Z",
+    "unit": "°C",
+    "faulty": true
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 27.75,
+    "timestamp": "2025-10-22T16:45:18.908Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 30.55,
+    "timestamp": "2025-10-22T16:45:28.906Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 20.17,
+    "timestamp": "2025-10-22T16:45:38.907Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 31.61,
+    "timestamp": "2025-10-22T16:45:48.910Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 23.07,
+    "timestamp": "2025-10-22T17:06:26.113Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 23.77,
+    "timestamp": "2025-10-22T17:06:36.150Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 28.09,
+    "timestamp": "2025-10-22T17:06:46.149Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 26.24,
+    "timestamp": "2025-10-22T17:06:56.158Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 15.69,
+    "timestamp": "2025-10-22T17:07:06.156Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 18.73,
+    "timestamp": "2025-10-22T17:07:15.659Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 25.09,
+    "timestamp": "2025-10-22T17:07:16.156Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 21.48,
+    "timestamp": "2025-10-22T17:07:25.697Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 21.23,
+    "timestamp": "2025-10-22T17:07:26.163Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 32.12,
+    "timestamp": "2025-10-22T17:07:35.690Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 32.62,
+    "timestamp": "2025-10-22T17:07:36.159Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 30.4,
+    "timestamp": "2025-10-22T17:07:45.691Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 24.3,
+    "timestamp": "2025-10-22T17:07:46.153Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 29.53,
+    "timestamp": "2025-10-22T17:07:55.693Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 27.56,
+    "timestamp": "2025-10-22T17:07:56.162Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 2.658,
+    "timestamp": "2025-10-22T17:08:05.706Z",
+    "unit": "°C",
+    "faulty": true
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 15.26,
+    "timestamp": "2025-10-22T17:08:06.162Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 69.74,
+    "timestamp": "2025-10-22T17:08:15.704Z",
+    "unit": "°C",
+    "faulty": true
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 20.01,
+    "timestamp": "2025-10-22T17:08:16.161Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 29.92,
+    "timestamp": "2025-10-22T17:08:25.701Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 32.69,
+    "timestamp": "2025-10-22T17:08:26.164Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 3.154,
+    "timestamp": "2025-10-22T17:08:35.704Z",
+    "unit": "°C",
+    "faulty": true
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 25.18,
+    "timestamp": "2025-10-22T17:08:36.252Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 15.2,
+    "timestamp": "2025-10-22T17:08:45.700Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 32.83,
+    "timestamp": "2025-10-22T17:08:46.162Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 33.03,
+    "timestamp": "2025-10-22T17:08:55.702Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 17.44,
+    "timestamp": "2025-10-22T17:08:56.173Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 18.48,
+    "timestamp": "2025-10-22T17:09:05.702Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 21.5,
+    "timestamp": "2025-10-22T17:09:06.167Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 17.33,
+    "timestamp": "2025-10-22T17:09:15.713Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 22.11,
+    "timestamp": "2025-10-22T17:09:16.175Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 29.65,
+    "timestamp": "2025-10-22T17:09:25.723Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 15.78,
+    "timestamp": "2025-10-22T17:09:26.180Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 24.01,
+    "timestamp": "2025-10-22T17:09:35.718Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 25.6,
+    "timestamp": "2025-10-22T17:09:36.183Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 23.8,
+    "timestamp": "2025-10-22T17:09:45.722Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 24.68,
+    "timestamp": "2025-10-22T17:09:46.180Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 25.42,
+    "timestamp": "2025-10-22T17:09:55.721Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 23.73,
+    "timestamp": "2025-10-22T17:09:56.179Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 15.91,
+    "timestamp": "2025-10-22T17:10:05.719Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 16.68,
+    "timestamp": "2025-10-22T17:10:06.185Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 33.85,
+    "timestamp": "2025-10-22T17:10:15.725Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 17.26,
+    "timestamp": "2025-10-22T17:10:16.184Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 32.75,
+    "timestamp": "2025-10-22T17:10:25.722Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 34.29,
+    "timestamp": "2025-10-22T17:10:26.187Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 30.06,
+    "timestamp": "2025-10-22T17:10:35.727Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 2.065,
+    "timestamp": "2025-10-22T17:10:36.176Z",
+    "unit": "°C",
+    "faulty": true
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 17.96,
+    "timestamp": "2025-10-22T17:10:45.725Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 17.16,
+    "timestamp": "2025-10-22T17:10:46.185Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 31.3,
+    "timestamp": "2025-10-22T17:10:55.727Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 27.35,
+    "timestamp": "2025-10-22T17:10:56.187Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 17.84,
+    "timestamp": "2025-10-22T17:11:05.726Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_4_1",
+    "location": {
+      "name": "Farm E",
+      "lat": 12.9234,
+      "lon": 77.6123
+    },
+    "sensorType": "temperature",
+    "value": 30.17,
+    "timestamp": "2025-10-22T17:11:06.188Z",
+    "unit": "°C"
+  }
+]

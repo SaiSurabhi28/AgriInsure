@@ -1,0 +1,50 @@
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+
+# Environment variables
+.env
+.env.local
+
+# Build outputs
+artifacts/
+cache/
+coverage/
+typechain/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Deployment info
+deployments/localhost.json
+deployments/backend/localhost.json
+
+# Hardhat
+.openzeppelin/
+
+# Frontend build
+frontend/build/
+frontend/.next/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+node_modules

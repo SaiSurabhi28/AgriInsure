@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test MetaMask Connection</title>
+    <style>
+        body { font-family: Arial; padding: 20px; background: #f0f0f0; }
+        .status { background: white; padding: 20px; border-radius: 10px; margin: 10px 0; }
+        button { padding: 10px 20px; font-size: 16px; cursor: pointer; }
+        #result { margin-top: 20px; background: #e0e0e0; padding: 15px; }
+    </style>
+</head>
+<body>
+    <h1>🔍 MetaMask Connection Test</h1>
+    
+    <div class="status">
+        <h2>Step 1: Connect MetaMask</h2>
+        <button onclick="connectWallet()">Connect Wallet</button>
+        <div id="result"></div>
+    </div>
+    
+    <div class="status">
+        <h2>Step 2: Check Balance</h2>
+        <button onclick="checkBalance()">Check Balance</button>
+        <div id="balanceResult"></div>
+    </div>
+    
+    <div class="status">
+        <h2>Step 3: Check Network</h2>
+        <div id="networkResult"></div>
+    </div>
+
+    <script>
+        let provider;
+        let account;
+
+        async function connectWallet() {
+            if (typeof window.ethereum === 'undefined') {
+                document.getElementById('result').innerHTML = '❌ MetaMask not found!';
+                return;
+            }
+
+            try {
+                // Request account access
+                const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
+                account = accounts[0];
+                document.getElementById('result').innerHTML = `✅ Connected: ${account}`;
+                
+                // Check network
+                checkNetwork();
+            } catch (error) {
+                document.getElementById('result').innerHTML = `❌ Error: ${error.message}`;
+            }
+        }
+
+        async function checkNetwork() {
+            const chainId = await window.ethereum.request({ method: 'eth_chainId' });
+            const networkNames = {
+                '0x1': 'Ethereum Mainnet',
+                '0x539': 'Hardhat Local (localhost)',
+                '0x89': 'Polygon',
+                '0xa': 'Optimism'
+            };
+            
+            const networkName = networkNames[chainId] || chainId;
+            document.getElementById('networkResult').innerHTML = `
+                <strong>Network ID:</strong> ${chainId}<br>
+                <strong>Network Name:</strong> ${networkName}<br>
+                ${chainId === '0x539' ? '✅ Connected to localhost!' : '⚠️ Not on localhost network!'}
+            `;
+        }
+
+        async function checkBalance() {
+            if (!account) {
+                document.getElementById('balanceResult').innerHTML = 'Please connect wallet first!';
+                return;
+            }
+
+            try {
+                const balance = await window.ethereum.request({
+                    method: 'eth_getBalance',
+                    params: [account, 'latest']
+                });
+                
+                const balanceInEth = parseInt(balance, 16) / 1e18;
+                document.getElementById('balanceResult').innerHTML = `
+                    <strong>Balance:</strong> ${balanceInEth.toFixed(2)} ETH
+                `;
+            } catch (error) {
+                document.getElementById('balanceResult').innerHTML = `Error: ${error.message}`;
+            }
+        }
+
+        // Auto-check network on load
+        window.addEventListener('load', () => {
+            if (typeof window.ethereum !== 'undefined') {
+                checkNetwork();
+            }
+        });
+    </script>
+</body>
+</html>
+

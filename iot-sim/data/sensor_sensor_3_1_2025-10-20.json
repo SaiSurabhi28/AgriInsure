@@ -1,0 +1,3108 @@
+[
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 25.63,
+    "timestamp": "2025-10-20T20:15:21.043Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 32.42,
+    "timestamp": "2025-10-20T20:15:31.085Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 32.9,
+    "timestamp": "2025-10-20T20:15:41.092Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 17.31,
+    "timestamp": "2025-10-20T20:15:51.091Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 2.327,
+    "timestamp": "2025-10-20T20:16:01.090Z",
+    "unit": "°C",
+    "faulty": true
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 26.86,
+    "timestamp": "2025-10-20T20:16:11.091Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 17.69,
+    "timestamp": "2025-10-20T20:16:21.094Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 18.95,
+    "timestamp": "2025-10-20T20:16:31.094Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 25.2,
+    "timestamp": "2025-10-20T20:16:41.095Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 21.96,
+    "timestamp": "2025-10-20T20:16:51.093Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 20.92,
+    "timestamp": "2025-10-20T20:17:01.099Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 32.82,
+    "timestamp": "2025-10-20T20:17:11.103Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 29.13,
+    "timestamp": "2025-10-20T20:17:21.105Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 28.57,
+    "timestamp": "2025-10-20T20:17:31.101Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 33.5,
+    "timestamp": "2025-10-20T20:17:41.099Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 33.66,
+    "timestamp": "2025-10-20T20:17:51.102Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 21.52,
+    "timestamp": "2025-10-20T20:18:01.105Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 16.64,
+    "timestamp": "2025-10-20T20:18:11.100Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 2.346,
+    "timestamp": "2025-10-20T20:18:21.109Z",
+    "unit": "°C",
+    "faulty": true
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 20.01,
+    "timestamp": "2025-10-20T20:18:31.106Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 32.64,
+    "timestamp": "2025-10-20T20:18:41.108Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 25.75,
+    "timestamp": "2025-10-20T20:18:51.115Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 28.97,
+    "timestamp": "2025-10-20T20:19:01.113Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 18.08,
+    "timestamp": "2025-10-20T20:19:11.111Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 32.42,
+    "timestamp": "2025-10-20T20:19:21.115Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 20.71,
+    "timestamp": "2025-10-20T20:19:31.116Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 30.15,
+    "timestamp": "2025-10-20T20:19:41.114Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 34.04,
+    "timestamp": "2025-10-20T20:19:51.118Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 29.48,
+    "timestamp": "2025-10-20T20:20:01.123Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 20.69,
+    "timestamp": "2025-10-20T20:20:11.176Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 23.04,
+    "timestamp": "2025-10-20T20:20:21.132Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 17.46,
+    "timestamp": "2025-10-20T20:20:31.134Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 28.76,
+    "timestamp": "2025-10-20T20:20:41.127Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 15.84,
+    "timestamp": "2025-10-20T20:20:51.133Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 21.49,
+    "timestamp": "2025-10-20T20:21:01.135Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 18.73,
+    "timestamp": "2025-10-20T20:21:11.135Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 28.13,
+    "timestamp": "2025-10-20T20:21:21.138Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 31.24,
+    "timestamp": "2025-10-20T20:21:31.139Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 26.53,
+    "timestamp": "2025-10-20T20:21:41.136Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 19.8,
+    "timestamp": "2025-10-20T20:21:51.131Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 24.08,
+    "timestamp": "2025-10-20T20:22:01.132Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 25.3,
+    "timestamp": "2025-10-20T20:22:11.139Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 22.74,
+    "timestamp": "2025-10-20T20:22:21.133Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 27.61,
+    "timestamp": "2025-10-20T20:22:31.136Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 25.45,
+    "timestamp": "2025-10-20T20:22:41.139Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 19.05,
+    "timestamp": "2025-10-20T20:22:51.149Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 15.59,
+    "timestamp": "2025-10-20T20:23:01.148Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 17.26,
+    "timestamp": "2025-10-20T20:23:11.146Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 23.81,
+    "timestamp": "2025-10-20T20:23:21.149Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 27.05,
+    "timestamp": "2025-10-20T20:23:31.147Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 26.49,
+    "timestamp": "2025-10-20T20:23:41.151Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 21.68,
+    "timestamp": "2025-10-20T20:23:51.150Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 24.32,
+    "timestamp": "2025-10-20T20:24:01.155Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 22.11,
+    "timestamp": "2025-10-20T20:24:11.159Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 21.02,
+    "timestamp": "2025-10-20T20:24:21.150Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 17.34,
+    "timestamp": "2025-10-20T20:24:31.160Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 21.84,
+    "timestamp": "2025-10-20T20:24:41.153Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 16.01,
+    "timestamp": "2025-10-20T20:24:51.163Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 18.45,
+    "timestamp": "2025-10-20T20:25:01.158Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 23.69,
+    "timestamp": "2025-10-20T20:25:11.157Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 29.88,
+    "timestamp": "2025-10-20T20:25:21.159Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 18.34,
+    "timestamp": "2025-10-20T20:25:31.164Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 18.83,
+    "timestamp": "2025-10-20T20:25:41.165Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 29.13,
+    "timestamp": "2025-10-20T20:25:51.166Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 29.61,
+    "timestamp": "2025-10-20T20:26:01.166Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 31.84,
+    "timestamp": "2025-10-20T20:26:11.168Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 30.34,
+    "timestamp": "2025-10-20T20:26:21.168Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 59.52,
+    "timestamp": "2025-10-20T20:26:31.168Z",
+    "unit": "°C",
+    "faulty": true
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 20.85,
+    "timestamp": "2025-10-20T20:26:41.170Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 21.47,
+    "timestamp": "2025-10-20T20:26:51.170Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 27.47,
+    "timestamp": "2025-10-20T20:27:01.172Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 34.08,
+    "timestamp": "2025-10-20T20:27:11.175Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 31.51,
+    "timestamp": "2025-10-20T20:27:21.174Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 29.18,
+    "timestamp": "2025-10-20T20:27:31.176Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 22.19,
+    "timestamp": "2025-10-20T20:27:41.179Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 21.5,
+    "timestamp": "2025-10-20T20:27:51.179Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 30.79,
+    "timestamp": "2025-10-20T20:28:01.177Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 18.47,
+    "timestamp": "2025-10-20T20:28:11.180Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 16.15,
+    "timestamp": "2025-10-20T20:28:21.182Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 33.11,
+    "timestamp": "2025-10-20T20:28:31.177Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 23.83,
+    "timestamp": "2025-10-20T20:28:41.187Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 15.92,
+    "timestamp": "2025-10-20T20:28:51.187Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 32.73,
+    "timestamp": "2025-10-20T20:29:01.185Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 16.5,
+    "timestamp": "2025-10-20T20:29:11.187Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 18.72,
+    "timestamp": "2025-10-20T20:29:21.189Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 32.33,
+    "timestamp": "2025-10-20T20:29:31.189Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 26.02,
+    "timestamp": "2025-10-20T20:29:41.190Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 3.1140000000000003,
+    "timestamp": "2025-10-20T20:29:51.192Z",
+    "unit": "°C",
+    "faulty": true
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 33.99,
+    "timestamp": "2025-10-20T20:30:01.193Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 23.12,
+    "timestamp": "2025-10-20T20:30:11.194Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 31.6,
+    "timestamp": "2025-10-20T20:30:21.195Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 28.93,
+    "timestamp": "2025-10-20T20:30:31.199Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 25.95,
+    "timestamp": "2025-10-20T20:30:41.196Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 26.12,
+    "timestamp": "2025-10-20T20:30:51.203Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 26.56,
+    "timestamp": "2025-10-20T20:31:01.198Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 29.58,
+    "timestamp": "2025-10-20T20:31:11.199Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 16.19,
+    "timestamp": "2025-10-20T20:31:21.200Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 16.5,
+    "timestamp": "2025-10-20T20:31:31.207Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 15.11,
+    "timestamp": "2025-10-20T20:31:41.203Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 20.9,
+    "timestamp": "2025-10-20T20:31:51.205Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 19.29,
+    "timestamp": "2025-10-20T20:32:01.205Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 16.84,
+    "timestamp": "2025-10-20T20:32:11.206Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 16.2,
+    "timestamp": "2025-10-20T20:32:21.204Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 31.7,
+    "timestamp": "2025-10-20T20:32:31.208Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 31.08,
+    "timestamp": "2025-10-20T20:32:41.209Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 23.13,
+    "timestamp": "2025-10-20T20:32:51.208Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 33.62,
+    "timestamp": "2025-10-20T20:33:01.211Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 29.78,
+    "timestamp": "2025-10-20T20:33:11.210Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 25.87,
+    "timestamp": "2025-10-20T20:33:21.213Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 30,
+    "timestamp": "2025-10-20T20:33:31.212Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 32.06,
+    "timestamp": "2025-10-20T20:33:41.212Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 20.56,
+    "timestamp": "2025-10-20T20:33:51.217Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 34.74,
+    "timestamp": "2025-10-20T20:34:01.218Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 32.19,
+    "timestamp": "2025-10-20T20:34:11.223Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 21.88,
+    "timestamp": "2025-10-20T20:34:21.221Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 22.67,
+    "timestamp": "2025-10-20T20:34:31.221Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 19.85,
+    "timestamp": "2025-10-20T20:34:41.225Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 25.74,
+    "timestamp": "2025-10-20T20:34:51.222Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 26.45,
+    "timestamp": "2025-10-20T20:35:01.228Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 33.32,
+    "timestamp": "2025-10-20T20:35:11.226Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 15.37,
+    "timestamp": "2025-10-20T20:35:21.226Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 32.37,
+    "timestamp": "2025-10-20T20:35:31.227Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 18.57,
+    "timestamp": "2025-10-20T20:35:41.228Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 31.64,
+    "timestamp": "2025-10-20T20:35:51.231Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 23.96,
+    "timestamp": "2025-10-20T20:36:01.240Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 34.87,
+    "timestamp": "2025-10-20T20:36:11.229Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 24.07,
+    "timestamp": "2025-10-20T20:36:21.232Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 16.79,
+    "timestamp": "2025-10-20T20:36:31.236Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 16.48,
+    "timestamp": "2025-10-20T20:36:41.233Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 15.68,
+    "timestamp": "2025-10-20T20:36:51.233Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 23.53,
+    "timestamp": "2025-10-20T20:37:01.236Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 29.23,
+    "timestamp": "2025-10-20T20:37:11.240Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 27.74,
+    "timestamp": "2025-10-20T20:37:21.238Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 27.72,
+    "timestamp": "2025-10-20T20:37:31.237Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 29,
+    "timestamp": "2025-10-20T20:37:41.235Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 33.26,
+    "timestamp": "2025-10-20T20:37:51.238Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 31.86,
+    "timestamp": "2025-10-20T20:38:01.238Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 23.32,
+    "timestamp": "2025-10-20T20:38:11.245Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 25.23,
+    "timestamp": "2025-10-20T20:38:21.241Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 32.7,
+    "timestamp": "2025-10-20T20:38:31.245Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 27.03,
+    "timestamp": "2025-10-20T20:38:41.244Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 19.86,
+    "timestamp": "2025-10-20T20:38:51.245Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 20.94,
+    "timestamp": "2025-10-20T20:39:01.247Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 34.35,
+    "timestamp": "2025-10-20T20:39:11.246Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 26.53,
+    "timestamp": "2025-10-20T20:39:21.249Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 27.55,
+    "timestamp": "2025-10-20T20:39:31.247Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 18.34,
+    "timestamp": "2025-10-20T20:39:41.250Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 2.061,
+    "timestamp": "2025-10-20T20:39:51.250Z",
+    "unit": "°C",
+    "faulty": true
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 33.08,
+    "timestamp": "2025-10-20T20:40:01.257Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 17.14,
+    "timestamp": "2025-10-20T20:40:11.255Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 30.46,
+    "timestamp": "2025-10-20T20:40:21.257Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 27.59,
+    "timestamp": "2025-10-20T20:40:31.262Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 16.86,
+    "timestamp": "2025-10-20T20:40:41.267Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 34.72,
+    "timestamp": "2025-10-20T20:40:51.263Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 17.43,
+    "timestamp": "2025-10-20T20:41:01.255Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 41.72,
+    "timestamp": "2025-10-20T20:41:11.278Z",
+    "unit": "°C",
+    "faulty": true
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 20.64,
+    "timestamp": "2025-10-20T20:41:21.266Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 28.88,
+    "timestamp": "2025-10-20T20:41:31.266Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 18.41,
+    "timestamp": "2025-10-20T20:41:41.267Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 33.18,
+    "timestamp": "2025-10-20T20:41:51.270Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 28.19,
+    "timestamp": "2025-10-20T20:42:01.268Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 21.85,
+    "timestamp": "2025-10-20T20:42:11.270Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 16.44,
+    "timestamp": "2025-10-20T20:42:21.275Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 22.99,
+    "timestamp": "2025-10-20T20:42:31.273Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 29.92,
+    "timestamp": "2025-10-20T20:42:41.274Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 24.33,
+    "timestamp": "2025-10-20T20:42:51.276Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 17.36,
+    "timestamp": "2025-10-20T20:43:01.274Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 31.32,
+    "timestamp": "2025-10-20T20:43:11.275Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 16.21,
+    "timestamp": "2025-10-20T20:43:21.277Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 17.97,
+    "timestamp": "2025-10-20T20:43:31.276Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 27.46,
+    "timestamp": "2025-10-20T20:43:41.276Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 23.63,
+    "timestamp": "2025-10-20T20:43:51.277Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 23.57,
+    "timestamp": "2025-10-20T20:44:01.278Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 31.85,
+    "timestamp": "2025-10-20T20:44:11.279Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 34.33,
+    "timestamp": "2025-10-20T20:44:21.280Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 33.63,
+    "timestamp": "2025-10-20T20:44:31.281Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 19.11,
+    "timestamp": "2025-10-20T20:44:41.284Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 21.44,
+    "timestamp": "2025-10-20T20:44:51.286Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 29.98,
+    "timestamp": "2025-10-20T20:45:01.285Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 30.4,
+    "timestamp": "2025-10-20T20:45:11.279Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 22.85,
+    "timestamp": "2025-10-20T20:45:21.287Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 17.9,
+    "timestamp": "2025-10-20T20:45:31.287Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 31.34,
+    "timestamp": "2025-10-20T20:45:41.284Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 31.2,
+    "timestamp": "2025-10-20T20:45:51.291Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 19.41,
+    "timestamp": "2025-10-20T20:46:01.292Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 19.18,
+    "timestamp": "2025-10-20T20:46:11.296Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 17.69,
+    "timestamp": "2025-10-20T20:46:21.300Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 22.11,
+    "timestamp": "2025-10-20T20:46:31.295Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 18.12,
+    "timestamp": "2025-10-20T20:46:41.300Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 18.67,
+    "timestamp": "2025-10-20T20:46:51.295Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 29.87,
+    "timestamp": "2025-10-20T20:47:01.285Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 25.91,
+    "timestamp": "2025-10-20T20:47:11.287Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 28.54,
+    "timestamp": "2025-10-20T20:47:21.280Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 20.16,
+    "timestamp": "2025-10-20T20:47:31.277Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 22.24,
+    "timestamp": "2025-10-20T20:47:41.275Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 17.58,
+    "timestamp": "2025-10-20T20:47:51.280Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 25.95,
+    "timestamp": "2025-10-20T20:48:01.281Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 24.19,
+    "timestamp": "2025-10-20T20:48:11.278Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 31.01,
+    "timestamp": "2025-10-20T20:48:21.278Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 34.35,
+    "timestamp": "2025-10-20T20:48:31.279Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 33.41,
+    "timestamp": "2025-10-20T20:48:41.270Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 63.36,
+    "timestamp": "2025-10-20T20:48:51.278Z",
+    "unit": "°C",
+    "faulty": true
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 16.81,
+    "timestamp": "2025-10-20T20:49:01.282Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 15.98,
+    "timestamp": "2025-10-20T20:49:11.285Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 26.88,
+    "timestamp": "2025-10-20T20:49:21.287Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 21.66,
+    "timestamp": "2025-10-20T20:49:31.289Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 34.98,
+    "timestamp": "2025-10-20T20:49:41.288Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 29.46,
+    "timestamp": "2025-10-20T20:49:51.290Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 33.9,
+    "timestamp": "2025-10-20T20:50:01.290Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 27.74,
+    "timestamp": "2025-10-20T20:50:11.290Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 27.08,
+    "timestamp": "2025-10-20T20:50:21.295Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 25.88,
+    "timestamp": "2025-10-20T20:50:31.293Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 17.26,
+    "timestamp": "2025-10-20T20:50:41.294Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 19.26,
+    "timestamp": "2025-10-20T20:50:51.294Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 28.97,
+    "timestamp": "2025-10-20T20:51:01.294Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 26.73,
+    "timestamp": "2025-10-20T20:51:11.295Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 17.74,
+    "timestamp": "2025-10-20T20:51:21.302Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 25.98,
+    "timestamp": "2025-10-20T20:51:31.300Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 18.69,
+    "timestamp": "2025-10-20T20:51:41.295Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 32.34,
+    "timestamp": "2025-10-20T20:51:51.290Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 16.09,
+    "timestamp": "2025-10-20T20:52:01.301Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 1.8870000000000002,
+    "timestamp": "2025-10-20T20:52:11.304Z",
+    "unit": "°C",
+    "faulty": true
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 33.31,
+    "timestamp": "2025-10-20T20:52:21.303Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 23.88,
+    "timestamp": "2025-10-20T20:52:31.302Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 23.61,
+    "timestamp": "2025-10-20T20:52:41.304Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 33.05,
+    "timestamp": "2025-10-20T20:52:51.304Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 22.19,
+    "timestamp": "2025-10-20T20:53:01.306Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 27.36,
+    "timestamp": "2025-10-20T20:53:11.307Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 23.13,
+    "timestamp": "2025-10-20T20:53:21.305Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 34.24,
+    "timestamp": "2025-10-20T20:53:31.306Z",
+    "unit": "°C",
+    "faulty": true
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 34.84,
+    "timestamp": "2025-10-20T20:53:41.309Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 20.07,
+    "timestamp": "2025-10-20T20:53:51.305Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 21.61,
+    "timestamp": "2025-10-20T20:54:01.311Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 19.73,
+    "timestamp": "2025-10-20T20:54:11.311Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 30.42,
+    "timestamp": "2025-10-20T20:54:21.312Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 24.92,
+    "timestamp": "2025-10-20T20:54:31.316Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 17.24,
+    "timestamp": "2025-10-20T20:54:41.307Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 17.56,
+    "timestamp": "2025-10-20T20:54:51.303Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 56.22,
+    "timestamp": "2025-10-20T20:55:01.349Z",
+    "unit": "°C",
+    "faulty": true
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 22.08,
+    "timestamp": "2025-10-20T20:55:11.310Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 33.55,
+    "timestamp": "2025-10-20T20:55:21.314Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 18.42,
+    "timestamp": "2025-10-20T20:55:31.314Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 25.54,
+    "timestamp": "2025-10-20T20:55:41.318Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 17.98,
+    "timestamp": "2025-10-20T20:55:51.318Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 18.43,
+    "timestamp": "2025-10-20T20:56:01.318Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 15.3,
+    "timestamp": "2025-10-20T20:56:11.320Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 29.67,
+    "timestamp": "2025-10-20T20:56:21.326Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 17.85,
+    "timestamp": "2025-10-20T20:56:31.321Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 27.58,
+    "timestamp": "2025-10-20T20:56:41.322Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 26,
+    "timestamp": "2025-10-20T20:56:51.330Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 23.34,
+    "timestamp": "2025-10-20T20:57:01.329Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 33.53,
+    "timestamp": "2025-10-20T20:57:11.328Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 29.62,
+    "timestamp": "2025-10-20T20:57:21.331Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 22.12,
+    "timestamp": "2025-10-20T20:57:31.328Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 16.66,
+    "timestamp": "2025-10-20T20:57:41.331Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 15.3,
+    "timestamp": "2025-10-20T20:57:51.332Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 31.4,
+    "timestamp": "2025-10-20T20:58:01.334Z",
+    "unit": "°C"
+  },
+  {
+    "sensorId": "sensor_3_1",
+    "location": {
+      "name": "Farm D",
+      "lat": 12.8992,
+      "lon": 77.5934
+    },
+    "sensorType": "temperature",
+    "value": 30.64,
+    "timestamp": "2025-10-20T20:58:11.336Z",
+    "unit": "°C"
+  }
+]
