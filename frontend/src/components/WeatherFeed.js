@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Container, Stack, Typography, Button, Alert, Grid, Card, CardContent, Box } from '@mui/material';
 
 const WeatherFeed = () => {
   const [weatherData, setWeatherData] = useState(null);
@@ -10,22 +11,23 @@ const WeatherFeed = () => {
 
   const fetchWeatherData = async () => {
     try {
-      // Fetch from backend (cache-busted)
       const response = await fetch(`http://localhost:3001/api/oracle/weather?t=${Date.now()}`);
       if (response.ok) {
         const data = await response.json();
         setWeatherData(data);
         const rounds = Array.isArray(data?.data) ? data.data : [];
         setDataSource(data.source || 'oracle');
-        // Merge into history (dedupe by roundId)
         setHistoryRounds(prev => {
           const byId = new Map(prev.map(r => [r.roundId, r]));
           rounds.forEach(r => {
-            if (r && r.roundId !== undefined) byId.set(r.roundId, r);
+            if (r && r.roundId !== undefined) {
+              byId.set(r.roundId, r);
+            }
           });
           const merged = Array.from(byId.values()).sort((a, b) => Number(a.timestamp) - Number(b.timestamp));
           const capped = merged.slice(Math.max(0, merged.length - 100));
-          setLastSevenRounds(capped.slice(Math.max(0, capped.length - 7)));
+          const last7 = capped.slice(Math.max(0, capped.length - 7));
+          setLastSevenRounds(last7);
           return capped;
         });
         setError(null);
@@ -33,12 +35,12 @@ const WeatherFeed = () => {
         const errorData = await response.json().catch(() => ({ error: 'Unknown error' }));
         throw new Error(errorData.error || 'Backend not available');
       }
-    } catch (error) {
-      console.error('Error fetching weather data:', error);
-      if (error.message.includes('Failed to fetch') || error.message.includes('429') || error.message.includes('Too many requests')) {
+    } catch (err) {
+      const msg = err instanceof Error ? err.message : 'Failed to fetch weather data';
+      if (msg.includes('429') || msg.includes('Too many requests')) {
         setError('Backend rate limit reached. Please wait a moment or restart the backend server.');
       } else {
-        setError(error.message || 'Failed to fetch weather data');
+        setError(msg);
       }
       setWeatherData(null);
       setDataSource('error');
@@ -55,10 +57,10 @@ const WeatherFeed = () => {
 
   if (loading) {
     return (
-      <div className="weather-feed">
-        <h2>🌤️ Live Weather Feed</h2>
-        <div className="loading">Loading weather data...</div>
-      </div>
+      <Container maxWidth="lg" sx={{ py: 3 }}>
+        <Typography variant="h6">🌤️ Live Weather Feed</Typography>
+        <Typography variant="body2" color="text.secondary" sx={{ mt: 1 }}>Loading weather data...</Typography>
+      </Container>
     );
   }
 
@@ -66,101 +68,89 @@ const WeatherFeed = () => {
   const recentTen = historyRounds.slice(Math.max(0, historyRounds.length - 10));
 
   return (
-    <div className="weather-feed">
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px' }}>
-        <h2 style={{ margin: 0 }}>🌤️ Live Weather Feed</h2>
-        <button 
-          onClick={() => { setLoading(true); fetchWeatherData(); }}
-          style={{
-            background: '#2196F3',
-            color: 'white',
-            border: 'none',
-            padding: '10px 20px',
-            borderRadius: '4px',
-            cursor: 'pointer',
-            fontSize: '14px'
-          }}
-          disabled={loading}
-        >
+    <Container maxWidth="lg" sx={{ py: 3 }}>
+      <Stack direction="row" alignItems="center" justifyContent="space-between" sx={{ mb: 2 }}>
+        <Typography variant="h6" sx={{ m: 0 }}>🌤️ Live Weather Feed</Typography>
+        <Button variant="contained" size="small" onClick={() => { setLoading(true); fetchWeatherData(); }} disabled={loading}>
           {loading ? '⏳ Refreshing...' : '🔄 Refresh Data'}
-        </button>
-      </div>
+        </Button>
+      </Stack>
 
       {error && (
-        <div style={{ 
-          padding: '12px', 
-          marginBottom: '15px', 
-          borderRadius: '4px',
-          backgroundColor: '#ffebee',
-          color: '#c62828'
-        }}>
+        <Alert severity="error" sx={{ mb: 2 }}>
           ⚠️ Error loading weather data: {error}
-        </div>
+        </Alert>
       )}
-      
-      <div className="weather-summary">
-        <div className="weather-card">
-          <h3>📊 Latest Oracle Data</h3>
-          {latestRound ? (
-            <div className="weather-metrics">
-              <div className="metric">
-                <span className="metric-label">Latest Round</span>
-                <span className="metric-value">#{latestRound.roundId}</span>
-              </div>
-              <div className="metric">
-                <span className="metric-label">Rainfall Value</span>
-                <span className="metric-value">{parseFloat(latestRound.value).toFixed(1)}mm</span>
-              </div>
-              <div className="metric">
-                <span className="metric-label">Last Update</span>
-                <span className="metric-value">{new Date(latestRound.timestamp * 1000).toLocaleTimeString()}</span>
-              </div>
-            </div>
-          ) : (
-            <p>No weather data available</p>
-          )}
-        </div>
 
-        <div className="oracle-status">
-          <h3>🔮 Oracle Rounds</h3>
-          <div className="oracle-info">
-            <div className="info-item">
-              <span>Total Rounds:</span>
-              <span>{historyRounds.length}</span>
-            </div>
-            <div className="info-item">
-              <span>Data Points:</span>
-              <span>{historyRounds.length}</span>
-            </div>
-          </div>
-        </div>
-      </div>
+      <Grid container spacing={2} sx={{ mb: 2 }}>
+        <Grid item xs={12} md={6}>
+          <Card>
+            <CardContent>
+              <Typography variant="subtitle1" sx={{ mb: 2 }}>📊 Latest Oracle Data</Typography>
+              {latestRound ? (
+                <Grid container spacing={2}>
+                  <Grid item xs={4}>
+                    <Typography variant="caption" color="text.secondary">Latest Round</Typography>
+                    <Typography variant="h6">#{latestRound.roundId}</Typography>
+                  </Grid>
+                  <Grid item xs={4}>
+                    <Typography variant="caption" color="text.secondary">Rainfall</Typography>
+                    <Typography variant="h6">{parseFloat(latestRound.value).toFixed(1)}mm</Typography>
+                  </Grid>
+                  <Grid item xs={4}>
+                    <Typography variant="caption" color="text.secondary">Last Update</Typography>
+                    <Typography variant="h6">{new Date(latestRound.timestamp * 1000).toLocaleTimeString()}</Typography>
+                  </Grid>
+                </Grid>
+              ) : (
+                <Typography variant="body2" color="text.secondary">No weather data available</Typography>
+              )}
+            </CardContent>
+          </Card>
+        </Grid>
+        <Grid item xs={12} md={6}>
+          <Card>
+            <CardContent>
+              <Typography variant="subtitle1" sx={{ mb: 2 }}>🔮 Oracle Rounds</Typography>
+              <Grid container spacing={2}>
+                <Grid item xs={6}>
+                  <Typography variant="caption" color="text.secondary">Total Rounds</Typography>
+                  <Typography variant="h6">{historyRounds.length}</Typography>
+                </Grid>
+                <Grid item xs={6}>
+                  <Typography variant="caption" color="text.secondary">Data Points</Typography>
+                  <Typography variant="h6">{historyRounds.length}</Typography>
+                </Grid>
+              </Grid>
+            </CardContent>
+          </Card>
+        </Grid>
+      </Grid>
 
-      <div className="sensor-data">
-        <h3>📡 Recent Oracle Rounds</h3>
-        <div className="sensors-grid">
-          {recentTen.map((round) => (
-            <div key={round.roundId} className="sensor-card">
-              <div className="sensor-header">
-                <span>Round #{round.roundId}</span>
-                <span className="farm-id">{new Date(round.timestamp * 1000).toLocaleString()}</span>
-              </div>
-              <div className="sensor-readings">
-                <div className="reading">
-                  <span>Value:</span>
-                  <span>{parseFloat(round.value).toFixed(1)}mm</span>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
+      <Card sx={{ mb: 2 }}>
+        <CardContent>
+          <Typography variant="subtitle1" sx={{ mb: 2 }}>📡 Recent Oracle Rounds</Typography>
+          <Grid container spacing={2}>
+            {recentTen.map((round) => (
+              <Grid item xs={12} sm={6} md={4} key={round.roundId}>
+                <Box sx={{ border: '1px solid', borderColor: 'divider', borderRadius: 1, p: 1.5 }}>
+                  <Stack direction="row" justifyContent="space-between" sx={{ mb: 1 }}>
+                    <Typography variant="body2">Round #{round.roundId}</Typography>
+                    <Typography variant="caption" color="text.secondary">{new Date(round.timestamp * 1000).toLocaleString()}</Typography>
+                  </Stack>
+                  <Typography variant="body2">Value: {parseFloat(round.value).toFixed(1)}mm</Typography>
+                </Box>
+              </Grid>
+            ))}
+          </Grid>
+        </CardContent>
+      </Card>
 
-      <div className="weather-chart">
-        <h3>📈 Weather Trends (Rainfall Over Time)</h3>
-        <div className="chart-container">
+      <Card>
+        <CardContent>
+          <Typography variant="subtitle1" sx={{ mb: 2 }}>📈 Weather Trends (Last 7 Rounds)</Typography>
           {lastSevenRounds.length > 0 ? (
-            <div className="trend-chart">
+            <Box sx={{ display: 'flex', alignItems: 'flex-end', height: 180 }}>
               {(() => {
                 const values = lastSevenRounds.map(r => parseFloat(r.value));
                 const maxValue = Math.max(1, ...values);
@@ -168,26 +158,34 @@ const WeatherFeed = () => {
                   const val = parseFloat(r.value) || 0;
                   const percentage = (val / maxValue) * 100;
                   return (
-                    <div key={r.roundId} className="chart-bar">
-                      <div 
-                        className="bar-fill" 
-                        style={{ height: `${percentage}%` }}
+                    <Box key={r.roundId} sx={{ flex: 1, px: 0.5 }}>
+                      <Box
+                        sx={{
+                          height: `${percentage}%`,
+                          bgcolor: 'primary.main',
+                          borderRadius: 0.5,
+                          display: 'flex',
+                          alignItems: 'flex-end',
+                          justifyContent: 'center',
+                          color: 'primary.contrastText',
+                          pb: 0.5
+                        }}
                         title={`Round ${r.roundId}: ${val.toFixed(1)}mm`}
                       >
-                        <span className="bar-value">{val.toFixed(0)}mm</span>
-                      </div>
-                      <div className="bar-label">R{r.roundId}</div>
-                    </div>
+                        <Typography variant="caption">{val.toFixed(0)}mm</Typography>
+                      </Box>
+                      <Typography variant="caption" sx={{ display: 'block', textAlign: 'center', mt: 0.5 }}>R{r.roundId}</Typography>
+                    </Box>
                   );
                 });
               })()}
-            </div>
+            </Box>
           ) : (
-            <p>No data available for chart</p>
+            <Typography variant="body2" color="text.secondary">No data available for chart</Typography>
           )}
-        </div>
-      </div>
-    </div>
+        </CardContent>
+      </Card>
+    </Container>
   );
 };
 

@@ -2,35 +2,61 @@ import React, { useState, useEffect } from 'react';
 import { useWeb3 } from '../hooks/useWeb3.js';
 import { useApi } from '../hooks/useApi.js';
 import { ethers } from 'ethers';
+import { Container, Stack, Typography, Button, Grid, Card, CardContent, Chip, Box } from '@mui/material';
 
 const MyPolicies = () => {
   const { account, isConnected, provider } = useWeb3();
   const { data: policiesData, loading, refetch } = useApi(account ? `/api/policies/farmer/${account}` : null);
   const [processing, setProcessing] = useState(false);
   const [refreshKey, setRefreshKey] = useState(0);
+  const [showAllPolicies, setShowAllPolicies] = useState(false);
+  const [allPoliciesData, setAllPoliciesData] = useState(null);
+  const [allPoliciesLoading, setAllPoliciesLoading] = useState(false);
   
-  // Listen for policy creation events and auto-refresh
+  useEffect(() => {
+    console.log('🔍 MyPolicies - Account:', account);
+    console.log('🔍 MyPolicies - Policies data:', policiesData);
+    if (policiesData) {
+      const allPolicies = policiesData.data || policiesData.policies || [];
+      const activePolicies = allPolicies.filter(p => p.status === 0 || p.statusString === 'Active');
+      console.log('🔍 MyPolicies - Active policies:', activePolicies.length);
+    }
+  }, [account, policiesData]);
+  
   useEffect(() => {
     const handlePolicyCreated = async () => {
-      console.log('Policy created event received, refreshing policies...');
-      // Wait a moment for blockchain to update
       await new Promise(resolve => setTimeout(resolve, 1500));
       if (refetch) {
         await refetch();
         setRefreshKey(prev => prev + 1);
       }
     };
-    
     window.addEventListener('policyCreated', handlePolicyCreated);
-    
-    return () => {
-      window.removeEventListener('policyCreated', handlePolicyCreated);
-    };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []); // Empty deps - only set up listener once
+    return () => window.removeEventListener('policyCreated', handlePolicyCreated);
+  }, []);
+  
+  const fetchAllPolicies = async () => {
+    setAllPoliciesLoading(true);
+    try {
+      const res = await fetch(`http://localhost:3001/api/policies/all?t=${Date.now()}`);
+      const data = await res.json();
+      if (data.success && data.data) {
+        setAllPoliciesData(data.data);
+      }
+    } catch (err) {
+      console.error('Error loading all policies:', err);
+    } finally {
+      setAllPoliciesLoading(false);
+    }
+  };
   
   const handleViewDetails = (policyId) => {
-    alert(`Policy Details:\nID: ${policyId}\n\nThis feature will show detailed policy information in a modal.\nCurrently under development.`);
+    alert(`Policy Details\n\nID: ${policyId}`);
+  };
+  
+  const handleViewAllPolicies = () => {
+    setShowAllPolicies(true);
+    if (!allPoliciesData) fetchAllPolicies();
   };
   
   const handleCheckPayout = async (policy) => {
@@ -38,185 +64,54 @@ const MyPolicies = () => {
       alert('Please connect your wallet first');
       return;
     }
-    
-    // Check if connected to correct network
     try {
       const network = await provider.getNetwork();
       if (network.chainId !== 1337n) {
-        alert(`❌ Wrong Network!\n\nYou're connected to Chain ID: ${network.chainId}\n\nPlease switch MetaMask to "Localhost 8545" (Chain ID: 1337)`);
+        alert(`❌ Wrong Network!\nYou're connected to Chain ID: ${network.chainId}\nSwitch MetaMask to \"Localhost 8545\" (Chain ID: 1337)`);
         return;
       }
     } catch (err) {
       console.error('Network check error:', err);
     }
-    
-    // Allow finalizing anytime! Early claim if conditions are met
     if (policy.status === 1 || policy.statusString === 'PaidOut') {
       alert('✅ This policy has already been paid out!');
       return;
     }
-    
     if (policy.status === 2 || policy.statusString === 'Expired') {
       alert('This policy expired with no payout conditions met.');
       return;
     }
-    
-    // Check if policy has started (startTs must be in the past)
     const currentTime = Math.floor(Date.now() / 1000);
     if (policy.startTs > currentTime) {
-      const secondsUntilStart = policy.startTs - currentTime;
-      const minutesUntilStart = Math.floor(secondsUntilStart / 60);
-      alert(`⏳ Policy hasn't started yet!\n\nPolicy starts in ${minutesUntilStart} minute(s).\nStart time: ${new Date(policy.startTs * 1000).toLocaleString()}\n\nPlease wait until the policy start time to finalize.`);
+      const minutesUntilStart = Math.floor((policy.startTs - currentTime) / 60);
+      alert(`⏳ Policy hasn't started yet!\nStarts in ${minutesUntilStart} minute(s).`);
       return;
     }
-    
-      const confirmFinalize = window.confirm(
-        `Finalize Policy #${policy.policyId}?\n\n` +
-        `This will check oracle data and execute payout if conditions are met.\n` +
-        `Payout Amount: ${policy.payoutAmount ? (parseFloat(policy.payoutAmount) / 1e18).toFixed(4) : '0'} ETH\n\n` +
-        `Proceed with MetaMask transaction?`
-      );
-      
-      if (!confirmFinalize) return;
-      
-      setProcessing(true);
-      
-    // Declare currentPolicyData outside try block so it's accessible in catch
-    let currentPolicyData = null;
-    
+    const confirmFinalize = window.confirm(`Finalize Policy #${policy.policyId}?`);
+    if (!confirmFinalize) return;
+    setProcessing(true);
     try {
       const signer = await provider.getSigner();
-      // Get contract address from backend
       const contractsResponse = await fetch('http://localhost:3001/api/contracts/addresses');
       const contracts = await contractsResponse.json();
-      const policyFactoryAddress = contracts.PolicyFactory;
-      const policyFactoryAbi = [
-        "function finalize(uint256 policyId)",
-        "function getPolicy(uint256 policyId) view returns (uint256 policyId, address holder, uint256 productId, uint64 startTs, uint64 endTs, uint64 threshold, uint256 premiumPaid, uint256 payoutAmount, uint8 status)",
-        "function oracle() view returns (address)",
-        "function hasActivePolicy(address holder) view returns (bool)"
-      ];
-      
-      const policyFactory = new ethers.Contract(policyFactoryAddress, policyFactoryAbi, signer);
-      
-      // Try to get current policy details before finalizing to provide better error messages
-      try {
-        currentPolicyData = await policyFactory.getPolicy(policy.policyId);
-      } catch (err) {
-        console.warn('Could not fetch current policy data:', err);
-      }
-      
+      const policyFactory = new ethers.Contract(contracts.PolicyFactory, [
+        'function finalize(uint256 policyId)'
+      ], signer);
       const tx = await policyFactory.finalize(policy.policyId);
-      alert(`Transaction submitted: ${tx.hash}\nPlease wait for confirmation...`);
-      
+      alert(`Transaction submitted: ${tx.hash}`);
       const receipt = await tx.wait();
-      alert(`✅ Policy finalized!\nTransaction: ${receipt.hash}\n\nCheck your wallet for any payout.`);
-      
-      // Dispatch event for other components (Dashboard) to refresh
+      alert(`✅ Policy finalized!\nTx: ${receipt.hash}`);
       window.dispatchEvent(new CustomEvent('policyFinalized', { detail: { policyId: policy.policyId } }));
-      
-      // Wait a moment for blockchain state to update, then refresh
-      console.log('Waiting for blockchain state to update...');
       await new Promise(resolve => setTimeout(resolve, 2000));
-      
-      // Force refetch policies from blockchain
-      console.log('Refetching policies...');
       if (refetch) {
         await refetch();
-        console.log('✅ Policies refetched');
-        // Force UI update
         setRefreshKey(prev => prev + 1);
       } else {
-        console.log('Refetch function not available, reloading page...');
         window.location.reload();
       }
     } catch (error) {
       console.error('Error finalizing policy:', error);
-      
-      // Parse error from various sources (ethers.js can have different error structures)
-      const errorString = JSON.stringify(error);
-      const errorMsg = error.message || error.reason || error.data?.message || error.error?.message || errorString || '';
-      const errorCode = error.code || error.data?.code || '';
-      
-      let errorMessage = 'Unable to finalize policy.\n\n';
-      
-      if (errorMsg.includes('network') || errorCode === 'NETWORK_ERROR') {
-        errorMessage += '❌ Network Error:\n';
-        errorMessage += 'Make sure MetaMask is connected to "Localhost 8545" network.\n\n';
-        errorMessage += 'In MetaMask, switch to "Localhost 8545" or add it:\n';
-        errorMessage += 'RPC URL: http://127.0.0.1:8545\n';
-        errorMessage += 'Chain ID: 1337';
-      } else if (errorMsg.includes('user rejected') || errorCode === 4001 || errorCode === 'ACTION_REJECTED') {
-        errorMessage += 'Transaction was cancelled.';
-      } else if (errorMsg.includes('insufficient funds') || errorMsg.includes('insufficient balance')) {
-        errorMessage += 'Not enough ETH for gas fees.';
-      } else if (errorMsg.includes('Invalid amount')) {
-        errorMessage += '❌ Invalid Amount Error:\n';
-        errorMessage += 'This policy has a payout amount of 0 ETH (free product).\n';
-        errorMessage += 'Payouts with 0 amount cannot be processed.\n\n';
-        errorMessage += 'Note: This is a demo policy - real policies would have payout amounts.';
-      } else if (errorMsg.includes('Invalid time window') || errorMsg.includes('time window') || errorMsg.includes('has not started yet')) {
-        errorMessage += '❌ Invalid Time Window Error:\n';
-        errorMessage += 'The policy start time hasn\'t been reached yet.\n';
-        errorMessage += 'Please wait until the policy start time to finalize.\n\n';
-        if (policy.startTs) {
-          errorMessage += `Policy starts at: ${new Date(policy.startTs * 1000).toLocaleString()}`;
-        }
-      } else if (errorMsg.includes('Conditions not met') || errorMsg.includes('above threshold') || 
-                 errorMsg.includes('cumulative rainfall') || errorMsg.includes('payout conditions')) {
-        // Parse the detailed error message
-        errorMessage = '❌ Cannot Finalize Policy - Conditions Not Met\n\n';
-        errorMessage += '━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n';
-        
-        // Extract policy details if available
-        const threshold = policy.threshold || currentPolicyData?.threshold?.toString() || 'N/A';
-        const startTs = policy.startTs || currentPolicyData?.startTs?.toString() || Date.now() / 1000;
-        const endTs = policy.endTs || currentPolicyData?.endTs?.toString() || Date.now() / 1000;
-        const currentTime = Math.floor(Date.now() / 1000);
-        const isExpired = currentTime >= endTs;
-        
-        errorMessage += '📋 Policy Details:\n';
-        errorMessage += `   • Policy ID: #${policy.policyId}\n`;
-        errorMessage += `   • Threshold: ${threshold}mm (cumulative rainfall must be BELOW this)\n`;
-        errorMessage += `   • Start Date: ${new Date(startTs * 1000).toLocaleString()}\n`;
-        errorMessage += `   • End Date: ${new Date(endTs * 1000).toLocaleString()}\n`;
-        errorMessage += `   • Current Status: ${isExpired ? 'EXPIRED' : 'ACTIVE'}\n\n`;
-        
-        errorMessage += '❌ Why Finalization Failed:\n';
-        errorMessage += '   The cumulative rainfall during the policy period is ABOVE your threshold.\n';
-        errorMessage += '   This means payout conditions are NOT satisfied.\n\n';
-        
-        errorMessage += '✅ When You CAN Finalize:\n';
-        errorMessage += '   1. If cumulative rainfall < threshold → Payout will be processed\n';
-        errorMessage += '   2. If policy has expired (even if conditions not met) → Policy expires, no payout\n\n';
-        
-        if (!isExpired) {
-          const timeUntilExpiry = endTs - currentTime;
-          const hoursUntilExpiry = Math.floor(timeUntilExpiry / 3600);
-          const minutesUntilExpiry = Math.floor((timeUntilExpiry % 3600) / 60);
-          errorMessage += `⏳ Policy Status:\n`;
-          errorMessage += `   • Policy is still ACTIVE\n`;
-          errorMessage += `   • Expires in: ${hoursUntilExpiry}h ${minutesUntilExpiry}m\n`;
-          errorMessage += `   • You can finalize once it expires (even if conditions aren't met)\n\n`;
-        } else {
-          errorMessage += `⚠️ Note: Your policy has expired. You should be able to finalize it now.\n`;
-          errorMessage += `   If you're still seeing this error, there may be a blockchain sync issue.\n\n`;
-        }
-        
-        errorMessage += '💡 What This Means:\n';
-        errorMessage += '   Your insurance protects against LOW rainfall (drought conditions).\n';
-        errorMessage += '   Since rainfall is above the threshold, no payout is due.\n';
-        errorMessage += '   If the policy expires without payout, your premium stays with the insurance company.';
-      } else {
-        errorMessage += `Error: ${errorMsg || 'Unknown error'}\n\n`;
-        errorMessage += 'Please make sure:\n';
-        errorMessage += '1. MetaMask is on "Localhost 8545"\n';
-        errorMessage += '2. You have some ETH for gas\n';
-        errorMessage += '3. Hardhat node is running (npx hardhat node)\n';
-        errorMessage += '4. Policy start time has passed';
-      }
-      
-      alert(errorMessage);
+      alert('Unable to finalize policy. Please check network and try again.');
     } finally {
       setProcessing(false);
     }
@@ -224,86 +119,129 @@ const MyPolicies = () => {
 
   if (!isConnected) {
     return (
-      <div className="my-policies">
-        <h2>📋 My Policies</h2>
-        <p>Please connect your wallet to view your policies.</p>
-      </div>
+      <Container maxWidth="lg" sx={{ py: 3 }}>
+        <Typography variant="h5">📋 My Policies</Typography>
+        <Typography variant="body2" color="text.secondary" sx={{ mt: 1 }}>Please connect your wallet to view your policies.</Typography>
+      </Container>
     );
   }
 
-  return (
-    <div className="my-policies">
-      <h2>📋 My Policies</h2>
-      
-      {loading ? (
-        <div className="loading">Loading policies...</div>
-      ) : policiesData && ((policiesData.data && policiesData.data.length > 0) || (policiesData.policies && policiesData.policies.length > 0)) ? (
-        <div className="policies-list">
-          {(policiesData.data || policiesData.policies || []).map((policy, index) => (
-            <div key={`${policy.policyId}-${refreshKey}`} className="policy-card">
-              <div className="policy-header">
-                <h3>Policy #{policy.policyId}</h3>
-                <span className={`status ${policy.statusString === 'Active' || policy.status === 0 ? 'active' : 'inactive'}`}>
-                  {policy.statusString || (policy.status === 0 ? 'Active' : policy.status === 1 ? 'PaidOut' : 'Inactive')}
-                </span>
-              </div>
-              
-              <div className="policy-details">
-                <div className="detail-row">
-                  <span>Product:</span>
-                  <span>{policy.productName || 'N/A'}</span>
-                </div>
-                <div className="detail-row">
-                  <span>Premium:</span>
-                  <span>{policy.premiumPaid ? ethers.formatEther(policy.premiumPaid) : '0'} ETH</span>
-                </div>
-                <div className="detail-row">
-                  <span>Payout:</span>
-                  <span>{policy.payoutAmount ? ethers.formatEther(policy.payoutAmount) : '0'} ETH</span>
-                </div>
-                <div className="detail-row">
-                  <span>Threshold:</span>
-                  <span>{policy.threshold}mm</span>
-                </div>
-                <div className="detail-row">
-                  <span>Duration:</span>
-                  <span>{policy.startTs && policy.endTs ? Math.floor((policy.endTs - policy.startTs) / 86400) : 'N/A'} days</span>
-                </div>
-                <div className="detail-row">
-                  <span>Status:</span>
-                  <span>{policy.statusString || (policy.status === 0 ? 'Active' : policy.status === 1 ? 'PaidOut' : 'Expired')}</span>
-                </div>
-                <div className="detail-row">
-                  <span>Created:</span>
-                  <span>{policy.startTs ? new Date(policy.startTs * 1000).toLocaleDateString() : 'Invalid Date'}</span>
-                </div>
-                <div className="detail-row">
-                  <span>Expires:</span>
-                  <span>{policy.endTs ? new Date(policy.endTs * 1000).toLocaleDateString() : 'Invalid Date'}</span>
-                </div>
-              </div>
+  const renderPolicyCard = (policy, key, extraBadge) => (
+    <Card key={key}>
+      <CardContent>
+        <Stack direction="row" justifyContent="space-between" alignItems="center" sx={{ mb: 1 }}>
+          <Stack direction="row" spacing={1} alignItems="center">
+            <Typography variant="subtitle1">Policy #{policy.policyId}</Typography>
+            {extraBadge}
+          </Stack>
+          <Chip label={policy.statusString || (policy.status === 0 ? 'Active' : policy.status === 1 ? 'PaidOut' : 'Expired')} color={(policy.statusString === 'Active' || policy.status === 0) ? 'success' : 'default'} size="small" />
+        </Stack>
+        <Grid container spacing={2}>
+          {policy.holder && (
+            <Grid item xs={12} md={6}>
+              <Typography variant="caption" color="text.secondary">Owner</Typography>
+              <Typography variant="body2">{policy.holder.slice(0, 6)}...{policy.holder.slice(-4)}</Typography>
+            </Grid>
+          )}
+          <Grid item xs={12} md={6}>
+            <Typography variant="caption" color="text.secondary">Product</Typography>
+            <Typography variant="body2">{policy.productName || 'N/A'}</Typography>
+          </Grid>
+          <Grid item xs={6} md={3}>
+            <Typography variant="caption" color="text.secondary">Premium</Typography>
+            <Typography variant="body2">{policy.premiumPaid ? ethers.formatEther(policy.premiumPaid) : '0'} ETH</Typography>
+          </Grid>
+          <Grid item xs={6} md={3}>
+            <Typography variant="caption" color="text.secondary">Payout</Typography>
+            <Typography variant="body2">{policy.payoutAmount ? ethers.formatEther(policy.payoutAmount) : '0'} ETH</Typography>
+          </Grid>
+          <Grid item xs={6} md={3}>
+            <Typography variant="caption" color="text.secondary">Threshold</Typography>
+            <Typography variant="body2">{policy.threshold}mm</Typography>
+          </Grid>
+          <Grid item xs={6} md={3}>
+            <Typography variant="caption" color="text.secondary">Duration</Typography>
+            <Typography variant="body2">{policy.startTs && policy.endTs ? Math.floor((policy.endTs - policy.startTs) / 86400) : 'N/A'} days</Typography>
+          </Grid>
+          <Grid item xs={6} md={3}>
+            <Typography variant="caption" color="text.secondary">Created</Typography>
+            <Typography variant="body2">{policy.startTs ? new Date(policy.startTs * 1000).toLocaleDateString() : 'N/A'}</Typography>
+          </Grid>
+          <Grid item xs={6} md={3}>
+            <Typography variant="caption" color="text.secondary">Expires</Typography>
+            <Typography variant="body2">{policy.endTs ? new Date(policy.endTs * 1000).toLocaleDateString() : 'N/A'}</Typography>
+          </Grid>
+        </Grid>
+        <Stack direction="row" spacing={1} sx={{ mt: 2 }}>
+          <Button size="small" variant="outlined" onClick={() => handleViewDetails(policy.policyId)}>View Details</Button>
+          <Button size="small" variant="contained" onClick={() => handleCheckPayout(policy)} disabled={processing || policy.statusString === 'PaidOut' || policy.statusString === 'Expired'}>
+            {processing ? 'Processing...' : (policy.statusString === 'Active' ? 'Finalize Policy' : 'Already Finalized')}
+          </Button>
+        </Stack>
+      </CardContent>
+    </Card>
+  );
 
-              <div className="policy-actions">
-                <button className="action-btn" onClick={() => handleViewDetails(policy.policyId)}>View Details</button>
-                <button 
-                  className="action-btn" 
-                  onClick={() => handleCheckPayout(policy)}
-                  disabled={processing || policy.statusString === 'PaidOut' || policy.statusString === 'Expired'}
-                >
-                  {processing ? 'Processing...' : (policy.statusString === 'Active' ? 'Finalize Policy' : 'Already Finalized')}
-                </button>
-                <button className="action-btn" onClick={() => { setRefreshKey(prev => prev + 1); refetch(); }}>Refresh</button>
-              </div>
-            </div>
+  const myPolicies = (policiesData?.data || policiesData?.policies || []);
+
+  return (
+    <Container maxWidth="lg" sx={{ py: 3 }}>
+      <Stack direction="row" alignItems="center" justifyContent="space-between" sx={{ mb: 2 }}>
+        <Typography variant="h5" sx={{ m: 0 }}>📋 My Policies</Typography>
+        <Stack direction="row" spacing={1}>
+          <Button variant="outlined" onClick={() => { setRefreshKey(prev => prev + 1); refetch(); }}>Refresh</Button>
+          <Button variant="contained" onClick={showAllPolicies ? () => setShowAllPolicies(false) : handleViewAllPolicies}>
+            {showAllPolicies ? '← Back to My Policies' : '🌐 View All Policies'}
+          </Button>
+        </Stack>
+      </Stack>
+
+      {showAllPolicies ? (
+        <Box>
+          <Typography variant="subtitle1" sx={{ mb: 2 }}>🌐 All Active Policies (All Accounts)</Typography>
+          {allPoliciesLoading ? (
+            <Typography variant="body2" color="text.secondary">Loading all policies...</Typography>
+          ) : allPoliciesData && allPoliciesData.length > 0 ? (
+            <Grid container spacing={2}>
+              {allPoliciesData
+                .filter(p => p.status === 0 || p.statusString === 'Active')
+                .sort((a, b) => b.policyId - a.policyId)
+                .map((policy, index) => {
+                  const isMyPolicy = policy.holder && account && policy.holder.toLowerCase() === account.toLowerCase();
+                  return (
+                    <Grid item xs={12} key={`all-${policy.policyId}-${index}`}>
+                      {renderPolicyCard(policy, `all-${policy.policyId}-${index}`, isMyPolicy ? <Chip label="Your Policy" color="success" size="small"/> : null)}
+                    </Grid>
+                  );
+                })}
+            </Grid>
+          ) : (
+            <Stack spacing={1}>
+              <Typography variant="body2">No active policies found in the system.</Typography>
+              <Button size="small" variant="outlined" onClick={fetchAllPolicies}>Refresh</Button>
+            </Stack>
+          )}
+        </Box>
+      ) : loading ? (
+        <Typography variant="body2" color="text.secondary">Loading policies...</Typography>
+      ) : myPolicies && myPolicies.length > 0 ? (
+        <Grid container spacing={2}>
+          {myPolicies
+            .filter(p => p.status === 0 || p.statusString === 'Active')
+            .sort((a, b) => b.policyId - a.policyId)
+            .map((policy, index) => (
+              <Grid item xs={12} key={`${policy.policyId}-${refreshKey}`}>
+                {renderPolicyCard(policy, `${policy.policyId}-${refreshKey}`)}
+              </Grid>
           ))}
-        </div>
+        </Grid>
       ) : (
-        <div className="no-policies">
-          <p>No policies found. Create your first policy to get started!</p>
-          <button className="action-btn" onClick={refetch}>Refresh</button>
-        </div>
+        <Stack spacing={1}>
+          <Typography variant="body2">No policies found. Create your first policy to get started!</Typography>
+          <Button size="small" variant="outlined" onClick={refetch}>Refresh</Button>
+        </Stack>
       )}
-    </div>
+    </Container>
   );
 };
 

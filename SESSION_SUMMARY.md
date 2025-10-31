@@ -55,7 +55,7 @@ npm start
 ```
 
 ### Current Runtime Status (this session)
-- **Frontend**: http://localhost:3020 (clean worktree from `origin/main`)
+- **Frontend**: http://localhost:3021 (local updated UI with KPI cards)
 - **Backend**: http://localhost:3001/health
 - **Oracle**: http://localhost:3002/api/oracle/health
 - **Hardhat node**: 127.0.0.1:8545 (chainId 1337)
@@ -76,10 +76,12 @@ cd backend && FRONTEND_URL=http://localhost:3010 PORT=3001 npm start &
 cd ../oracle && npm start &
 cd ../iot-sim && npm start &
 
-# frontend on port 3020 (clean worktree)
-cd '../../AgriInsure-remote-main/frontend' && PORT=3020 npm start
+# frontend on port 3021 (local updated UI)
+cd frontend && PORT=3021 npm start
 
-# Note: Removed legacy folder `agriinsure/` to avoid confusion
+# Notes
+# - Old frontend on 3020 is stopped; use 3021 as the canonical UI
+# - Legacy folder `agriinsure/` was removed to avoid confusion
 ```
 
 ### Key Features Working:
