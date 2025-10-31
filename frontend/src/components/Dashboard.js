@@ -8,6 +8,7 @@ const Dashboard = () => {
   const { account, connectWallet, isConnected } = useWeb3();
   const [stats, setStats] = useState({
     activePolicies: 0,
+    allActivePolicies: 0,
     totalPremium: 0,
     totalPayouts: 0,
     policies: []
@@ -28,8 +29,21 @@ const Dashboard = () => {
           }, 0);
           const totalPayouts = data.policies.filter(p => p.status === 1 || p.statusString === 'PaidOut').length;
           
+          // Fetch all active policies across all accounts
+          let allActive = 0;
+          try {
+            const allRes = await fetch(`http://localhost:3001/api/policies/all?limit=1000&t=${Date.now()}`);
+            const allData = await allRes.json();
+            if (allData.success && Array.isArray(allData.data)) {
+              allActive = allData.data.filter(p => p.status === 0 || p.statusString === 'Active').length;
+            }
+          } catch (e) {
+            console.warn('Failed to load all policies:', e);
+          }
+          
           setStats({
             activePolicies: active,
+            allActivePolicies: allActive,
             totalPremium: totalPremium,
             totalPayouts: totalPayouts,
             policies: data.policies
@@ -78,6 +92,10 @@ const Dashboard = () => {
         <div className="stat-card">
           <h3>Active Policies</h3>
           <p className="stat-number">{stats.activePolicies}</p>
+        </div>
+        <div className="stat-card">
+          <h3>All Active Policies</h3>
+          <p className="stat-number">{stats.allActivePolicies}</p>
         </div>
         <div className="stat-card">
           <h3>Total Premium</h3>
