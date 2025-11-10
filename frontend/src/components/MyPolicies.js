@@ -27,6 +27,16 @@ const MyPolicies = () => {
   }, [account, policiesData]);
   
   useEffect(() => {
+    if (!isConnected || !refetch) return undefined;
+
+    const intervalId = setInterval(() => {
+      refetch();
+    }, 15000);
+
+    return () => clearInterval(intervalId);
+  }, [isConnected, refetch]);
+
+  useEffect(() => {
     const handlePolicyCreated = async () => {
       await new Promise(resolve => setTimeout(resolve, 1500));
       if (refetch) {
