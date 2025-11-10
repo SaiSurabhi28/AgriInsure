@@ -67,21 +67,19 @@ const Dashboard = () => {
     }
   }, []);
 
-  const fetchStats = async () => {
-    if (!account || !isConnected) return;
+  const fetchPlatformStats = useCallback(async () => {
     try {
-      const res = await fetch(`http://localhost:3001/api/policies/farmer/${account}`);
+      const res = await fetch(`http://localhost:3001/api/policies/all?limit=500`);
       const data = await res.json();
-      if (data.success && data.data) {
+      if (data.success && Array.isArray(data.data)) {
         const policies = data.data;
         const active = policies.filter(p => p.status === 0 || p.statusString === 'Active').length;
         const totalPremiumWei = policies.reduce((sum, p) => {
           const value = p?.premiumPaid ? BigInt(p.premiumPaid) : 0n;
           return sum + value;
         }, 0n);
-        const totalPayoutPolicies = policies.filter(p => p.status === 1 || p.statusString === 'PaidOut');
-        const totalPayouts = totalPayoutPolicies.length;
-        const totalPayoutWei = totalPayoutPolicies.reduce((sum, p) => {
+        const payoutPolicies = policies.filter(p => p.status === 1 || p.statusString === 'PaidOut');
+        const totalPayoutWei = payoutPolicies.reduce((sum, p) => {
           const value = p?.payoutAmount ? BigInt(p.payoutAmount) : 0n;
           return sum + value;
         }, 0n);
@@ -92,7 +90,7 @@ const Dashboard = () => {
           activePolicies: active,
           totalPremiumEth,
           totalPayoutEth,
-          payoutCount: totalPayouts,
+          payoutCount: payoutPolicies.length,
           totalPremiumWei: totalPremiumWei.toString(),
           totalPayoutWei: totalPayoutWei.toString(),
           policies: policies
@@ -101,7 +99,7 @@ const Dashboard = () => {
     } catch (err) {
       console.error('Error loading policies:', err);
     }
-  };
+  }, []);
 
   const fetchTreasuryLedger = async () => {
     try {
@@ -129,13 +127,13 @@ const Dashboard = () => {
   };
 
   useEffect(() => {
-    fetchStats();
+    fetchPlatformStats();
     fetchWeatherData();
     const interval = setInterval(fetchWeatherData, 10000);
     fetchTreasuryLedger();
     const handlePolicyEvent = async () => {
       await new Promise(resolve => setTimeout(resolve, 1500));
-      fetchStats();
+      fetchPlatformStats();
       fetchTreasuryLedger();
     };
     window.addEventListener('policyCreated', handlePolicyEvent);
@@ -145,7 +143,7 @@ const Dashboard = () => {
       window.removeEventListener('policyCreated', handlePolicyEvent);
       window.removeEventListener('policyFinalized', handlePolicyEvent);
     };
-  }, [account, isConnected, fetchWeatherData]);
+  }, [fetchWeatherData, fetchPlatformStats]);
 
   const formatLedgerDate = (iso) => {
     if (!iso) return '--';
@@ -167,7 +165,7 @@ const Dashboard = () => {
         ) : (
           <Stack direction="row" spacing={2} alignItems="center">
             <Typography variant="body2">Connected: {account?.slice(0, 6)}...{account?.slice(-4)}</Typography>
-            <Button variant="outlined" onClick={fetchStats}>🔄 Refresh</Button>
+            <Button variant="outlined" onClick={() => { fetchPlatformStats(); fetchTreasuryLedger(); }}>🔄 Refresh</Button>
           </Stack>
         )}
       </Stack>
