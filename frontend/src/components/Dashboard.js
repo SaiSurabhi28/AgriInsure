@@ -182,25 +182,19 @@ const Dashboard = () => {
           </Card>
         </Grid>
         <Grid item xs={12} sm={6} md={3}>
-          <Card sx={{
-            background: 'linear-gradient(135deg, #6a11cb 0%, #2575fc 100%)',
-            color: '#fff'
-          }}>
+          <Card>
             <CardContent>
-              <Typography variant="subtitle2" sx={{ opacity: 0.85 }}>Total Premium Paid</Typography>
+              <Typography variant="subtitle2" color="text.secondary">Total Premium Paid</Typography>
               <Typography variant="h5" sx={{ mt: 1 }}>{formatEth(stats.totalPremiumEth)} ETH</Typography>
             </CardContent>
           </Card>
         </Grid>
         <Grid item xs={12} sm={6} md={3}>
-          <Card sx={{
-            background: 'linear-gradient(135deg, #11998e 0%, #38ef7d 100%)',
-            color: '#fff'
-          }}>
+          <Card>
             <CardContent>
-              <Typography variant="subtitle2" sx={{ opacity: 0.85 }}>Payouts Executed</Typography>
+              <Typography variant="subtitle2" color="text.secondary">Payouts Executed</Typography>
               <Typography variant="h5" sx={{ mt: 1 }}>{formatEth(stats.totalPayoutEth)} ETH</Typography>
-              <Typography variant="body2" sx={{ opacity: 0.85 }}>{stats.payoutCount} payout{stats.payoutCount === 1 ? '' : 's'}</Typography>
+              <Typography variant="body2" color="text.secondary">{stats.payoutCount} payout{stats.payoutCount === 1 ? '' : 's'}</Typography>
             </CardContent>
           </Card>
         </Grid>
