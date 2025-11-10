@@ -145,8 +145,11 @@ const CreatePolicy = () => {
       }
       
       const latestBlock = await provider.getBlock('latest');
-      const chainTimestamp = latestBlock?.timestamp ?? Math.floor(Date.now() / 1000);
-      const startTime = chainTimestamp + 300; // allow 5 minutes buffer
+      const chainTimestamp = typeof latestBlock?.timestamp === 'number'
+        ? latestBlock.timestamp
+        : Math.floor(Date.now() / 1000);
+      const realNow = Math.floor(Date.now() / 1000);
+      const startTime = Math.max(chainTimestamp, realNow) + 300; // allow 5 minutes buffer
       const durationDays = parseInt(formData.duration);
       const threshold = parseInt(formData.threshold);
       
@@ -267,8 +270,11 @@ const CreatePolicy = () => {
       }
 
       const latestBlock = await provider.getBlock('latest');
-      const chainTimestamp = latestBlock?.timestamp ?? Math.floor(Date.now() / 1000);
-      const startTime = chainTimestamp + 180; // 3 minute buffer for Hardhat time adjustments
+      const chainTimestamp = typeof latestBlock?.timestamp === 'number'
+        ? latestBlock.timestamp
+        : Math.floor(Date.now() / 1000);
+      const realNow = Math.floor(Date.now() / 1000);
+      const startTime = Math.max(chainTimestamp, realNow) + 180; // 3 minute buffer for Hardhat time adjustments
       const durationSeconds = 60;
       const threshold = parseInt(formData.threshold);
 
