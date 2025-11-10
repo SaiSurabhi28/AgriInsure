@@ -1,3 +1,5 @@
+/* global BigInt */
+
 import React, { useEffect, useState, useCallback } from 'react';
 import { ethers } from 'ethers';
 import { useWeb3 } from '../hooks/useWeb3.js';
