@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useCallback } from 'react';
+import { ethers } from 'ethers';
 import { useWeb3 } from '../hooks/useWeb3.js';
 import { useApi } from '../hooks/useApi.js';
 import { Container, Grid, Card, CardContent, Typography, Button, Stack, Box } from '@mui/material';
@@ -58,23 +59,34 @@ const Dashboard = () => {
       if (data.success && data.data) {
         const policies = data.data;
         const active = policies.filter(p => p.status === 0 || p.statusString === 'Active').length;
-        const totalPremium = policies.reduce((sum, p) => {
-          const premium = p.premiumPaid ? parseFloat(p.premiumPaid) / 1e18 : 0;
-          return sum + premium;
-        }, 0);
-        const totalPayouts = policies.filter(p => p.status === 1 || p.statusString === 'PaidOut').length;
-        const totalPayoutAmount = policies
-          .filter(p => p.status === 1 || p.statusString === 'PaidOut')
-          .reduce((sum, p) => {
-            const payout = p.payoutAmount ? parseFloat(p.payoutAmount) / 1e18 : 0;
-            return sum + payout;
-          }, 0);
-        const revenue = totalPremium - totalPayoutAmount;
+        const totalPremiumWei = policies.reduce((sum, p) => {
+          const value = p?.premiumPaid ? BigInt(p.premiumPaid) : 0n;
+          return sum + value;
+        }, 0n);
+        const totalPayoutPolicies = policies.filter(p => p.status === 1 || p.statusString === 'PaidOut');
+        const totalPayouts = totalPayoutPolicies.length;
+        const totalPayoutWei = totalPayoutPolicies.reduce((sum, p) => {
+          const value = p?.payoutAmount ? BigInt(p.payoutAmount) : 0n;
+          return sum + value;
+        }, 0n);
+        const revenueWei = totalPremiumWei - totalPayoutWei;
+
+        const totalPremiumEth = Number(ethers.formatEther(totalPremiumWei));
+        const totalPayoutEth = Number(ethers.formatEther(totalPayoutWei));
+        const revenueEthRaw = Number(ethers.formatEther(revenueWei));
+
+        const normalizedPremium = Math.abs(totalPremiumEth) < 0.00005 ? 0 : totalPremiumEth;
+        const normalizedRevenue = Math.abs(revenueEthRaw) < 0.00005 ? 0 : revenueEthRaw;
+
         setStats({
           activePolicies: active,
-          totalPremium: totalPremium,
+          totalPremium: normalizedPremium,
           totalPayouts: totalPayouts,
-          revenue: revenue,
+          revenue: normalizedRevenue,
+          totalPremiumWei: totalPremiumWei.toString(),
+          totalPayoutWei: totalPayoutWei.toString(),
+          revenueWei: revenueWei.toString(),
+          totalPayoutEth,
           policies: policies
         });
       }
