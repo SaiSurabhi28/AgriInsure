@@ -81,23 +81,6 @@ const WeatherFeed = () => {
 
   const latestRound = latestSample;
   const recentTen = historyRounds.slice(-10);
-  const lastSevenRoundsRaw = historyRounds.slice(-7);
-
-  const transformedRounds = lastSevenRoundsRaw.map((round, index) => {
-    const formattedTimestamp = new Date(round.timestamp * 1000);
-    return {
-      ...round,
-      trendRoundLabel: `R${historyRounds.length - lastSevenRoundsRaw.length + index + 1}`,
-      trendDateLabel: formattedTimestamp.toLocaleTimeString(),
-      rainfallVal: typeof round.rainfall === 'number' ? round.rainfall : 0
-    };
-  });
-
-  const maxRainfall = Math.max(1, ...transformedRounds.map(r => r.rainfallVal));
-  const minRainfall = Math.min(0, ...transformedRounds.map(r => r.rainfallVal));
-  const tickCount = 4;
-  const tickStep = (maxRainfall - minRainfall) / tickCount;
-  const ticks = Array.from({ length: tickCount + 1 }, (_, i) => minRainfall + (tickStep * i)).map(v => Math.max(0, v));
 
   return (
     <Container maxWidth="lg" sx={{ py: 3 }}>
@@ -194,67 +177,6 @@ const WeatherFeed = () => {
         </CardContent>
       </Card>
 
-      <Card>
-        <CardContent>
-          <Typography variant="subtitle1" sx={{ mb: 2 }}>📈 Weather Trends (Last 7 Rounds)</Typography>
-          {transformedRounds.length > 0 ? (
-            <Box sx={{ position: 'relative', height: 220, display: 'flex', flexDirection: 'column' }}>
-              <Box sx={{ position: 'absolute', top: 16, left: 0, bottom: 36, width: '100%', px: 4 }}>
-                <Box sx={{ position: 'absolute', top: -20, left: 0 }}>
-                  <Typography variant="caption" color="text.secondary">Rainfall (mm)</Typography>
-                </Box>
-                {ticks.map((tick, idx) => {
-                  const top = `${100 - ((tick - minRainfall) / (maxRainfall - minRainfall || 1)) * 100}%`;
-                  return (
-                    <Box key={idx} sx={{ position: 'absolute', left: 0, right: 0, top, display: 'flex', alignItems: 'center' }}>
-                      <Typography variant="caption" color="text.secondary" sx={{ width: 40 }}>{tick.toFixed(1)}</Typography>
-                      <Box sx={{ flex: 1, height: 1, bgcolor: 'divider' }} />
-                    </Box>
-                  );
-                })}
-              </Box>
-
-              <Box sx={{ flex: 1, display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', pl: 5, pr: 2, pb: 2 }}>
-                {transformedRounds.map(round => {
-                  const heightPercent = maxRainfall === minRainfall
-                    ? 100
-                    : ((round.rainfallVal - minRainfall) / (maxRainfall - minRainfall || 1)) * 100;
-                  return (
-                    <Box key={round.roundId} sx={{ flex: 1, mx: 0.5, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                      <Box
-                        sx={{
-                          height: `${Math.max(4, heightPercent)}%`,
-                          width: '60%',
-                          minWidth: 24,
-                          bgcolor: 'primary.main',
-                          borderRadius: 1,
-                          display: 'flex',
-                          alignItems: 'flex-end',
-                          justifyContent: 'center',
-                          color: 'primary.contrastText',
-                          pb: 0.5,
-                          transition: 'height 0.3s ease'
-                        }}
-                        title={`Round ${round.trendRoundLabel}: ${round.rainfallVal.toFixed(2)}mm`}
-                      >
-                        <Typography variant="caption" sx={{ fontSize: '0.7rem' }}>{round.rainfallVal.toFixed(1)}</Typography>
-                      </Box>
-                      <Typography variant="caption" color="text.secondary" sx={{ mt: 0.5 }}>{round.trendRoundLabel}</Typography>
-                      <Typography variant="caption" color="text.secondary">{round.trendDateLabel}</Typography>
-                    </Box>
-                  );
-                })}
-              </Box>
-
-              <Box sx={{ position: 'absolute', left: 0, right: 0, bottom: 8, display: 'flex', justifyContent: 'center' }}>
-                <Typography variant="caption" color="text.secondary">Rounds (most recent on right)</Typography>
-              </Box>
-            </Box>
-          ) : (
-            <Typography variant="body2" color="text.secondary">No data available for chart</Typography>
-          )}
-        </CardContent>
-      </Card>
     </Container>
   );
 };
