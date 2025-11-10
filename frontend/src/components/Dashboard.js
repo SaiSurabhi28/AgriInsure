@@ -14,7 +14,6 @@ const Dashboard = () => {
     activePolicies: 0,
     totalPremium: 0,
     totalPayouts: 0,
-    revenue: 0,
     policies: []
   });
   const [showFinalized, setShowFinalized] = useState(false);
@@ -71,23 +70,17 @@ const Dashboard = () => {
           const value = p?.payoutAmount ? BigInt(p.payoutAmount) : 0n;
           return sum + value;
         }, 0n);
-        const revenueWei = totalPremiumWei - totalPayoutWei;
-
         const totalPremiumEth = Number(ethers.formatEther(totalPremiumWei));
         const totalPayoutEth = Number(ethers.formatEther(totalPayoutWei));
-        const revenueEthRaw = Number(ethers.formatEther(revenueWei));
 
         const normalizedPremium = Math.abs(totalPremiumEth) < 0.00005 ? 0 : totalPremiumEth;
-        const normalizedRevenue = Math.abs(revenueEthRaw) < 0.00005 ? 0 : revenueEthRaw;
 
         setStats({
           activePolicies: active,
           totalPremium: normalizedPremium,
           totalPayouts: totalPayouts,
-          revenue: normalizedRevenue,
           totalPremiumWei: totalPremiumWei.toString(),
           totalPayoutWei: totalPayoutWei.toString(),
-          revenueWei: revenueWei.toString(),
           totalPayoutEth,
           policies: policies
         });
@@ -188,14 +181,6 @@ const Dashboard = () => {
             <CardContent>
               <Typography variant="subtitle2" color="text.secondary">Payouts Made</Typography>
               <Typography variant="h5">{stats.totalPayouts}</Typography>
-            </CardContent>
-          </Card>
-        </Grid>
-        <Grid item xs={12} sm={6} md={3}>
-          <Card>
-            <CardContent>
-              <Typography variant="subtitle2" color="text.secondary">Revenue</Typography>
-              <Typography variant="h5" sx={{ color: stats.revenue >= 0 ? 'success.main' : 'error.main' }}>{stats.revenue.toFixed(4)} ETH</Typography>
             </CardContent>
           </Card>
         </Grid>
