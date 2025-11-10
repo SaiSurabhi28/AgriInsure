@@ -145,8 +145,8 @@ const CreatePolicy = () => {
       }
       
       const latestBlock = await provider.getBlock('latest');
-      const chainTimestamp = typeof latestBlock?.timestamp === 'number'
-        ? latestBlock.timestamp
+      const chainTimestamp = latestBlock && typeof latestBlock.timestamp !== 'undefined'
+        ? Number(latestBlock.timestamp)
         : Math.floor(Date.now() / 1000);
       const realNow = Math.floor(Date.now() / 1000);
       const startTime = Math.max(chainTimestamp, realNow) + 300; // allow 5 minutes buffer
@@ -270,8 +270,8 @@ const CreatePolicy = () => {
       }
 
       const latestBlock = await provider.getBlock('latest');
-      const chainTimestamp = typeof latestBlock?.timestamp === 'number'
-        ? latestBlock.timestamp
+      const chainTimestamp = latestBlock && typeof latestBlock.timestamp !== 'undefined'
+        ? Number(latestBlock.timestamp)
         : Math.floor(Date.now() / 1000);
       const realNow = Math.floor(Date.now() / 1000);
       const startTime = Math.max(chainTimestamp, realNow) + 180; // 3 minute buffer for Hardhat time adjustments
