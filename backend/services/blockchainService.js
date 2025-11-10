@@ -399,8 +399,8 @@ class BlockchainService {
       policyId,
       holder: policy.holder,
       productId: Number(policy.productId),
-      startTs: Number(policy.startTimestamp),
-      endTs: Number(policy.endTimestamp),
+      startTs: Number(policy.startTs ?? policy.startTimestamp ?? policy.start_time ?? 0),
+      endTs: Number(policy.endTs ?? policy.endTimestamp ?? policy.end_time ?? 0),
       status: Number(policy.status),
       premiumPaid: policy.premiumPaid,
       payoutAmount: policy.payoutAmount
@@ -427,11 +427,13 @@ class BlockchainService {
       for (let policyId = 1; policyId <= latestPolicyId; policyId++) {
         try {
           const policy = await contract.getPolicy(policyId);
+          const status = Number(policy.status);
+          const endTimestamp = Number(policy.endTs ?? policy.endTimestamp ?? 0);
           if (
             policy.holder !== ethers.ZeroAddress &&
-            Number(policy.status) === 0 &&
-            Number(policy.endTimestamp) > 0 &&
-            Number(policy.endTimestamp) <= now
+            status === 0 &&
+            endTimestamp > 0 &&
+            endTimestamp <= now
           ) {
             const tx = await contractWithSigner.expirePolicy(policyId);
             await tx.wait();
