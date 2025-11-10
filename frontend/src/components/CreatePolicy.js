@@ -144,8 +144,9 @@ const CreatePolicy = () => {
         // Continue anyway - the contract will reject if policy exists
       }
       
-      // Create policy with MetaMask
-      const startTime = Math.floor(Date.now() / 1000) + 60; // 1 min from now
+      const latestBlock = await provider.getBlock('latest');
+      const chainTimestamp = latestBlock?.timestamp ?? Math.floor(Date.now() / 1000);
+      const startTime = chainTimestamp + 300; // allow 5 minutes buffer
       const durationDays = parseInt(formData.duration);
       const threshold = parseInt(formData.threshold);
       
@@ -265,8 +266,9 @@ const CreatePolicy = () => {
         console.warn('Could not check for active policy (test policy):', checkError.message);
       }
 
-      // Give MetaMask confirmation plenty of time before the policy starts
-      const startTime = Math.floor(Date.now() / 1000) + 90;
+      const latestBlock = await provider.getBlock('latest');
+      const chainTimestamp = latestBlock?.timestamp ?? Math.floor(Date.now() / 1000);
+      const startTime = chainTimestamp + 180; // 3 minute buffer for Hardhat time adjustments
       const durationSeconds = 60;
       const threshold = parseInt(formData.threshold);
 
