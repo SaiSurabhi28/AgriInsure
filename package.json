@@ -1,0 +1,42 @@
+{
+  "name": "agriinsure",
+  "version": "1.0.0",
+  "description": "Blockchain-Enabled Parametric Micro-Insurance for Farmers",
+  "main": "index.js",
+  "scripts": {
+    "test": "hardhat test",
+    "compile": "hardhat compile",
+    "deploy": "hardhat run scripts/deploy.js --network sepolia",
+    "deploy-local": "hardhat run scripts/deploy.js --network localhost",
+    "start-backend": "cd backend && npm start",
+    "start-frontend": "cd frontend && npm start",
+    "start-oracle": "cd oracle && npm start",
+    "start-iot": "cd iot-sim && npm start",
+    "dev": "concurrently \"npm run start-backend\" \"npm run start-frontend\" \"npm run start-oracle\" \"npm run start-iot\""
+  },
+  "keywords": [
+    "blockchain",
+    "insurance",
+    "agriculture",
+    "IoT",
+    "oracle"
+  ],
+  "author": "AgriInsure Team",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "concurrently": "^8.2.2",
+    "hardhat": "^2.19.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.4.0",
+    "ethers": "^6.8.0"
+  }
+}
+
+
+
+
+
+
+
