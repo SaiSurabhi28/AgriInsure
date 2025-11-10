@@ -28,7 +28,7 @@ const Dashboard = () => {
   });
   const [treasuryLoading, setTreasuryLoading] = useState(true);
   const [treasuryError, setTreasuryError] = useState(null);
-  const [showTreasury, setShowTreasury] = useState(true);
+  const [showTreasury, setShowTreasury] = useState(false);
   
   const fetchWeatherData = useCallback(async () => {
     try {
