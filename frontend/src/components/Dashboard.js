@@ -8,12 +8,27 @@ import { Container, Grid, Card, CardContent, Typography, Button, Stack, Box } fr
 
 const BUILD_ID = process.env.REACT_APP_BUILD_ID || 'dev';
 
+const formatEth = (value) => {
+  if (!value || Number.isNaN(value)) {
+    return '0';
+  }
+  if (value >= 1) {
+    return value.toLocaleString(undefined, {
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 4
+    });
+  }
+  const formatted = value.toFixed(8).replace(/0+$/, '').replace(/\.$/, '');
+  return formatted || '0';
+};
+
 const Dashboard = () => {
   const { account, connectWallet, isConnected } = useWeb3();
   const [stats, setStats] = useState({
     activePolicies: 0,
-    totalPremium: 0,
-    totalPayouts: 0,
+    totalPremiumEth: 0,
+    totalPayoutEth: 0,
+    payoutCount: 0,
     policies: []
   });
   const [showFinalized, setShowFinalized] = useState(false);
@@ -73,15 +88,13 @@ const Dashboard = () => {
         const totalPremiumEth = Number(ethers.formatEther(totalPremiumWei));
         const totalPayoutEth = Number(ethers.formatEther(totalPayoutWei));
 
-        const normalizedPremium = Math.abs(totalPremiumEth) < 0.00005 ? 0 : totalPremiumEth;
-
         setStats({
           activePolicies: active,
-          totalPremium: normalizedPremium,
-          totalPayouts: totalPayouts,
+          totalPremiumEth,
+          totalPayoutEth,
+          payoutCount: totalPayouts,
           totalPremiumWei: totalPremiumWei.toString(),
           totalPayoutWei: totalPayoutWei.toString(),
-          totalPayoutEth,
           policies: policies
         });
       }
@@ -169,18 +182,25 @@ const Dashboard = () => {
           </Card>
         </Grid>
         <Grid item xs={12} sm={6} md={3}>
-          <Card>
+          <Card sx={{
+            background: 'linear-gradient(135deg, #6a11cb 0%, #2575fc 100%)',
+            color: '#fff'
+          }}>
             <CardContent>
-              <Typography variant="subtitle2" color="text.secondary">Total Premium</Typography>
-              <Typography variant="h5">{stats.totalPremium.toFixed(4)} ETH</Typography>
+              <Typography variant="subtitle2" sx={{ opacity: 0.85 }}>Total Premium Paid</Typography>
+              <Typography variant="h5" sx={{ mt: 1 }}>{formatEth(stats.totalPremiumEth)} ETH</Typography>
             </CardContent>
           </Card>
         </Grid>
         <Grid item xs={12} sm={6} md={3}>
-          <Card>
+          <Card sx={{
+            background: 'linear-gradient(135deg, #11998e 0%, #38ef7d 100%)',
+            color: '#fff'
+          }}>
             <CardContent>
-              <Typography variant="subtitle2" color="text.secondary">Payouts Made</Typography>
-              <Typography variant="h5">{stats.totalPayouts}</Typography>
+              <Typography variant="subtitle2" sx={{ opacity: 0.85 }}>Payouts Executed</Typography>
+              <Typography variant="h5" sx={{ mt: 1 }}>{formatEth(stats.totalPayoutEth)} ETH</Typography>
+              <Typography variant="body2" sx={{ opacity: 0.85 }}>{stats.payoutCount} payout{stats.payoutCount === 1 ? '' : 's'}</Typography>
             </CardContent>
           </Card>
         </Grid>
