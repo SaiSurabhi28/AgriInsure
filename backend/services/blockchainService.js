@@ -12,6 +12,29 @@ class BlockchainService {
     this.loadContractAddresses();
   }
 
+  async getWriteSigner() {
+    if (this.wallet) {
+      return this.wallet;
+    }
+
+    if (!this.provider) {
+      throw new Error('Provider not initialized');
+    }
+
+    if (typeof this.provider.getSigner === 'function') {
+      try {
+        const accounts = await this.provider.listAccounts();
+        if (accounts && accounts.length > 0) {
+          return await this.provider.getSigner(accounts[0]);
+        }
+      } catch (error) {
+        console.warn('Unable to acquire signer from provider:', error.message || error);
+      }
+    }
+
+    throw new Error('No wallet configured for write operations. Set PRIVATE_KEY in backend/.env or fund a Hardhat account.');
+  }
+
   initializeProvider() {
     try {
       // Initialize provider based on environment
@@ -218,7 +241,10 @@ class BlockchainService {
         await this.initializeContracts();
       }
 
-      const tx = await this.contracts.Treasury.executePayout(
+      const signer = await this.getWriteSigner();
+      const treasuryWithSigner = this.contracts.Treasury.connect(signer);
+
+      const tx = await treasuryWithSigner.executePayout(
         farmerAddress,
         ethers.parseEther(payoutAmount.toString())
       );
@@ -303,7 +329,13 @@ class BlockchainService {
       const network = await this.provider.getNetwork();
       const blockNumber = await this.provider.getBlockNumber();
       const gasPrice = await this.provider.getGasPrice();
-      const balance = this.wallet ? await this.wallet.getBalance() : ethers.parseEther('0');
+      let balance = ethers.parseEther('0');
+      try {
+        const signer = await this.getWriteSigner();
+        balance = await signer.getBalance();
+      } catch (signerError) {
+        console.warn('Skipping wallet balance retrieval:', signerError.message || signerError);
+      }
 
       return {
         network: {
@@ -356,9 +388,8 @@ class BlockchainService {
         throw new Error('PolicyFactory contract not initialized');
       }
 
-      if (!this.wallet) {
-        throw new Error('No wallet configured for write operations');
-      }
+      const signer = await this.getWriteSigner();
+      const contractWithSigner = contract.connect(signer);
 
       const latestPolicyId = Number(await contract.policyCounter());
       const now = Math.floor(Date.now() / 1000);
@@ -373,7 +404,6 @@ class BlockchainService {
             Number(policy.endTimestamp) > 0 &&
             Number(policy.endTimestamp) <= now
           ) {
-            const contractWithSigner = contract.connect(this.wallet);
             const tx = await contractWithSigner.expirePolicy(policyId);
             await tx.wait();
             expiredPolicies.push(policyId);
@@ -404,12 +434,8 @@ class BlockchainService {
         throw new Error('PolicyFactory contract not initialized');
       }
 
-      // Get signer for write operations
-      if (!this.wallet) {
-        throw new Error('No wallet configured for write operations');
-      }
-
-      const contractWithSigner = contract.connect(this.wallet);
+      const signer = await this.getWriteSigner();
+      const contractWithSigner = contract.connect(signer);
       const tx = await contractWithSigner.expirePolicy(policyId);
       const receipt = await tx.wait();
       
@@ -433,11 +459,8 @@ class BlockchainService {
         throw new Error('PolicyFactory contract not initialized');
       }
 
-      if (!this.wallet) {
-        throw new Error('No wallet configured for write operations');
-      }
-
-      const contractWithSigner = contract.connect(this.wallet);
+      const signer = await this.getWriteSigner();
+      const contractWithSigner = contract.connect(signer);
       const tx = await contractWithSigner.batchExpirePolicies(policyIds);
       const receipt = await tx.wait();
       
