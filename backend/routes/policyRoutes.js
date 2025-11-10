@@ -275,6 +275,12 @@ router.get('/farmer/:farmerAddress', async (req, res) => {
       });
     }
 
+    try {
+      await blockchainService.expireDuePolicies();
+    } catch (expireError) {
+      console.warn('Auto-expire during farmer fetch failed:', expireError.message || expireError);
+    }
+
     const policies = await blockchainService.getFarmerPolicies(farmerAddress);
 
     res.json({
