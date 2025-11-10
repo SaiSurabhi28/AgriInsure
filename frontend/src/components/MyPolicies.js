@@ -150,36 +150,6 @@ const MyPolicies = () => {
     }
   };
 
-  const handleExpirePolicy = async (policyId) => {
-    const confirmExpire = window.confirm(`Archive Policy #${policyId}?`);
-    if (!confirmExpire) return;
-    setProcessing(true);
-    try {
-      const response = await fetch(`http://localhost:3001/api/policies/${policyId}/expire`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        }
-      });
-      const result = await response.json();
-      if (!response.ok || !result.success) {
-        throw new Error(result.message || result.error || 'Failed to archive policy');
-      }
-      alert('Policy archived successfully.');
-      window.dispatchEvent(new CustomEvent('policyFinalized', { detail: { policyId } }));
-      await new Promise(resolve => setTimeout(resolve, 1500));
-      if (refetch) {
-        await refetch();
-        setRefreshKey(prev => prev + 1);
-      }
-    } catch (error) {
-      console.error('Error expiring policy:', error);
-      alert(`Unable to archive policy.\nReason: ${error?.message || 'Unknown error'}`);
-    } finally {
-      setProcessing(false);
-    }
-  };
-
   if (!isConnected) {
     return (
       <Container maxWidth="lg" sx={{ py: 3 }}>
@@ -244,20 +214,9 @@ const MyPolicies = () => {
               📊 Composite Index
             </Button>
             {showFinalizeButton && isMyPolicy && (
-              <>
-                <Button size="small" variant="contained" onClick={() => handleCheckPayout(policy)} disabled={processing || policy.statusString === 'PaidOut' || policy.statusString === 'Expired'}>
-                  {processing ? 'Processing...' : (policy.statusString === 'Active' ? 'Finalize Policy' : 'Already Finalized')}
-                </Button>
-                <Button
-                  size="small"
-                  variant="outlined"
-                  color="secondary"
-                  disabled={processing || policy.statusString !== 'Active' || (policy.endTs && policy.endTs * 1000 > Date.now())}
-                  onClick={() => handleExpirePolicy(policy.policyId)}
-                >
-                  {processing ? 'Processing...' : 'Archive Policy'}
-                </Button>
-              </>
+              <Button size="small" variant="contained" onClick={() => handleCheckPayout(policy)} disabled={processing || policy.statusString === 'PaidOut' || policy.statusString === 'Expired'}>
+                {processing ? 'Processing...' : (policy.statusString === 'Active' ? 'Finalize Policy' : 'Already Finalized')}
+              </Button>
             )}
           </Stack>
         </CardContent>
