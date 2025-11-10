@@ -149,7 +149,7 @@ const CreatePolicy = () => {
         ? Number(latestBlock.timestamp)
         : Math.floor(Date.now() / 1000);
       const realNow = Math.floor(Date.now() / 1000);
-      const startTime = Math.max(chainTimestamp, realNow) + 300; // allow 5 minutes buffer
+      const startTime = Math.max(chainTimestamp, realNow) + 30; // 30 second buffer
       const durationDays = parseInt(formData.duration);
       const threshold = parseInt(formData.threshold);
       
@@ -274,7 +274,7 @@ const CreatePolicy = () => {
         ? Number(latestBlock.timestamp)
         : Math.floor(Date.now() / 1000);
       const realNow = Math.floor(Date.now() / 1000);
-      const startTime = Math.max(chainTimestamp, realNow) + 180; // 3 minute buffer for Hardhat time adjustments
+      const startTime = Math.max(chainTimestamp, realNow) + 30; // 30 second buffer for Hardhat time adjustments
       const durationSeconds = 60;
       const threshold = parseInt(formData.threshold);
 
