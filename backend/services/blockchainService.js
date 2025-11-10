@@ -35,6 +35,33 @@ class BlockchainService {
     throw new Error('No wallet configured for write operations. Set PRIVATE_KEY in backend/.env or fund a Hardhat account.');
   }
 
+  async syncBlockchainTime() {
+    if (!this.provider || typeof this.provider.getBlock !== 'function' || typeof this.provider.send !== 'function') {
+      return;
+    }
+
+    try {
+      const network = await this.provider.getNetwork();
+      const chainId = network?.chainId;
+      const isLocal = chainId === 31337n || chainId === 1337n;
+      if (!isLocal) {
+        return;
+      }
+
+      const latestBlock = await this.provider.getBlock('latest');
+      const latestTimestamp = latestBlock?.timestamp || 0;
+      const now = Math.floor(Date.now() / 1000);
+      const diff = now - latestTimestamp;
+
+      if (diff > 1) {
+        await this.provider.send('evm_increaseTime', [diff]);
+        await this.provider.send('evm_mine', []);
+      }
+    } catch (error) {
+      console.warn('Time sync skipped:', error.message || error);
+    }
+  }
+
   initializeProvider() {
     try {
       // Initialize provider based on environment
@@ -391,6 +418,8 @@ class BlockchainService {
       const signer = await this.getWriteSigner();
       const contractWithSigner = contract.connect(signer);
 
+      await this.syncBlockchainTime();
+
       const latestPolicyId = Number(await contract.policyCounter());
       const now = Math.floor(Date.now() / 1000);
       const expiredPolicies = [];
@@ -436,6 +465,9 @@ class BlockchainService {
 
       const signer = await this.getWriteSigner();
       const contractWithSigner = contract.connect(signer);
+
+      await this.syncBlockchainTime();
+
       const tx = await contractWithSigner.expirePolicy(policyId);
       const receipt = await tx.wait();
       
@@ -461,6 +493,9 @@ class BlockchainService {
 
       const signer = await this.getWriteSigner();
       const contractWithSigner = contract.connect(signer);
+
+      await this.syncBlockchainTime();
+
       const tx = await contractWithSigner.batchExpirePolicies(policyIds);
       const receipt = await tx.wait();
       
