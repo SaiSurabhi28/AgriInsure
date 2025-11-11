@@ -25,7 +25,7 @@ const CreatePolicy = () => {
     return message.includes('start time must be in the future');
   };
 
-  const computeBufferedStartTime = async (initialBuffer, callStaticFn) => {
+  const executeWithBufferedStartTime = async (initialBuffer, callStaticFn, txFn) => {
     let buffer = initialBuffer;
     const maxBuffer = 600;
     while (buffer <= maxBuffer) {
@@ -40,7 +40,6 @@ const CreatePolicy = () => {
         try {
           await callStaticFn(startTime);
           console.log(`Buffered start time accepted at ${buffer}s buffer (start: ${startTime})`);
-          return startTime;
         } catch (err) {
           if (isStartTimeError(err)) {
             console.warn(`Start time ${startTime} rejected; increasing buffer to ${buffer + 30}s`);
@@ -49,9 +48,23 @@ const CreatePolicy = () => {
           }
           throw err;
         }
-      } else {
-        console.log(`Using start time ${startTime} with buffer ${buffer}s`);
-        return startTime;
+      }
+
+      if (!txFn) {
+        return { startTime, tx: null };
+      }
+
+      try {
+        const tx = await txFn(startTime);
+        console.log(`Transaction submitted with start time ${startTime} (buffer ${buffer}s)`);
+        return { startTime, tx };
+      } catch (err) {
+        if (isStartTimeError(err)) {
+          console.warn(`Transaction reverted for start time ${startTime}; retrying with buffer ${buffer + 30}s`);
+          buffer += 30;
+          continue;
+        }
+        throw err;
       }
     }
 
@@ -194,15 +207,27 @@ const CreatePolicy = () => {
         premiumWei = ethers.parseEther(premiumValue);
       }
       
-      const startTime = await computeBufferedStartTime(30, async (candidateStart) => {
-        await policyFactory.createPolicy.staticCall(
-          parseInt(formData.productId),
-          candidateStart,
-          durationDays,
-          threshold,
-          { value: premiumWei }
-        );
-      });
+      const { startTime, tx } = await executeWithBufferedStartTime(
+        30,
+        async (candidateStart) => {
+          await policyFactory.createPolicy.staticCall(
+            parseInt(formData.productId),
+            candidateStart,
+            durationDays,
+            threshold,
+            { value: premiumWei }
+          );
+        },
+        async (candidateStart) => {
+          return policyFactory.createPolicy(
+            parseInt(formData.productId),
+            candidateStart,
+            durationDays,
+            threshold,
+            { value: premiumWei }
+          );
+        }
+      );
 
       console.log('Creating policy with:', {
         productId: parseInt(formData.productId),
@@ -212,14 +237,6 @@ const CreatePolicy = () => {
         premiumWei: premiumWei.toString(),
         premiumFormatted: premiumValue
       });
-      
-      const tx = await policyFactory.createPolicy(
-        parseInt(formData.productId),
-        startTime,
-        durationDays,
-        threshold,
-        { value: premiumWei }
-      );
       
       const receipt = await tx.wait();
       console.log('Policy created:', receipt);
@@ -318,22 +335,26 @@ const CreatePolicy = () => {
         ? "0"
         : ethers.parseEther(premiumValue);
 
-      const startTime = await computeBufferedStartTime(30, async (candidateStart) => {
-        await policyFactory.createTestPolicy.staticCall(
-          parseInt(formData.productId),
-          candidateStart,
-          60,
-          threshold,
-          { value: premiumWei }
-        );
-      });
-
-      const tx = await policyFactory.createTestPolicy(
-        parseInt(formData.productId),
-        startTime,
-        60,
-        threshold,
-        { value: premiumWei }
+      const { startTime, tx } = await executeWithBufferedStartTime(
+        30,
+        async (candidateStart) => {
+          await policyFactory.createTestPolicy.staticCall(
+            parseInt(formData.productId),
+            candidateStart,
+            60,
+            threshold,
+            { value: premiumWei }
+          );
+        },
+        async (candidateStart) => {
+          return policyFactory.createTestPolicy(
+            parseInt(formData.productId),
+            candidateStart,
+            60,
+            threshold,
+            { value: premiumWei }
+          );
+        }
       );
 
       const receipt = await tx.wait();
