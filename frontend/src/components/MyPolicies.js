@@ -113,12 +113,6 @@ const MyPolicies = () => {
       alert('This policy expired with no payout conditions met.');
       return;
     }
-    const currentTime = Math.floor(Date.now() / 1000);
-    if (policy.startTs > currentTime) {
-      const minutesUntilStart = Math.floor((policy.startTs - currentTime) / 60);
-      alert(`⏳ Policy hasn't started yet!\nStarts in ${minutesUntilStart} minute(s).`);
-      return;
-    }
     const confirmFinalize = window.confirm(`Finalize Policy #${policy.policyId}?`);
     if (!confirmFinalize) return;
     setProcessing(true);
