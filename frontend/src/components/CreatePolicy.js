@@ -25,55 +25,28 @@ const CreatePolicy = () => {
     return message.includes('start time must be in the future');
   };
 
-  const executeWithBufferedStartTime = async (initialBuffer, callStaticFn, txFn) => {
-    const maxBuffer = 900;
-    const maxAttempts = 8;
-    for (let attempt = 0; attempt < maxAttempts; attempt += 1) {
-      let buffer = initialBuffer;
+  const computeStartTime = async (initialBuffer, staticCallFn) => {
+    const latestBlock = await provider.getBlock('latest');
+    const chainTimestamp = latestBlock && typeof latestBlock.timestamp !== 'undefined'
+      ? Number(latestBlock.timestamp)
+      : Math.floor(Date.now() / 1000);
+    const realNow = Math.floor(Date.now() / 1000);
+    const base = Math.max(chainTimestamp, realNow);
+    const buffers = [initialBuffer, initialBuffer + 90, initialBuffer + 300]; // up to ~5 minutes ahead
 
-      while (buffer <= maxBuffer) {
-        const latestBlock = await provider.getBlock('latest');
-        const chainTimestamp = latestBlock && typeof latestBlock.timestamp !== 'undefined'
-          ? Number(latestBlock.timestamp)
-          : Math.floor(Date.now() / 1000);
-        const realNow = Math.floor(Date.now() / 1000);
-        const startTime = Math.max(chainTimestamp, realNow) + buffer;
-
-        if (callStaticFn) {
-          try {
-            await callStaticFn(startTime);
-            console.log(`Buffered start time accepted at ${buffer}s buffer (start: ${startTime})`);
-          } catch (err) {
-            if (isStartTimeError(err)) {
-              console.warn(`Start time ${startTime} rejected; increasing buffer to ${buffer + 30}s`);
-              buffer += 30;
-              continue;
-            }
-            throw err;
-          }
+    for (const buffer of buffers) {
+      const candidate = base + buffer;
+      try {
+        await staticCallFn(candidate);
+        console.log(`Using start time ${candidate} (+${buffer}s buffer)`);
+        return candidate;
+      } catch (err) {
+        if (isStartTimeError(err)) {
+          console.warn(`Start time ${candidate} rejected; trying with buffer ${buffer + 90}s`);
+          continue;
         }
-
-        if (!txFn) {
-          return { startTime, tx: null };
-        }
-
-        try {
-          const tx = await txFn(startTime);
-          console.log(`Transaction submitted with start time ${startTime} (buffer ${buffer}s)`);
-          return { startTime, tx };
-        } catch (err) {
-          if (isStartTimeError(err)) {
-            console.warn(`Transaction reverted for start time ${startTime}; retrying with buffer ${buffer + 30}s`);
-            buffer += 30;
-            continue;
-          }
-          throw err;
-        }
+        throw err;
       }
-
-      const waitMs = 2000 * (attempt + 1);
-      console.warn(`Unable to find valid start time after buffer ${maxBuffer}s. Waiting ${waitMs / 1000}s before retrying...`);
-      await new Promise(resolve => setTimeout(resolve, waitMs));
     }
 
     throw new Error('Unable to schedule a policy start time in the future. Please try again in a moment.');
@@ -215,26 +188,22 @@ const CreatePolicy = () => {
         premiumWei = ethers.parseEther(premiumValue);
       }
       
-      const { startTime, tx } = await executeWithBufferedStartTime(
-        30,
-        async (candidateStart) => {
-          await policyFactory.createPolicy.staticCall(
-            parseInt(formData.productId),
-            candidateStart,
-            durationDays,
-            threshold,
-            { value: premiumWei }
-          );
-        },
-        async (candidateStart) => {
-          return policyFactory.createPolicy(
-            parseInt(formData.productId),
-            candidateStart,
-            durationDays,
-            threshold,
-            { value: premiumWei }
-          );
-        }
+      const startTime = await computeStartTime(45, async (candidateStart) => {
+        await policyFactory.createPolicy.staticCall(
+          parseInt(formData.productId),
+          candidateStart,
+          durationDays,
+          threshold,
+          { value: premiumWei }
+        );
+      });
+
+      const tx = await policyFactory.createPolicy(
+        parseInt(formData.productId),
+        startTime,
+        durationDays,
+        threshold,
+        { value: premiumWei }
       );
 
       console.log('Creating policy with:', {
@@ -343,26 +312,22 @@ const CreatePolicy = () => {
         ? "0"
         : ethers.parseEther(premiumValue);
 
-      const { startTime, tx } = await executeWithBufferedStartTime(
-        45,
-        async (candidateStart) => {
-          await policyFactory.createTestPolicy.staticCall(
-            parseInt(formData.productId),
-            candidateStart,
-            60,
-            threshold,
-            { value: premiumWei }
-          );
-        },
-        async (candidateStart) => {
-          return policyFactory.createTestPolicy(
-            parseInt(formData.productId),
-            candidateStart,
-            60,
-            threshold,
-            { value: premiumWei }
-          );
-        }
+      const startTime = await computeStartTime(45, async (candidateStart) => {
+        await policyFactory.createTestPolicy.staticCall(
+          parseInt(formData.productId),
+          candidateStart,
+          60,
+          threshold,
+          { value: premiumWei }
+        );
+      });
+
+      const tx = await policyFactory.createTestPolicy(
+        parseInt(formData.productId),
+        startTime,
+        60,
+        threshold,
+        { value: premiumWei }
       );
 
       const receipt = await tx.wait();
