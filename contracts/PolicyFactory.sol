@@ -216,14 +216,12 @@ contract PolicyFactory is Ownable, ReentrancyGuard, Pausable {
     /**
      * @dev Create a new insurance policy
      * @param productId Product ID
-     * @param startTs Start timestamp (must be >= block.timestamp)
      * @param durationDays Duration in days
      * @param threshold Threshold value (mm)
      * @return policyId Created policy ID
      */
     function createPolicy(
         uint256 productId,
-        uint64 startTs,
         uint64 durationDays,
         uint64 threshold
     ) external payable nonReentrant whenNotPaused returns (uint256) {
@@ -232,10 +230,7 @@ contract PolicyFactory is Ownable, ReentrancyGuard, Pausable {
         
         Product memory product = products[productId];
         require(product.isActive, "Product not active");
-        uint64 currentTs = uint64(block.timestamp);
-        if (startTs == 0 || startTs + START_TIME_TOLERANCE < currentTs) {
-            startTs = currentTs;
-        }
+        uint64 startTs = uint64(block.timestamp);
         require(durationDays >= product.minDurationDays && durationDays <= product.maxDurationDays, "Invalid duration");
         require(threshold >= product.minThreshold && threshold <= product.maxThreshold, "Invalid threshold");
         
@@ -274,7 +269,6 @@ contract PolicyFactory is Ownable, ReentrancyGuard, Pausable {
     /**
      * @dev Create a test policy with duration in seconds (for testing only)
      * @param productId Product ID
-     * @param startTs Start timestamp
      * @param durationSeconds Duration in seconds (for testing)
      * @param threshold Threshold value (mm)
      * @return policyId Created policy ID
@@ -282,7 +276,6 @@ contract PolicyFactory is Ownable, ReentrancyGuard, Pausable {
      */
     function createTestPolicy(
         uint256 productId,
-        uint64 startTs,
         uint64 durationSeconds,
         uint64 threshold
     ) external payable nonReentrant whenNotPaused returns (uint256) {
@@ -291,10 +284,7 @@ contract PolicyFactory is Ownable, ReentrancyGuard, Pausable {
         
         Product memory product = products[productId];
         require(product.isActive, "Product not active");
-        uint64 currentTs = uint64(block.timestamp);
-        if (startTs == 0 || startTs + START_TIME_TOLERANCE < currentTs) {
-            startTs = currentTs;
-        }
+        uint64 startTs = uint64(block.timestamp);
         require(threshold >= product.minThreshold && threshold <= product.maxThreshold, "Invalid threshold");
         require(durationSeconds > 0 && durationSeconds <= 86400 * 30, "Duration must be between 1 second and 30 days");
         
