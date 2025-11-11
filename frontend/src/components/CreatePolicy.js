@@ -129,7 +129,7 @@ const CreatePolicy = () => {
       
       // Simple ABI for createPolicy and hasActivePolicy functions
       const policyFactoryAbi = [
-        "function createPolicy(uint256 productId, uint64 startTs, uint64 durationDays, uint64 threshold) payable returns (uint256)",
+        "function createPolicy(uint256 productId, uint64 durationDays, uint64 threshold) payable returns (uint256)",
         "function hasActivePolicy(address holder) view returns (bool)"
       ];
       
@@ -161,10 +161,8 @@ const CreatePolicy = () => {
         premiumWei = ethers.parseEther(premiumValue);
       }
       
-      const startTime = 0;
       await policyFactory.createPolicy.staticCall(
         parseInt(formData.productId),
-        startTime,
         durationDays,
         threshold,
         { value: premiumWei }
@@ -172,7 +170,6 @@ const CreatePolicy = () => {
 
       const tx = await policyFactory.createPolicy(
         parseInt(formData.productId),
-        startTime,
         durationDays,
         threshold,
         { value: premiumWei }
@@ -180,7 +177,6 @@ const CreatePolicy = () => {
 
       console.log('Creating policy with:', {
         productId: parseInt(formData.productId),
-        startTime,
         durationDays,
         threshold,
         premiumWei: premiumWei.toString(),
@@ -259,7 +255,7 @@ const CreatePolicy = () => {
       const policyFactoryAddress = contracts.PolicyFactory;
 
       const policyFactoryAbi = [
-        "function createTestPolicy(uint256 productId, uint64 startTs, uint64 durationSeconds, uint64 threshold) payable returns (uint256)",
+        "function createTestPolicy(uint256 productId, uint64 durationSeconds, uint64 threshold) payable returns (uint256)",
         "function hasActivePolicy(address holder) view returns (bool)"
       ];
 
@@ -284,10 +280,8 @@ const CreatePolicy = () => {
         ? "0"
         : ethers.parseEther(premiumValue);
 
-      const startTime = 0;
       await policyFactory.createTestPolicy.staticCall(
         parseInt(formData.productId),
-        startTime,
         60,
         threshold,
         { value: premiumWei }
@@ -295,7 +289,6 @@ const CreatePolicy = () => {
 
       const tx = await policyFactory.createTestPolicy(
         parseInt(formData.productId),
-        startTime,
         60,
         threshold,
         { value: premiumWei }
