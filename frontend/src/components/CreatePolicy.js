@@ -26,23 +26,44 @@ const CreatePolicy = () => {
   };
 
   const executeWithBufferedStartTime = async (initialBuffer, callStaticFn, txFn) => {
-    let buffer = initialBuffer;
-    const maxBuffer = 600;
-    while (buffer <= maxBuffer) {
-      const latestBlock = await provider.getBlock('latest');
-      const chainTimestamp = latestBlock && typeof latestBlock.timestamp !== 'undefined'
-        ? Number(latestBlock.timestamp)
-        : Math.floor(Date.now() / 1000);
-      const realNow = Math.floor(Date.now() / 1000);
-      const startTime = Math.max(chainTimestamp, realNow) + buffer;
+    const maxBuffer = 900;
+    const maxAttempts = 8;
+    for (let attempt = 0; attempt < maxAttempts; attempt += 1) {
+      let buffer = initialBuffer;
 
-      if (callStaticFn) {
+      while (buffer <= maxBuffer) {
+        const latestBlock = await provider.getBlock('latest');
+        const chainTimestamp = latestBlock && typeof latestBlock.timestamp !== 'undefined'
+          ? Number(latestBlock.timestamp)
+          : Math.floor(Date.now() / 1000);
+        const realNow = Math.floor(Date.now() / 1000);
+        const startTime = Math.max(chainTimestamp, realNow) + buffer;
+
+        if (callStaticFn) {
+          try {
+            await callStaticFn(startTime);
+            console.log(`Buffered start time accepted at ${buffer}s buffer (start: ${startTime})`);
+          } catch (err) {
+            if (isStartTimeError(err)) {
+              console.warn(`Start time ${startTime} rejected; increasing buffer to ${buffer + 30}s`);
+              buffer += 30;
+              continue;
+            }
+            throw err;
+          }
+        }
+
+        if (!txFn) {
+          return { startTime, tx: null };
+        }
+
         try {
-          await callStaticFn(startTime);
-          console.log(`Buffered start time accepted at ${buffer}s buffer (start: ${startTime})`);
+          const tx = await txFn(startTime);
+          console.log(`Transaction submitted with start time ${startTime} (buffer ${buffer}s)`);
+          return { startTime, tx };
         } catch (err) {
           if (isStartTimeError(err)) {
-            console.warn(`Start time ${startTime} rejected; increasing buffer to ${buffer + 30}s`);
+            console.warn(`Transaction reverted for start time ${startTime}; retrying with buffer ${buffer + 30}s`);
             buffer += 30;
             continue;
           }
@@ -50,22 +71,9 @@ const CreatePolicy = () => {
         }
       }
 
-      if (!txFn) {
-        return { startTime, tx: null };
-      }
-
-      try {
-        const tx = await txFn(startTime);
-        console.log(`Transaction submitted with start time ${startTime} (buffer ${buffer}s)`);
-        return { startTime, tx };
-      } catch (err) {
-        if (isStartTimeError(err)) {
-          console.warn(`Transaction reverted for start time ${startTime}; retrying with buffer ${buffer + 30}s`);
-          buffer += 30;
-          continue;
-        }
-        throw err;
-      }
+      const waitMs = 2000 * (attempt + 1);
+      console.warn(`Unable to find valid start time after buffer ${maxBuffer}s. Waiting ${waitMs / 1000}s before retrying...`);
+      await new Promise(resolve => setTimeout(resolve, waitMs));
     }
 
     throw new Error('Unable to schedule a policy start time in the future. Please try again in a moment.');
@@ -336,7 +344,7 @@ const CreatePolicy = () => {
         : ethers.parseEther(premiumValue);
 
       const { startTime, tx } = await executeWithBufferedStartTime(
-        30,
+        45,
         async (candidateStart) => {
           await policyFactory.createTestPolicy.staticCall(
             parseInt(formData.productId),
