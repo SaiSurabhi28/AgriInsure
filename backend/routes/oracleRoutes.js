@@ -182,11 +182,12 @@ router.get('/weather', async (req, res) => {
 
 router.get('/weather/live', async (req, res) => {
   try {
-    const sample = await datasetWeatherService.getRandomWeatherSample();
+    const sample = await datasetWeatherService.getNextWeatherSample();
+
     if (!sample) {
-      return res.status(404).json({
+      return res.status(503).json({
         success: false,
-        error: 'No weather samples available'
+        error: 'Dataset is unavailable'
       });
     }
 

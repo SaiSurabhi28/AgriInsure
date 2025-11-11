@@ -11,6 +11,8 @@ class DatasetWeatherService {
     this.cacheDurationMs = parseInt(process.env.DATASET_CACHE_MS || '600000', 10); // 10 minutes default
     this._cache = null;
     this._stationStatsCache = null;
+    this._sequentialIndex = 0;
+    this._lastSequentialSample = null;
   }
 
   getDatasetPath() {
@@ -138,6 +140,8 @@ class DatasetWeatherService {
       loadedAt: Date.now()
     };
     this._stationStatsCache = null;
+    this._sequentialIndex = 0;
+    this._lastSequentialSample = rows.length ? rows[0] : null;
 
     return rows;
   }
@@ -189,6 +193,26 @@ class DatasetWeatherService {
   async getLatestEntry() {
     const rows = await this.loadDataset();
     return rows.length ? rows[rows.length - 1] : null;
+  }
+
+  async getNextWeatherSample() {
+    const rows = await this.loadDataset();
+    if (!rows.length) {
+      return null;
+    }
+
+    if (this._sequentialIndex >= rows.length) {
+      this._sequentialIndex = 0;
+    }
+
+    const sample = rows[this._sequentialIndex];
+    this._sequentialIndex += 1;
+    this._lastSequentialSample = sample;
+    return sample;
+  }
+
+  getCurrentWeatherSample() {
+    return this._lastSequentialSample;
   }
 
   async getDatasetInfo() {
@@ -467,30 +491,8 @@ class DatasetWeatherService {
   }
 
   async getRandomWeatherSample() {
-    const rows = await this.loadDataset();
-    if (!rows.length) {
-      return null;
-    }
-
-    const sample = rows[Math.floor(Math.random() * rows.length)];
-    const humidityPercent = typeof sample.humidity === 'number'
-      ? Math.max(0, Math.min(100, sample.humidity * 100))
-      : null;
-
-    return {
-      roundId: sample.index,
-      timestamp: sample.timestamp,
-      isoDate: sample.isoDate,
-      rainfall: sample.rainfall,
-      rainfallFormatted: sample.rainfall !== null && sample.rainfall !== undefined
-        ? Number(sample.rainfall).toFixed(2)
-        : '0.00',
-      temperature: sample.temperature,
-      humidity: humidityPercent,
-      windSpeed: sample.windSpeed,
-      windGust: sample.windGust,
-      source: 'dataset_random'
-    };
+    // Deprecated method name kept for backward compatibility.
+    return this.getNextWeatherSample();
   }
 
   _formatStationName(name = '') {

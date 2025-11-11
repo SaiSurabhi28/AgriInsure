@@ -142,7 +142,10 @@ router.get('/:policyId/composite-index', async (req, res) => {
     const policyStatus = await blockchainService.getPolicyStatus(policyId);
     
     // Pull latest weather metrics from historical dataset
-    const latestWeather = await datasetWeatherService.getLatestEntry();
+    let latestWeather = datasetWeatherService.getCurrentWeatherSample();
+    if (!latestWeather) {
+      latestWeather = await datasetWeatherService.getNextWeatherSample();
+    }
     if (!latestWeather) {
       return res.status(503).json({
         error: 'Weather dataset is unavailable'

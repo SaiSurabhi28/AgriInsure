@@ -104,7 +104,7 @@ router.get('/stats', async (req, res) => {
  */
 router.post('/recommendations/smart', async (req, res) => {
   try {
-    const weatherSnapshot = await datasetWeatherService.getRandomWeatherSample();
+    const weatherSnapshot = await datasetWeatherService.getNextWeatherSample();
     const nutrientSample = await cropService.getRandomSample();
 
     if (!weatherSnapshot) {

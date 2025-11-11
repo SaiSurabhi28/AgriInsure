@@ -204,16 +204,20 @@ class LocationWeatherService {
     const expectedRainfall = avgRainfall * duration;
     const expectedVariability = variability * Math.sqrt(duration);
 
+    const idealThreshold = Math.max(1, Math.round(expectedRainfall));
+    const conservativeThreshold = Math.max(idealThreshold + Math.round(expectedVariability), Math.round(expectedRainfall * 1.2));
+    const aggressiveThreshold = Math.max(1, Math.round(expectedRainfall * 0.75));
+
     const recommendations = {
-      ideal: region.recommendedThresholds.ideal,
-      conservative: region.recommendedThresholds.conservative,
-      aggressive: region.recommendedThresholds.aggressive
+      ideal: idealThreshold,
+      conservative: conservativeThreshold,
+      aggressive: aggressiveThreshold
     };
 
     const explanation = {
-      ideal: `Aligns with ${expectedRainfall.toFixed(1)} mm expected over ${duration} day(s) in ${region.name}.`,
-      conservative: 'Higher threshold to minimise payout triggers during wetter periods.',
-      aggressive: 'Lower threshold for drought-sensitive crops or higher risk appetite.'
+      ideal: `Matches the average cumulative rainfall (${expectedRainfall.toFixed(1)} mm) over ${duration} day(s) in ${region.name}.`,
+      conservative: `Adds a safety buffer of approximately ${expectedVariability.toFixed(1)} mm to account for wetter periods.`,
+      aggressive: 'Lower margin designed for drought-sensitive crops with higher payout frequency.'
     };
 
     const analysis = {
