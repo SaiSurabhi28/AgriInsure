@@ -87,24 +87,28 @@ class BlockchainService {
   }
 
   loadContractAddresses() {
-    try {
-      // Try backend deployments first, then root deployments
-      let deploymentFile = path.join(__dirname, '..', 'deployments', `${process.env.NODE_ENV || 'localhost'}.json`);
-      if (!fs.existsSync(deploymentFile)) {
-        deploymentFile = path.join(__dirname, '..', '..', 'deployments', `${process.env.NODE_ENV || 'localhost'}.json`);
+     try {
+      const candidates = [];
+      const envName = process.env.NODE_ENV || 'localhost';
+      candidates.push(path.join(__dirname, '..', 'deployments', `${envName}.json`));
+      candidates.push(path.join(__dirname, '..', '..', 'deployments', `${envName}.json`));
+      if (envName !== 'localhost') {
+        candidates.push(path.join(__dirname, '..', 'deployments', 'localhost.json'));
+        candidates.push(path.join(__dirname, '..', '..', 'deployments', 'localhost.json'));
       }
-      
-      if (fs.existsSync(deploymentFile)) {
+
+      let deploymentFile = candidates.find(file => fs.existsSync(file));
+
+      if (deploymentFile) {
         const deployment = fs.readJsonSync(deploymentFile);
         this.contractAddresses = {
           OracleAdapter: deployment.contracts.OracleAdapter.address,
           Treasury: deployment.contracts.Treasury.address,
           PolicyFactory: deployment.contracts.PolicyFactory.address
         };
-        console.log('Contract addresses loaded:', this.contractAddresses);
+        console.log(`Contract addresses loaded from ${deploymentFile}:`, this.contractAddresses);
       } else {
         console.warn('No deployment file found, using default addresses');
-        // Default addresses for local development
         this.contractAddresses = {
           OracleAdapter: '0x5FbDB2315678afecb367f032d93F642f64180aa3',
           Treasury: '0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512',
