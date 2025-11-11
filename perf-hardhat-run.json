@@ -1,0 +1,39 @@
+{
+  "transactions": [
+    {
+      "label": "addProduct",
+      "gasUsed": "185892",
+      "cumulativeGasUsed": "185892"
+    },
+    {
+      "label": "createTestPolicy_1",
+      "gasUsed": "262295",
+      "cumulativeGasUsed": "262295"
+    },
+    {
+      "label": "createTestPolicy_2",
+      "gasUsed": "245195",
+      "cumulativeGasUsed": "245195"
+    },
+    {
+      "label": "createTestPolicy_3",
+      "gasUsed": "245195",
+      "cumulativeGasUsed": "245195"
+    },
+    {
+      "label": "expirePolicy_1",
+      "gasUsed": "55035",
+      "cumulativeGasUsed": "55035"
+    },
+    {
+      "label": "expirePolicy_2",
+      "gasUsed": "55035",
+      "cumulativeGasUsed": "55035"
+    },
+    {
+      "label": "expirePolicy_3",
+      "gasUsed": "55035",
+      "cumulativeGasUsed": "55035"
+    }
+  ]
+}

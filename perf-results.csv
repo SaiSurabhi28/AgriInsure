@@ -1,0 +1,8 @@
+label,operation,gas_used,cumulative_gas_used,notes
+addProduct,addProduct,185892,185892,Owner seeds Demo Rain Shield product
+createTestPolicy_1,createTestPolicy,262295,262295,First farmer policy (higher gas due to new storage)
+createTestPolicy_2,createTestPolicy,245195,245195,Second farmer policy
+createTestPolicy_3,createTestPolicy,245195,245195,Third farmer policy
+expirePolicy_1,expirePolicy,55035,55035,Expire policy #1 after 60s
+expirePolicy_2,expirePolicy,55035,55035,Expire policy #2 after 60s
+expirePolicy_3,expirePolicy,55035,55035,Expire policy #3 after 60s

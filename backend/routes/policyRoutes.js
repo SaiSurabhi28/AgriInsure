@@ -57,13 +57,13 @@ router.get('/locations/all', (req, res) => {
 });
 
 // Get recommendations for a specific location
-router.get('/locations/:locationId/recommendations', (req, res) => {
+router.get('/locations/:locationId/recommendations', async (req, res) => {
   try {
     const { locationId } = req.params;
     const { durationDays } = req.query;
     
     const locationService = new LocationWeatherService();
-    const recommendations = locationService.getLocationRecommendations(
+    const recommendations = await locationService.getLocationRecommendations(
       locationId,
       durationDays ? parseInt(durationDays) : 14
     );
