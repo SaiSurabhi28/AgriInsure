@@ -28,6 +28,8 @@ interface ITreasury {
  */
 contract PolicyFactory is Ownable, ReentrancyGuard, Pausable {
 
+    uint64 private constant START_TIME_TOLERANCE = 5 minutes;
+
     // Events
     event PolicyCreated(
         uint256 indexed policyId,
@@ -230,7 +232,11 @@ contract PolicyFactory is Ownable, ReentrancyGuard, Pausable {
         
         Product memory product = products[productId];
         require(product.isActive, "Product not active");
-        require(startTs >= uint64(block.timestamp), "Start time must be in the future");
+        uint64 currentTs = uint64(block.timestamp);
+        require(
+            startTs >= currentTs || currentTs - startTs <= START_TIME_TOLERANCE,
+            "Start time must be in the future"
+        );
         require(durationDays >= product.minDurationDays && durationDays <= product.maxDurationDays, "Invalid duration");
         require(threshold >= product.minThreshold && threshold <= product.maxThreshold, "Invalid threshold");
         
@@ -286,7 +292,11 @@ contract PolicyFactory is Ownable, ReentrancyGuard, Pausable {
         
         Product memory product = products[productId];
         require(product.isActive, "Product not active");
-        require(startTs >= uint64(block.timestamp), "Start time must be in the future");
+        uint64 currentTs = uint64(block.timestamp);
+        require(
+            startTs >= currentTs || currentTs - startTs <= START_TIME_TOLERANCE,
+            "Start time must be in the future"
+        );
         require(threshold >= product.minThreshold && threshold <= product.maxThreshold, "Invalid threshold");
         require(durationSeconds > 0 && durationSeconds <= 86400 * 30, "Duration must be between 1 second and 30 days");
         
