@@ -20,6 +20,44 @@ const CreatePolicy = () => {
   const [locationRecommendations, setLocationRecommendations] = useState(null);
   const [showRecommendations, setShowRecommendations] = useState(false);
 
+  const isStartTimeError = (error) => {
+    const message = (error?.reason || error?.shortMessage || error?.message || error?.error?.message || '').toLowerCase();
+    return message.includes('start time must be in the future');
+  };
+
+  const computeBufferedStartTime = async (initialBuffer, callStaticFn) => {
+    let buffer = initialBuffer;
+    const maxBuffer = 600;
+    while (buffer <= maxBuffer) {
+      const latestBlock = await provider.getBlock('latest');
+      const chainTimestamp = latestBlock && typeof latestBlock.timestamp !== 'undefined'
+        ? Number(latestBlock.timestamp)
+        : Math.floor(Date.now() / 1000);
+      const realNow = Math.floor(Date.now() / 1000);
+      const startTime = Math.max(chainTimestamp, realNow) + buffer;
+
+      if (callStaticFn) {
+        try {
+          await callStaticFn(startTime);
+          console.log(`Buffered start time accepted at ${buffer}s buffer (start: ${startTime})`);
+          return startTime;
+        } catch (err) {
+          if (isStartTimeError(err)) {
+            console.warn(`Start time ${startTime} rejected; increasing buffer to ${buffer + 30}s`);
+            buffer += 30;
+            continue;
+          }
+          throw err;
+        }
+      } else {
+        console.log(`Using start time ${startTime} with buffer ${buffer}s`);
+        return startTime;
+      }
+    }
+
+    throw new Error('Unable to schedule a policy start time in the future. Please try again in a moment.');
+  };
+
   const API_BASE_URL = 'http://localhost:3001';
 
   // Load products and locations
@@ -144,12 +182,6 @@ const CreatePolicy = () => {
         // Continue anyway - the contract will reject if policy exists
       }
       
-      const latestBlock = await provider.getBlock('latest');
-      const chainTimestamp = latestBlock && typeof latestBlock.timestamp !== 'undefined'
-        ? Number(latestBlock.timestamp)
-        : Math.floor(Date.now() / 1000);
-      const realNow = Math.floor(Date.now() / 1000);
-      const startTime = Math.max(chainTimestamp, realNow) + 30; // 30 second buffer
       const durationDays = parseInt(formData.duration);
       const threshold = parseInt(formData.threshold);
       
@@ -162,6 +194,16 @@ const CreatePolicy = () => {
         premiumWei = ethers.parseEther(premiumValue);
       }
       
+      const startTime = await computeBufferedStartTime(30, async (candidateStart) => {
+        await policyFactory.createPolicy.staticCall(
+          parseInt(formData.productId),
+          candidateStart,
+          durationDays,
+          threshold,
+          { value: premiumWei }
+        );
+      });
+
       console.log('Creating policy with:', {
         productId: parseInt(formData.productId),
         startTime,
@@ -269,13 +311,6 @@ const CreatePolicy = () => {
         console.warn('Could not check for active policy (test policy):', checkError.message);
       }
 
-      const latestBlock = await provider.getBlock('latest');
-      const chainTimestamp = latestBlock && typeof latestBlock.timestamp !== 'undefined'
-        ? Number(latestBlock.timestamp)
-        : Math.floor(Date.now() / 1000);
-      const realNow = Math.floor(Date.now() / 1000);
-      const startTime = Math.max(chainTimestamp, realNow) + 30; // 30 second buffer for Hardhat time adjustments
-      const durationSeconds = 60;
       const threshold = parseInt(formData.threshold);
 
       const premiumValue = pricing.premiumFormatted || (pricing.premium ? pricing.premium.toString() : "0");
@@ -283,10 +318,20 @@ const CreatePolicy = () => {
         ? "0"
         : ethers.parseEther(premiumValue);
 
+      const startTime = await computeBufferedStartTime(30, async (candidateStart) => {
+        await policyFactory.createTestPolicy.staticCall(
+          parseInt(formData.productId),
+          candidateStart,
+          60,
+          threshold,
+          { value: premiumWei }
+        );
+      });
+
       const tx = await policyFactory.createTestPolicy(
         parseInt(formData.productId),
         startTime,
-        durationSeconds,
+        60,
         threshold,
         { value: premiumWei }
       );
