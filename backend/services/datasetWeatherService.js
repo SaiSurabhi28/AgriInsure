@@ -13,6 +13,8 @@ class DatasetWeatherService {
     this._stationStatsCache = null;
     this._sequentialIndex = 0;
     this._lastSequentialSample = null;
+    this._recentSamples = [];
+    this._globalRoundCounter = 0;
   }
 
   getDatasetPath() {
@@ -142,6 +144,8 @@ class DatasetWeatherService {
     this._stationStatsCache = null;
     this._sequentialIndex = 0;
     this._lastSequentialSample = rows.length ? rows[0] : null;
+    this._recentSamples = [];
+    this._globalRoundCounter = 0;
 
     return rows;
   }
@@ -205,14 +209,41 @@ class DatasetWeatherService {
       this._sequentialIndex = 0;
     }
 
-    const sample = rows[this._sequentialIndex];
+    const rawSample = rows[this._sequentialIndex];
     this._sequentialIndex += 1;
-    this._lastSequentialSample = sample;
-    return sample;
+    this._globalRoundCounter += 1;
+
+    const formattedSample = {
+      roundId: this._globalRoundCounter,
+      timestamp: rawSample.timestamp,
+      isoDate: rawSample.isoDate,
+      rainfall: rawSample.rainfall ?? 0,
+      temperature: rawSample.temperature ?? null,
+      humidity: rawSample.humidity ?? null,
+      windSpeed: rawSample.windSpeed ?? null,
+      windGust: rawSample.windGust ?? null,
+      source: 'dataset'
+    };
+
+    this._lastSequentialSample = formattedSample;
+    this._recentSamples.push(formattedSample);
+    if (this._recentSamples.length > 200) {
+      this._recentSamples.shift();
+    }
+
+    return formattedSample;
   }
 
   getCurrentWeatherSample() {
     return this._lastSequentialSample;
+  }
+
+  getRecentSamples(limit = 100) {
+    if (!this._recentSamples.length && this._lastSequentialSample) {
+      return [this._lastSequentialSample];
+    }
+    const max = Math.max(1, Math.floor(limit));
+    return this._recentSamples.slice(-max);
   }
 
   async getDatasetInfo() {

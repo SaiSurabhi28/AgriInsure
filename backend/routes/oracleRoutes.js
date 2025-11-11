@@ -183,6 +183,7 @@ router.get('/weather', async (req, res) => {
 router.get('/weather/live', async (req, res) => {
   try {
     const sample = await datasetWeatherService.getNextWeatherSample();
+    const history = datasetWeatherService.getRecentSamples(100);
 
     if (!sample) {
       return res.status(503).json({
@@ -194,7 +195,10 @@ router.get('/weather/live', async (req, res) => {
     res.json({
       success: true,
       data: sample,
-      timestamp: new Date().toISOString()
+      history,
+      source: 'dataset',
+      timestamp: new Date().toISOString(),
+      totalRounds: history.length
     });
   } catch (error) {
     console.error('Live weather error:', error);

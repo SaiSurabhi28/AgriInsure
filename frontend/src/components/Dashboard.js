@@ -53,7 +53,10 @@ const Dashboard = () => {
       if (response.ok) {
         const data = await response.json();
         if (data.data) {
-          const latest = data.data;
+          const history = Array.isArray(data.history) && data.history.length > 0
+            ? data.history
+            : [data.data];
+          const latest = history[history.length - 1];
           setWeatherData({
             rainfall: latest.rainfallFormatted || (latest.rainfall !== undefined && latest.rainfall !== null ? Number(latest.rainfall).toFixed(2) : '--'),
             temperature: latest.temperature !== null && latest.temperature !== undefined ? Number(latest.temperature).toFixed(1) : '--',

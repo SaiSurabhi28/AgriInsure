@@ -15,26 +15,28 @@ const WeatherFeed = () => {
       if (response.ok) {
         const data = await response.json();
         if (data?.data) {
-          const sample = data.data;
-          const round = {
-            roundId: sample.roundId ?? sample.timestamp ?? Math.floor(Date.now() / 1000),
-            timestamp: sample.timestamp ?? Math.floor(Date.now() / 1000),
-            rainfall: sample.rainfall !== undefined && sample.rainfall !== null
-              ? Number(sample.rainfall)
-              : sample.rainfallFormatted
-                ? Number(sample.rainfallFormatted)
+          const transform = (entry) => ({
+            roundId: entry.roundId ?? entry.timestamp ?? Math.floor(Date.now() / 1000),
+            timestamp: entry.timestamp ?? Math.floor(Date.now() / 1000),
+            rainfall: entry.rainfall !== undefined && entry.rainfall !== null
+              ? Number(entry.rainfall)
+              : entry.rainfallFormatted
+                ? Number(entry.rainfallFormatted)
                 : 0,
-            temperature: sample.temperature ?? null,
-            humidity: sample.humidity ?? null,
-            windSpeed: sample.windSpeed ?? null,
-            source: sample.source || data.source || 'dataset'
-          };
-          setLatestSample(round);
-          setDataSource(round.source);
-          setHistoryRounds(prev => {
-            const next = [...prev, round].slice(-100);
-            return next;
+            temperature: entry.temperature ?? null,
+            humidity: entry.humidity ?? null,
+            windSpeed: entry.windSpeed ?? null,
+            source: entry.source || data.source || 'dataset'
           });
+
+          const historyList = Array.isArray(data.history) && data.history.length > 0
+            ? data.history.map(transform)
+            : [transform(data.data)];
+
+          const latestRound = historyList[historyList.length - 1];
+          setLatestSample(latestRound);
+          setDataSource(latestRound.source);
+          setHistoryRounds(historyList);
           setError(null);
         }
       } else {
