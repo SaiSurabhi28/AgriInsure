@@ -25,33 +25,6 @@ const CreatePolicy = () => {
     return message.includes('start time must be in the future');
   };
 
-  const computeStartTime = async (initialBuffer, staticCallFn) => {
-    const latestBlock = await provider.getBlock('latest');
-    const chainTimestamp = latestBlock && typeof latestBlock.timestamp !== 'undefined'
-      ? Number(latestBlock.timestamp)
-      : Math.floor(Date.now() / 1000);
-    const realNow = Math.floor(Date.now() / 1000);
-    const base = Math.max(chainTimestamp, realNow);
-    const buffers = [initialBuffer, initialBuffer + 90, initialBuffer + 300]; // up to ~5 minutes ahead
-
-    for (const buffer of buffers) {
-      const candidate = base + buffer;
-      try {
-        await staticCallFn(candidate);
-        console.log(`Using start time ${candidate} (+${buffer}s buffer)`);
-        return candidate;
-      } catch (err) {
-        if (isStartTimeError(err)) {
-          console.warn(`Start time ${candidate} rejected; trying with buffer ${buffer + 90}s`);
-          continue;
-        }
-        throw err;
-      }
-    }
-
-    throw new Error('Unable to schedule a policy start time in the future. Please try again in a moment.');
-  };
-
   const API_BASE_URL = 'http://localhost:3001';
 
   // Load products and locations
@@ -188,15 +161,14 @@ const CreatePolicy = () => {
         premiumWei = ethers.parseEther(premiumValue);
       }
       
-      const startTime = await computeStartTime(45, async (candidateStart) => {
-        await policyFactory.createPolicy.staticCall(
-          parseInt(formData.productId),
-          candidateStart,
-          durationDays,
-          threshold,
-          { value: premiumWei }
-        );
-      });
+      const startTime = 0;
+      await policyFactory.createPolicy.staticCall(
+        parseInt(formData.productId),
+        startTime,
+        durationDays,
+        threshold,
+        { value: premiumWei }
+      );
 
       const tx = await policyFactory.createPolicy(
         parseInt(formData.productId),
@@ -312,15 +284,14 @@ const CreatePolicy = () => {
         ? "0"
         : ethers.parseEther(premiumValue);
 
-      const startTime = await computeStartTime(45, async (candidateStart) => {
-        await policyFactory.createTestPolicy.staticCall(
-          parseInt(formData.productId),
-          candidateStart,
-          60,
-          threshold,
-          { value: premiumWei }
-        );
-      });
+      const startTime = 0;
+      await policyFactory.createTestPolicy.staticCall(
+        parseInt(formData.productId),
+        startTime,
+        60,
+        threshold,
+        { value: premiumWei }
+      );
 
       const tx = await policyFactory.createTestPolicy(
         parseInt(formData.productId),

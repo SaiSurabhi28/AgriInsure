@@ -233,10 +233,9 @@ contract PolicyFactory is Ownable, ReentrancyGuard, Pausable {
         Product memory product = products[productId];
         require(product.isActive, "Product not active");
         uint64 currentTs = uint64(block.timestamp);
-        require(
-            startTs >= currentTs || currentTs - startTs <= START_TIME_TOLERANCE,
-            "Start time must be in the future"
-        );
+        if (startTs == 0 || startTs + START_TIME_TOLERANCE < currentTs) {
+            startTs = currentTs;
+        }
         require(durationDays >= product.minDurationDays && durationDays <= product.maxDurationDays, "Invalid duration");
         require(threshold >= product.minThreshold && threshold <= product.maxThreshold, "Invalid threshold");
         
@@ -293,10 +292,9 @@ contract PolicyFactory is Ownable, ReentrancyGuard, Pausable {
         Product memory product = products[productId];
         require(product.isActive, "Product not active");
         uint64 currentTs = uint64(block.timestamp);
-        require(
-            startTs >= currentTs || currentTs - startTs <= START_TIME_TOLERANCE,
-            "Start time must be in the future"
-        );
+        if (startTs == 0 || startTs + START_TIME_TOLERANCE < currentTs) {
+            startTs = currentTs;
+        }
         require(threshold >= product.minThreshold && threshold <= product.maxThreshold, "Invalid threshold");
         require(durationSeconds > 0 && durationSeconds <= 86400 * 30, "Duration must be between 1 second and 30 days");
         
