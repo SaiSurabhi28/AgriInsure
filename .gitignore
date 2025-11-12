@@ -49,6 +49,9 @@ temp/
 
 node_modules
 
+# Local Python environments
+.perf-venv/
+
 # IoT Simulator data (generated)
 iot-sim/data/*.json
 !iot-sim/data/.gitkeep
