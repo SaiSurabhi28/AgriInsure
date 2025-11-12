@@ -19,24 +19,33 @@ def avg_gas_bar(df):
     grouped = (
         df.groupby('operation')['gas_used']
         .mean()
-        .sort_values(ascending=False)
+        .sort_values()
     )
-    fig, ax = plt.subplots(figsize=(7, 4.5))
-    ax.bar(grouped.index, grouped / 1000, color='#56a3a6')
-    ax.set_ylabel('Average gas (×10^3 units)')
+    fig, ax = plt.subplots(figsize=(6, 4))
+    bars = ax.barh(grouped.index, grouped / 1000, color='#56a3a6')
+    ax.set_xlabel('Average gas (×10³ units)')
     ax.set_title('Average gas per operation')
-    ax.grid(axis='y', alpha=0.3)
-    for idx, val in enumerate(grouped / 1000):
-        ax.text(idx, val + 1, f"{val:.1f}", ha='center', va='bottom', fontsize=9)
+    ax.grid(axis='x', alpha=0.25, linestyle='--')
+    for bar, val in zip(bars, grouped / 1000):
+        ax.text(bar.get_width() + 2, bar.get_y() + bar.get_height() / 2, f"{val:.1f}", va='center', fontsize=9)
     fig.tight_layout()
     fig.savefig(OUTPUT_DIR / 'gas_bar.png', dpi=200)
 
 
 def gas_pie(df):
     grouped = df.groupby('operation')['gas_used'].sum().sort_values(ascending=False)
-    fig, ax = plt.subplots(figsize=(5, 5))
-    ax.pie(grouped, labels=grouped.index, autopct='%1.1f%%', startangle=140)
+    fig, ax = plt.subplots(figsize=(5.5, 5))
+    wedges, _, autotexts = ax.pie(
+        grouped,
+        labels=None,
+        autopct='%1.1f%%',
+        startangle=140,
+        pctdistance=0.75,
+        textprops={'fontsize': 9}
+    )
+    ax.legend(wedges, grouped.index, title='Operation', loc='center left', bbox_to_anchor=(1, 0.5))
     ax.set_title('Total gas distribution by operation')
+    fig.tight_layout()
     fig.savefig(OUTPUT_DIR / 'gas_pie.png', dpi=200)
 
 
