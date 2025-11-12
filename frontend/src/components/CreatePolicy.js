@@ -19,52 +19,74 @@ const CreatePolicy = () => {
   const [locations, setLocations] = useState([]);
   const [locationRecommendations, setLocationRecommendations] = useState(null);
   const [showRecommendations, setShowRecommendations] = useState(false);
+  const [advancedMode, setAdvancedMode] = useState(false);
 
-  const isStartTimeError = (error) => {
-    const message = (error?.reason || error?.shortMessage || error?.message || error?.error?.message || '').toLowerCase();
-    return message.includes('start time must be in the future');
+  const apiBaseUrl = 'http://localhost:3001';
+
+  const triggerExpireSweep = async () => {
+    try {
+      await fetch(`${apiBaseUrl}/api/policies/expire-due`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' }
+      });
+    } catch (err) {
+      console.warn('Expire sweep failed:', err?.message || err);
+    }
   };
 
-  const API_BASE_URL = 'http://localhost:3001';
+  const getChainTimestamp = async () => {
+    if (provider) {
+      try {
+        const block = await provider.getBlock('latest');
+        if (block?.timestamp) {
+          return Number(block.timestamp);
+        }
+      } catch (err) {
+        console.warn('Failed to read latest block timestamp:', err?.message || err);
+      }
+    }
+    return Math.floor(Date.now() / 1000);
+  };
+
+  const fetchProducts = async () => {
+    try {
+      // Load products
+      const productsRes = await fetch(`${apiBaseUrl}/api/products`);
+      if (productsRes.ok) {
+        const productsData = await productsRes.json();
+        setProducts(productsData.products || []);
+        if (productsData.products && productsData.products.length > 0) {
+          const firstProduct = productsData.products[0];
+          setSelectedProduct(firstProduct);
+          setFormData(prev => ({ 
+            ...prev,
+            productId: firstProduct.id.toString(), 
+            duration: firstProduct.minDurationDays.toString(),
+            threshold: Math.floor((firstProduct.minThreshold + firstProduct.maxThreshold) / 2).toString()
+          }));
+        }
+      }
+
+      // Load locations
+      const locationsRes = await fetch(`${apiBaseUrl}/api/policies/locations/all`);
+      if (locationsRes.ok) {
+        const locationsData = await locationsRes.json();
+        setLocations(locationsData.regions || []);
+      }
+    } catch (err) {
+      console.error('Error loading data:', err);
+    }
+  };
 
   // Load products and locations
   useEffect(() => {
-    const loadData = async () => {
-      try {
-        // Load products
-        const productsRes = await fetch(`${API_BASE_URL}/api/products`);
-        if (productsRes.ok) {
-          const productsData = await productsRes.json();
-          setProducts(productsData.products || []);
-          if (productsData.products && productsData.products.length > 0) {
-            const firstProduct = productsData.products[0];
-            setSelectedProduct(firstProduct);
-            setFormData(prev => ({ 
-              ...prev,
-              productId: firstProduct.id.toString(), 
-              duration: firstProduct.minDurationDays.toString(),
-              threshold: Math.floor((firstProduct.minThreshold + firstProduct.maxThreshold) / 2).toString()
-            }));
-          }
-        }
-
-        // Load locations
-        const locationsRes = await fetch(`${API_BASE_URL}/api/policies/locations/all`);
-        if (locationsRes.ok) {
-          const locationsData = await locationsRes.json();
-          setLocations(locationsData.regions || []);
-        }
-      } catch (err) {
-        console.error('Error loading data:', err);
-      }
-    };
-    loadData();
+    fetchProducts();
   }, []);
 
   // Calculate pricing when form changes
   useEffect(() => {
     if (formData.productId && formData.duration) {
-      fetch(`${API_BASE_URL}/api/policies/price`, {
+      fetch(`${apiBaseUrl}/api/policies/price`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -90,7 +112,7 @@ const CreatePolicy = () => {
   // Fetch location recommendations when location or duration changes
   useEffect(() => {
     if (formData.location && formData.duration) {
-      fetch(`${API_BASE_URL}/api/policies/locations/${formData.location}/recommendations?durationDays=${formData.duration}`)
+      fetch(`${apiBaseUrl}/api/policies/locations/${formData.location}/recommendations?durationDays=${formData.duration}`)
         .then(res => res.json())
         .then(data => {
           if (data.success) {
@@ -123,7 +145,7 @@ const CreatePolicy = () => {
     setCreatingPolicy(true);
     try {
       // Get contract ABI and address (use local deployment address - get from backend)
-      const contractsResponse = await fetch(`${API_BASE_URL}/api/contracts/addresses`);
+      const contractsResponse = await fetch(`${apiBaseUrl}/api/contracts/addresses`);
       const contracts = await contractsResponse.json();
       const policyFactoryAddress = contracts.PolicyFactory;
       
@@ -135,102 +157,91 @@ const CreatePolicy = () => {
       
       const signer = await provider.getSigner();
       const policyFactory = new ethers.Contract(policyFactoryAddress, policyFactoryAbi, signer);
-      
-      // Check if user already has an active policy directly from contract
-      try {
-        const hasActive = await policyFactory.hasActivePolicy(account);
-        if (hasActive) {
-          alert('You already have an active policy. Please wait for it to expire or be claimed before creating a new one.');
-          setCreatingPolicy(false);
-          return;
-        }
-      } catch (checkError) {
-        console.warn('Could not check for active policy:', checkError.message);
-        // Continue anyway - the contract will reject if policy exists
-      }
-      
-      const durationDays = parseInt(formData.duration);
-      const threshold = parseInt(formData.threshold);
-      
-      // Convert premium to wei - handle 0 premium correctly
-      let premiumWei;
-      const premiumValue = pricing.premiumFormatted || (pricing.premium ? pricing.premium.toString() : "0");
-      if (!premiumValue || premiumValue === "0.0" || premiumValue === "0" || parseFloat(premiumValue) === 0) {
-        premiumWei = "0"; // Truly free - no ETH needed
-      } else {
-        premiumWei = ethers.parseEther(premiumValue);
-      }
-      
-      await policyFactory.createPolicy.staticCall(
-        parseInt(formData.productId),
-        durationDays,
-        threshold,
-        { value: premiumWei }
-      );
 
-      const tx = await policyFactory.createPolicy(
-        parseInt(formData.productId),
-        durationDays,
-        threshold,
-        { value: premiumWei }
-      );
+    await triggerExpireSweep();
 
-      console.log('Creating policy with:', {
-        productId: parseInt(formData.productId),
-        durationDays,
-        threshold,
-        premiumWei: premiumWei.toString(),
-        premiumFormatted: premiumValue
-      });
-      
-      const receipt = await tx.wait();
-      console.log('Policy created:', receipt);
-      
-      // Wait a moment for blockchain state to update
-      await new Promise(resolve => setTimeout(resolve, 2000));
-      
-      // Dispatch event to notify MyPolicies to refresh
-      window.dispatchEvent(new CustomEvent('policyCreated', { detail: { policyId: receipt.logs?.[0]?.topics?.[3] } }));
-      
-      alert(`Policy created successfully! Transaction: ${receipt.hash}\n\nYou can now view your policy in "My Policies" page.`);
-      
-      // Don't auto-redirect - let user manually navigate to avoid interrupting the flow
-      
-      // Reset form to default values
-      const defaultDuration = selectedProduct?.minDurationDays?.toString() || '14';
-      const defaultThreshold = selectedProduct 
-        ? Math.floor((selectedProduct.minThreshold + selectedProduct.maxThreshold) / 2).toString()
-        : '50';
-      setFormData({ 
-        productId: formData.productId, 
-        duration: defaultDuration, 
-        threshold: defaultThreshold 
-      });
-      setPricing(null);
-    } catch (error) {
-      console.error('Error creating policy:', error);
-      console.error('Full error details:', {
-        message: error.message,
-        code: error.code,
-        data: error.data,
-        reason: error.reason,
-        error: error
-      });
-      
-      // More detailed error message
-      let errorMsg = 'Error creating policy: ' + error.message;
-      if (error.reason) {
-        errorMsg += '\nReason: ' + error.reason;
-      }
-      if (error.code === 'ACTION_REJECTED') {
-        errorMsg = 'Transaction was rejected. Please approve the transaction in MetaMask.';
-      }
-      
-      alert(errorMsg);
-    } finally {
-      setCreatingPolicy(false);
+    const durationDays = parseInt(formData.duration);
+    const threshold = parseInt(formData.threshold);
+    
+    // Convert premium to wei - handle 0 premium correctly
+    let premiumWei;
+    const premiumValue = pricing.premiumFormatted || (pricing.premium ? pricing.premium.toString() : "0");
+    if (!premiumValue || premiumValue === "0.0" || premiumValue === "0" || parseFloat(premiumValue) === 0) {
+      premiumWei = "0"; // Truly free - no ETH needed
+    } else {
+      premiumWei = ethers.parseEther(premiumValue);
     }
-  };
+    
+    await policyFactory.createPolicy.staticCall(
+      parseInt(formData.productId),
+      durationDays,
+      threshold,
+      { value: premiumWei }
+    );
+
+    const tx = await policyFactory.createPolicy(
+      parseInt(formData.productId),
+      durationDays,
+      threshold,
+      { value: premiumWei }
+    );
+
+    console.log('Creating policy with:', {
+      productId: parseInt(formData.productId),
+      durationDays,
+      threshold,
+      premiumWei: premiumWei.toString(),
+      premiumFormatted: premiumValue
+    });
+    
+    const receipt = await tx.wait();
+    console.log('Policy created:', receipt);
+    
+    // Wait a moment for blockchain state to update
+    await new Promise(resolve => setTimeout(resolve, 2000));
+    
+    // Dispatch event to notify MyPolicies to refresh
+    window.dispatchEvent(new CustomEvent('policyCreated', { detail: { policyId: receipt.logs?.[0]?.topics?.[3] } }));
+    
+    alert(`Policy created successfully! Transaction: ${receipt.hash}\n\nYou can now view your policy in "My Policies" page.`);
+    
+    // Don't auto-redirect - let user manually navigate to avoid interrupting the flow
+    
+    // Reset form to default values
+    const defaultDuration = selectedProduct?.minDurationDays?.toString() || '14';
+    const defaultThreshold = selectedProduct 
+      ? Math.floor((selectedProduct.minThreshold + selectedProduct.maxThreshold) / 2).toString()
+      : '50';
+    setFormData({ 
+      productId: formData.productId, 
+      duration: defaultDuration, 
+      threshold: defaultThreshold 
+    });
+    setPricing(null);
+  } catch (error) {
+    console.error('Error creating policy:', error);
+    console.error('Full error details:', {
+      message: error.message,
+      code: error.code,
+      data: error.data,
+      reason: error.reason,
+      error: error
+    });
+    
+    // More detailed error message
+    let errorMsg = 'Error creating policy: ' + error.message;
+    if (error.reason) {
+      errorMsg += '\nReason: ' + error.reason;
+    }
+    if (error.code === 'ACTION_REJECTED') {
+      errorMsg = 'Transaction was rejected. Please approve the transaction in MetaMask.';
+    }
+    
+    alert(errorMsg);
+  } finally {
+    setCreatingPolicy(false);
+  }
+};
 
   const handleCreateTestPolicy = async () => {
     if (!isConnected || !provider) {
@@ -250,7 +261,7 @@ const CreatePolicy = () => {
 
     setCreatingTestPolicy(true);
     try {
-      const contractsResponse = await fetch(`${API_BASE_URL}/api/contracts/addresses`);
+      const contractsResponse = await fetch(`${apiBaseUrl}/api/contracts/addresses`);
       const contracts = await contractsResponse.json();
       const policyFactoryAddress = contracts.PolicyFactory;
 
@@ -262,53 +273,44 @@ const CreatePolicy = () => {
       const signer = await provider.getSigner();
       const policyFactory = new ethers.Contract(policyFactoryAddress, policyFactoryAbi, signer);
 
-      try {
-        const hasActive = await policyFactory.hasActivePolicy(account);
-        if (hasActive) {
-          alert('You already have an active policy. Please wait for it to expire or be claimed before creating a new one.');
-          setCreatingTestPolicy(false);
-          return;
-        }
-      } catch (checkError) {
-        console.warn('Could not check for active policy (test policy):', checkError.message);
-      }
+    await triggerExpireSweep();
 
-      const threshold = parseInt(formData.threshold);
+    const threshold = parseInt(formData.threshold);
 
-      const premiumValue = pricing.premiumFormatted || (pricing.premium ? pricing.premium.toString() : "0");
-      const premiumWei = (!premiumValue || premiumValue === "0.0" || premiumValue === "0" || parseFloat(premiumValue) === 0)
-        ? "0"
-        : ethers.parseEther(premiumValue);
+    const premiumValue = pricing.premiumFormatted || (pricing.premium ? pricing.premium.toString() : "0");
+    const premiumWei = (!premiumValue || premiumValue === "0.0" || premiumValue === "0" || parseFloat(premiumValue) === 0)
+      ? "0"
+      : ethers.parseEther(premiumValue);
 
-      await policyFactory.createTestPolicy.staticCall(
-        parseInt(formData.productId),
-        60,
-        threshold,
-        { value: premiumWei }
-      );
+    await policyFactory.createTestPolicy.staticCall(
+      parseInt(formData.productId),
+      60,
+      threshold,
+      { value: premiumWei }
+    );
 
-      const tx = await policyFactory.createTestPolicy(
-        parseInt(formData.productId),
-        60,
-        threshold,
-        { value: premiumWei }
-      );
+    const tx = await policyFactory.createTestPolicy(
+      parseInt(formData.productId),
+      60,
+      threshold,
+      { value: premiumWei }
+    );
 
-      const receipt = await tx.wait();
-      console.log('60s test policy created:', receipt);
+    const receipt = await tx.wait();
+    console.log('60s test policy created:', receipt);
 
-      await new Promise(resolve => setTimeout(resolve, 2000));
+    await new Promise(resolve => setTimeout(resolve, 2000));
 
-      window.dispatchEvent(new CustomEvent('policyCreated', { detail: { policyId: receipt.logs?.[0]?.topics?.[3] } }));
+    window.dispatchEvent(new CustomEvent('policyCreated', { detail: { policyId: receipt.logs?.[0]?.topics?.[3] } }));
 
-      alert(`60-second test policy created! Transaction: ${receipt.hash}\n\nThe policy will start in a few seconds and expire one minute later.`);
-    } catch (error) {
-      console.error('Error creating test policy:', error);
-      alert('Failed to create 60-second policy: ' + (error?.message || 'Unknown error'));
-    } finally {
-      setCreatingTestPolicy(false);
-    }
-  };
+    alert(`60-second test policy created! Transaction: ${receipt.hash}\n\nThe policy will start in a few seconds and expire one minute later.`);
+  } catch (error) {
+    console.error('Error creating test policy:', error);
+    alert('Failed to create 60-second policy: ' + (error?.message || 'Unknown error'));
+  } finally {
+    setCreatingTestPolicy(false);
+  }
+};
 
   return (
     <div className="create-policy">

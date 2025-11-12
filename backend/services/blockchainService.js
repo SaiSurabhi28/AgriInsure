@@ -1,6 +1,7 @@
 const { ethers } = require('ethers');
 const fs = require('fs-extra');
 const path = require('path');
+const datasetWeatherService = require('./datasetWeatherService');
 
 class BlockchainService {
   constructor() {
@@ -8,6 +9,7 @@ class BlockchainService {
     this.wallet = null;
     this.contracts = {};
     this.contractAddresses = {};
+    this.virtualChainClock = null;
     this.initializeProvider();
     this.loadContractAddresses();
   }
@@ -56,6 +58,7 @@ class BlockchainService {
       if (diff > 1) {
         await this.provider.send('evm_increaseTime', [diff]);
         await this.provider.send('evm_mine', []);
+        this._setVirtualChainTime(now);
       }
     } catch (error) {
       console.warn('Time sync skipped:', error.message || error);
@@ -117,6 +120,99 @@ class BlockchainService {
       }
     } catch (error) {
       console.error('Failed to load contract addresses:', error);
+    }
+  }
+
+  _updateVirtualChainClock(latestChainTimestamp) {
+    const wallNow = Math.floor(Date.now() / 1000);
+    if (!this.virtualChainClock) {
+      this.virtualChainClock = {
+        chain: latestChainTimestamp,
+        capturedAt: wallNow
+      };
+      return latestChainTimestamp;
+    }
+
+    const delta = Math.max(0, wallNow - this.virtualChainClock.capturedAt);
+    let projectedChain = this.virtualChainClock.chain + delta;
+    if (latestChainTimestamp > projectedChain) {
+      projectedChain = latestChainTimestamp;
+    }
+
+    this.virtualChainClock = {
+      chain: projectedChain,
+      capturedAt: wallNow
+    };
+
+    return projectedChain;
+  }
+
+  _setVirtualChainTime(chainTimestamp) {
+    const wallNow = Math.floor(Date.now() / 1000);
+    this.virtualChainClock = {
+      chain: chainTimestamp,
+      capturedAt: wallNow
+    };
+    return chainTimestamp;
+  }
+
+  async seedOracleFromDataset() {
+    try {
+      await this.initializeContracts();
+      const oracle = this.contracts.OracleAdapter;
+      if (!oracle) {
+        throw new Error('OracleAdapter contract not initialized');
+      }
+
+      const sample = await datasetWeatherService.getNextWeatherSample();
+      if (!sample) {
+        throw new Error('No dataset sample available');
+      }
+
+      const overallAvg = await datasetWeatherService.getOverallAverageRainfall();
+      const baseline = overallAvg > 0 ? overallAvg : 0.25; // safeguard against division by zero
+      const targetBaselineMm = parseFloat(process.env.ORACLE_DATASET_BASELINE_MM || '80'); // map avg rainfall to ~80mm
+
+      const rainfallRaw = typeof sample.rainfall === 'number' ? sample.rainfall : baseline;
+      const scaledRainfall = Math.max(
+        0,
+        Math.round((rainfallRaw / baseline) * targetBaselineMm)
+      );
+
+      const latestRoundId = await oracle.latestRoundId();
+      const nextRoundId = latestRoundId + 1n;
+
+      const signer = await this.getWriteSigner();
+      const oracleWithSigner = oracle.connect(signer);
+
+      const latestBlock = await this.provider.getBlock('latest');
+      const baseTimestamp = Number(latestBlock?.timestamp || Math.floor(Date.now() / 1000));
+      const targetTimestamp = baseTimestamp + 1;
+
+      const tx = await oracleWithSigner.push(
+        nextRoundId,
+        BigInt(scaledRainfall),
+        BigInt(targetTimestamp)
+      );
+      await tx.wait();
+
+      this._setVirtualChainTime(targetTimestamp);
+
+      console.log(
+        `📡 Oracle feed round ${nextRoundId} | rainfall=${scaledRainfall} | raw=${rainfallRaw.toFixed(
+          3
+        )} | baseline=${baseline.toFixed(3)} | ts=${targetTimestamp}`
+      );
+
+      return {
+        roundId: nextRoundId.toString(),
+        rainfall: scaledRainfall,
+        rainfallRaw,
+        timestamp: targetTimestamp
+      };
+    } catch (error) {
+      console.warn('Oracle dataset feed skipped:', error.message || error);
+      return null;
     }
   }
 
@@ -425,7 +521,17 @@ class BlockchainService {
       await this.syncBlockchainTime();
 
       const latestPolicyId = Number(await contract.policyCounter());
-      const now = Math.floor(Date.now() / 1000);
+      const network = await this.provider.getNetwork();
+      const isLocalChain = network?.chainId === 31337n || network?.chainId === 1337n;
+      let now;
+      try {
+        const latestBlock = await this.provider.getBlock('latest');
+        now = Number(latestBlock?.timestamp || Math.floor(Date.now() / 1000));
+      } catch (blockError) {
+        console.warn('Falling back to wall-clock time for expiry checks:', blockError.message || blockError);
+        now = Math.floor(Date.now() / 1000);
+      }
+      let virtualNow = this._updateVirtualChainClock(now);
       const expiredPolicies = [];
 
       for (let policyId = 1; policyId <= latestPolicyId; policyId++) {
@@ -433,15 +539,39 @@ class BlockchainService {
           const policy = await contract.getPolicy(policyId);
           const status = Number(policy.status);
           const endTimestamp = Number(policy.endTs ?? policy.endTimestamp ?? 0);
-          if (
-            policy.holder !== ethers.ZeroAddress &&
-            status === 0 &&
-            endTimestamp > 0 &&
-            endTimestamp <= now
-          ) {
+          if (policy.holder === ethers.ZeroAddress || status !== 0 || endTimestamp === 0) {
+            continue;
+          }
+
+          // Debug trace for local expiry behaviour
+          if (isLocalChain) {
+            console.log(`[AutoExpire] Policy #${policyId} status=${status} now=${now} virtual=${virtualNow} end=${endTimestamp}`);
+          }
+
+          // For local chains, fast-forward the next block once our virtual chain clock passes endTs
+          if (isLocalChain && endTimestamp <= virtualNow && endTimestamp >= now) {
+            const wallClockNow = Math.floor(Date.now() / 1000);
+            const targetTs = Math.max(endTimestamp + 1, now + 1, wallClockNow);
+            try {
+              await this.provider.send('evm_setNextBlockTimestamp', [targetTs]);
+              await this.provider.send('evm_mine', []);
+              now = targetTs;
+              virtualNow = this._setVirtualChainTime(now);
+            } catch (timeError) {
+              console.warn(`Failed to fast-forward time for policy #${policyId}:`, timeError?.message || timeError);
+              virtualNow = this._updateVirtualChainClock(now);
+            }
+          }
+
+          if (endTimestamp > 0 && endTimestamp < now) {
             const tx = await contractWithSigner.expirePolicy(policyId);
             await tx.wait();
             expiredPolicies.push(policyId);
+            now = Number((await this.provider.getBlock('latest'))?.timestamp || now);
+            virtualNow = this._setVirtualChainTime(now);
+          } else {
+            // Progress the virtual clock for subsequent policies
+            virtualNow = this._updateVirtualChainClock(now);
           }
         } catch (innerError) {
           const message = innerError?.reason || innerError?.error?.message || innerError?.message || 'Unknown error';

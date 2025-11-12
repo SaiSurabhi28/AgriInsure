@@ -42,15 +42,12 @@ async function main() {
   console.log('');
   
   console.log('📝 Creating policy...');
-  // Calculate start time right before sending (must be in the future)
-  const startTime = Math.floor(Date.now() / 1000) + 15; // Start 15 seconds from now
-  console.log('   Start:', new Date(startTime * 1000).toLocaleString());
-  console.log('   End:', new Date((startTime + durationSeconds) * 1000).toLocaleString());
+  console.log('   Start: Immediate (current block time)');
+  console.log('   Duration: 60 seconds');
   console.log('');
-  
+
   const tx = await policyFactory.connect(farmer).createTestPolicy(
     productId,
-    startTime,
     durationSeconds,
     threshold,
     { value: premiumWei }

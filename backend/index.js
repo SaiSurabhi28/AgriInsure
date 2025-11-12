@@ -19,7 +19,10 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 const AUTO_EXPIRE_ENABLED = (process.env.AUTO_EXPIRE_ENABLED || 'true') !== 'false';
 const AUTO_EXPIRE_INTERVAL_MS = parseInt(process.env.AUTO_EXPIRE_INTERVAL_MS || '15000', 10);
+const ORACLE_FEED_ENABLED = (process.env.ORACLE_DATASET_FEED_ENABLED || 'true') !== 'false';
+const ORACLE_FEED_INTERVAL_MS = parseInt(process.env.ORACLE_DATASET_FEED_INTERVAL_MS || '10000', 10);
 let autoExpireTimer = null;
+let oracleFeedTimer = null;
 
 // Create HTTP server for WebSocket
 const server = http.createServer(app);
@@ -253,6 +256,23 @@ server.listen(PORT, () => {
     console.log(`🕒 Auto-expire scheduler active (every ${AUTO_EXPIRE_INTERVAL_MS / 1000}s)`);
   } else {
     console.log('🕒 Auto-expire scheduler disabled');
+  }
+
+  if (ORACLE_FEED_ENABLED && ORACLE_FEED_INTERVAL_MS > 0) {
+    if (oracleFeedTimer) {
+      clearInterval(oracleFeedTimer);
+    }
+    oracleFeedTimer = setInterval(async () => {
+      try {
+        await blockchainService.seedOracleFromDataset();
+      } catch (error) {
+        console.error('Oracle dataset feed failed:', error.message || error);
+      }
+    }, ORACLE_FEED_INTERVAL_MS);
+
+    console.log(`🌧️ Oracle dataset feed active (every ${ORACLE_FEED_INTERVAL_MS / 1000}s)`);
+  } else {
+    console.log('🌧️ Oracle dataset feed disabled');
   }
 });
 

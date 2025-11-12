@@ -225,8 +225,7 @@ contract PolicyFactory is Ownable, ReentrancyGuard, Pausable {
         uint64 durationDays,
         uint64 threshold
     ) external payable nonReentrant whenNotPaused returns (uint256) {
-        // Check if user already has an active policy
-        require(!hasActivePolicy(msg.sender), "Account already has an active policy");
+        _ensureNoBlockingActivePolicy(msg.sender);
         
         Product memory product = products[productId];
         require(product.isActive, "Product not active");
@@ -279,8 +278,7 @@ contract PolicyFactory is Ownable, ReentrancyGuard, Pausable {
         uint64 durationSeconds,
         uint64 threshold
     ) external payable nonReentrant whenNotPaused returns (uint256) {
-        // Check if user already has an active policy
-        require(!hasActivePolicy(msg.sender), "Account already has an active policy");
+        _ensureNoBlockingActivePolicy(msg.sender);
         
         Product memory product = products[productId];
         require(product.isActive, "Product not active");
@@ -405,24 +403,8 @@ contract PolicyFactory is Ownable, ReentrancyGuard, Pausable {
      */
     function expirePolicy(uint256 policyId) external whenNotPaused {
         Policy storage policy = policies[policyId];
-        
-        // Check policy exists and is active
         require(policy.holder != address(0), "Policy does not exist");
-        require(policy.status == Status.Active, "Policy not active");
-        
-        // Check policy has expired
-        require(block.timestamp > policy.endTs, "Policy has not expired yet");
-        
-        // Mark as expired
-        policy.status = Status.Expired;
-        
-        // Clear active policy tracking
-        activePolicyId[policy.holder] = 0;
-        
-        // Premium stays in Treasury (insurance company keeps it)
-        // No need to transfer - it's already in Treasury from creation
-        
-        emit PolicyAutoExpired(policyId, policy.holder, policy.premiumPaid, block.timestamp);
+        _expirePolicy(policyId, policy);
     }
     
     /**
@@ -439,10 +421,7 @@ contract PolicyFactory is Ownable, ReentrancyGuard, Pausable {
                 policy.status == Status.Active && 
                 block.timestamp > policy.endTs) {
                 
-                policy.status = Status.Expired;
-                activePolicyId[policy.holder] = 0;
-                
-                emit PolicyAutoExpired(policyIds[i], policy.holder, policy.premiumPaid, block.timestamp);
+                _expirePolicy(policyIds[i], policy);
             }
         }
     }
@@ -480,5 +459,36 @@ contract PolicyFactory is Ownable, ReentrancyGuard, Pausable {
      */
     function unpauseFactory() external onlyOwner {
         _unpause();
+    }
+
+    function _ensureNoBlockingActivePolicy(address holder) internal {
+        uint256 existingPolicyId = activePolicyId[holder];
+        if (existingPolicyId == 0) {
+            return;
+        }
+
+        Policy storage policy = policies[existingPolicyId];
+
+        if (policy.status != Status.Active) {
+            activePolicyId[holder] = 0;
+            return;
+        }
+
+        if (block.timestamp > policy.endTs) {
+            _expirePolicy(existingPolicyId, policy);
+            return;
+        }
+
+        revert("Account already has an active policy");
+    }
+
+    function _expirePolicy(uint256 policyId, Policy storage policy) internal {
+        require(policy.status == Status.Active, "Policy not active");
+        require(block.timestamp > policy.endTs, "Policy has not expired yet");
+
+        policy.status = Status.Expired;
+        activePolicyId[policy.holder] = 0;
+
+        emit PolicyAutoExpired(policyId, policy.holder, policy.premiumPaid, block.timestamp);
     }
 }

@@ -261,6 +261,11 @@ class DatasetWeatherService {
     };
   }
 
+  async getOverallAverageRainfall() {
+    await this.loadDataset();
+    return this._cache.overallAvgRainfall || 0;
+  }
+
   async getStationStats() {
     if (this._stationStatsCache && (Date.now() - this._cache.loadedAt) < this.cacheDurationMs) {
       return this._stationStatsCache;

@@ -5,6 +5,8 @@ const IndexCalculator = require('../services/indexCalculator');
 const LocationWeatherService = require('../services/locationWeatherService');
 const datasetWeatherService = require('../services/datasetWeatherService');
 
+const ORACLE_DATASET_BASELINE_MM = parseFloat(process.env.ORACLE_DATASET_BASELINE_MM || '80');
+
 // Create a new insurance policy
 router.post('/create', async (req, res) => {
   try {
@@ -39,6 +41,24 @@ router.post('/create', async (req, res) => {
     console.error('Policy creation error:', error);
     res.status(500).json({
       error: 'Failed to create policy',
+      message: error.message
+    });
+  }
+});
+
+// Force expire any due policies (utility endpoint)
+router.post('/expire-due', async (req, res) => {
+  try {
+    const expiredPolicies = await blockchainService.expireDuePolicies();
+    res.json({
+      success: true,
+      expiredPolicies
+    });
+  } catch (error) {
+    console.error('Force expire error:', error);
+    res.status(500).json({
+      success: false,
+      error: 'Failed to expire policies',
       message: error.message
     });
   }
@@ -152,8 +172,13 @@ router.get('/:policyId/composite-index', async (req, res) => {
       });
     }
 
+    const overallAvg = await datasetWeatherService.getOverallAverageRainfall();
+    const rainfallBaseline = overallAvg > 0 ? overallAvg : 0.25;
+    const rainfallRaw = typeof latestWeather.rainfall === 'number' ? latestWeather.rainfall : rainfallBaseline;
+    const rainfallScaled = (rainfallRaw / rainfallBaseline) * ORACLE_DATASET_BASELINE_MM;
+
     const weatherData = {
-      rainfall: latestWeather.rainfall ?? 0,
+      rainfall: Math.round(rainfallScaled * 100) / 100,
       temperature: latestWeather.temperature ?? 20,
       soilMoisture: typeof latestWeather.humidity === 'number'
         ? Math.max(0, Math.min(100, latestWeather.humidity))
@@ -161,7 +186,8 @@ router.get('/:policyId/composite-index', async (req, res) => {
       windSpeed: latestWeather.windSpeed ?? 0,
       humidity: latestWeather.humidity ?? null,
       timestamp: latestWeather.isoDate,
-      source: 'dataset'
+      source: 'dataset',
+      rawRainfall: rainfallRaw
     };
 
     // Initialize calculator

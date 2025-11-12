@@ -15,6 +15,26 @@ const MyPolicies = () => {
   const [showCompositeIndex, setShowCompositeIndex] = useState(false);
   const [compositeIndexData, setCompositeIndexData] = useState(null);
   const [compositeIndexLoading, setCompositeIndexLoading] = useState(false);
+
+  const initialChainClock = () => {
+    if (typeof window !== 'undefined') {
+      try {
+        const stored = window.sessionStorage.getItem('agriinsure_chain_clock');
+        if (stored) {
+          const parsed = JSON.parse(stored);
+          if (parsed && typeof parsed.chain === 'number' && typeof parsed.capturedAt === 'number') {
+            return parsed;
+          }
+        }
+      } catch (err) {
+        console.warn('Failed to parse stored chain clock:', err?.message || err);
+      }
+    }
+    const nowSec = Math.floor(Date.now() / 1000);
+    return { chain: nowSec, capturedAt: nowSec };
+  };
+
+  const [chainClock, setChainClock] = useState(initialChainClock);
   
   useEffect(() => {
     console.log('🔍 MyPolicies - Account:', account);
@@ -47,6 +67,58 @@ const MyPolicies = () => {
     window.addEventListener('policyCreated', handlePolicyCreated);
     return () => window.removeEventListener('policyCreated', handlePolicyCreated);
   }, []);
+  
+  useEffect(() => {
+    let isMounted = true;
+
+    const updateChainTime = async () => {
+      if (!isMounted) return;
+
+      let blockTimestamp = null;
+      if (provider) {
+        try {
+          const latestBlock = await provider.getBlock('latest');
+          if (latestBlock?.timestamp) {
+            blockTimestamp = Number(latestBlock.timestamp);
+          }
+        } catch (err) {
+          // Swallow errors; we'll fall back to wall clock drift
+        }
+      }
+
+      setChainClock(prev => {
+        const wallNow = Math.floor(Date.now() / 1000);
+        const delta = Math.max(0, wallNow - prev.capturedAt);
+        let nextChain = prev.chain + delta;
+
+        if (typeof blockTimestamp === 'number' && blockTimestamp > nextChain) {
+          nextChain = blockTimestamp;
+        }
+
+        const nextClock = {
+          chain: nextChain,
+          capturedAt: wallNow
+        };
+
+        if (typeof window !== 'undefined') {
+          try {
+            window.sessionStorage.setItem('agriinsure_chain_clock', JSON.stringify(nextClock));
+          } catch (storageErr) {
+            // Ignore storage issues
+          }
+        }
+
+        return nextClock;
+      });
+    };
+
+    updateChainTime();
+    const intervalId = setInterval(updateChainTime, 1000);
+    return () => {
+      isMounted = false;
+      clearInterval(intervalId);
+    };
+  }, [provider]);
   
   const fetchAllPolicies = async () => {
     setAllPoliciesLoading(true);
@@ -153,8 +225,23 @@ const MyPolicies = () => {
     );
   }
 
-  const renderPolicyCard = (policy, key, extraBadge, showFinalizeButton = false) => {
+  const getCurrentChainTime = () => {
+    const wallNow = Math.floor(Date.now() / 1000);
+    const delta = Math.max(0, wallNow - chainClock.capturedAt);
+    return chainClock.chain + delta;
+  };
+
+  const renderPolicyCard = (policy, key, extraBadge, showFinalizeButton = false, nowOverrideSec = null) => {
     const isMyPolicy = policy.holder && account && policy.holder.toLowerCase() === account.toLowerCase();
+    const nowSec = typeof nowOverrideSec === 'number' ? nowOverrideSec : getCurrentChainTime();
+    const remainingSeconds = policy.endTs ? Math.max(0, policy.endTs - nowSec) : null;
+    const isShortPolicy = policy.startTs && policy.endTs && (policy.endTs - policy.startTs) < 86400;
+    const isExpiredOnChain = policy.status === 2 || policy.statusString === 'Expired';
+    const formatRemaining = (seconds) => {
+      const mins = Math.floor(seconds / 60);
+      const secs = seconds % 60;
+      return `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
+    };
     return (
       <Card key={key}>
         <CardContent>
@@ -191,7 +278,11 @@ const MyPolicies = () => {
             </Grid>
             <Grid item xs={6} md={3}>
               <Typography variant="caption" color="text.secondary">Duration</Typography>
-              <Typography variant="body2">{policy.startTs && policy.endTs ? Math.floor((policy.endTs - policy.startTs) / 86400) : 'N/A'} days</Typography>
+              {isShortPolicy ? (
+                <Typography variant="body2">60 sec test policy</Typography>
+              ) : (
+                <Typography variant="body2">{policy.startTs && policy.endTs ? Math.floor((policy.endTs - policy.startTs) / 86400) : 'N/A'} days</Typography>
+              )}
             </Grid>
             <Grid item xs={6} md={3}>
               <Typography variant="caption" color="text.secondary">Created</Typography>
@@ -199,7 +290,19 @@ const MyPolicies = () => {
             </Grid>
             <Grid item xs={6} md={3}>
               <Typography variant="caption" color="text.secondary">Expires</Typography>
-              <Typography variant="body2">{policy.endTs ? new Date(policy.endTs * 1000).toLocaleDateString() : 'N/A'}</Typography>
+              <Typography variant="body2">
+                {isShortPolicy
+                  ? remainingSeconds !== null
+                    ? isExpiredOnChain
+                      ? 'Expired'
+                      : remainingSeconds === 0
+                        ? '00:00 (pending expiry)'
+                        : `${formatRemaining(remainingSeconds)} remaining`
+                    : 'N/A'
+                  : policy.endTs
+                    ? new Date(policy.endTs * 1000).toLocaleDateString()
+                    : 'N/A'}
+              </Typography>
             </Grid>
           </Grid>
           <Stack direction="row" spacing={1} sx={{ mt: 2 }}>
@@ -208,8 +311,19 @@ const MyPolicies = () => {
               📊 Composite Index
             </Button>
             {showFinalizeButton && isMyPolicy && (
-              <Button size="small" variant="contained" onClick={() => handleCheckPayout(policy)} disabled={processing || policy.statusString === 'PaidOut' || policy.statusString === 'Expired'}>
-                {processing ? 'Processing...' : (policy.statusString === 'Active' ? 'Finalize Policy' : 'Already Finalized')}
+              <Button
+                size="small"
+                variant="contained"
+                onClick={() => handleCheckPayout(policy)}
+                disabled={
+                  processing ||
+                  policy.status === 1 ||
+                  policy.status === 2 ||
+                  policy.statusString === 'PaidOut' ||
+                  policy.statusString === 'Expired'
+                }
+              >
+                {processing ? 'Processing...' : (isExpiredOnChain ? 'Awaiting Expiry' : 'Finalize Policy')}
               </Button>
             )}
           </Stack>
@@ -219,6 +333,7 @@ const MyPolicies = () => {
   };
 
   const myPolicies = (policiesData?.data || policiesData?.policies || []);
+  const currentChainTime = getCurrentChainTime();
 
   return (
     <Container maxWidth="lg" sx={{ py: 3 }}>
@@ -240,13 +355,13 @@ const MyPolicies = () => {
           ) : allPoliciesData && allPoliciesData.length > 0 ? (
             <Grid container spacing={2}>
               {allPoliciesData
-                .filter(p => p.status === 0 || p.statusString === 'Active')
+                .filter(p => (p.status === 0 || p.statusString === 'Active'))
                 .sort((a, b) => b.policyId - a.policyId)
                 .map((policy, index) => {
                   const isMyPolicy = policy.holder && account && policy.holder.toLowerCase() === account.toLowerCase();
                   return (
                     <Grid item xs={12} key={`all-${policy.policyId}-${index}`}>
-                      {renderPolicyCard(policy, `all-${policy.policyId}-${index}`, isMyPolicy ? <Chip label="Your Policy" color="success" size="small"/> : null, false)}
+                      {renderPolicyCard(policy, `all-${policy.policyId}-${index}`, isMyPolicy ? <Chip label="Your Policy" color="success" size="small"/> : null, false, currentChainTime)}
                     </Grid>
                   );
                 })}
@@ -263,11 +378,11 @@ const MyPolicies = () => {
       ) : myPolicies && myPolicies.length > 0 ? (
         <Grid container spacing={2}>
           {myPolicies
-            .filter(p => p.status === 0 || p.statusString === 'Active')
+            .filter(p => (p.status === 0 || p.statusString === 'Active'))
             .sort((a, b) => b.policyId - a.policyId)
             .map((policy, index) => (
               <Grid item xs={12} key={`${policy.policyId}-${refreshKey}`}>
-                {renderPolicyCard(policy, `${policy.policyId}-${refreshKey}`, null, true)}
+                {renderPolicyCard(policy, `${policy.policyId}-${refreshKey}`, null, true, currentChainTime)}
               </Grid>
           ))}
         </Grid>
