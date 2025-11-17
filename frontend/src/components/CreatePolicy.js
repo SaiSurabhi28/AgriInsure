@@ -125,6 +125,33 @@ const CreatePolicy = () => {
     }
   }, [formData.location, formData.duration]);
 
+  // Automatically set threshold to ideal value when both recommendations and product are available
+  useEffect(() => {
+    if (locationRecommendations && locationRecommendations.recommendations && locationRecommendations.recommendations.ideal && selectedProduct) {
+      const idealThreshold = locationRecommendations.recommendations.ideal;
+      const minThreshold = selectedProduct.minThreshold || 1;
+      const maxThreshold = selectedProduct.maxThreshold || 100;
+      
+      // Clamp ideal threshold to product's valid range
+      const clampedThreshold = Math.max(minThreshold, Math.min(maxThreshold, idealThreshold));
+      
+      // Only update if current threshold is not already the clamped ideal (to avoid unnecessary updates)
+      const currentThreshold = parseInt(formData.threshold) || 0;
+      if (currentThreshold !== clampedThreshold) {
+        setFormData(prev => ({ ...prev, threshold: clampedThreshold.toString() }));
+        
+        // Show info message if ideal was outside valid range
+        if (idealThreshold < minThreshold || idealThreshold > maxThreshold) {
+          console.log(
+            `Note: Ideal threshold (${idealThreshold}mm) adjusted to ${clampedThreshold}mm to match product range (${minThreshold}-${maxThreshold}mm)`
+          );
+        } else {
+          console.log(`✓ Threshold automatically set to ideal value: ${clampedThreshold}mm`);
+        }
+      }
+    }
+  }, [locationRecommendations, selectedProduct]);
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (!isConnected || !provider) {
@@ -140,6 +167,37 @@ const CreatePolicy = () => {
     if (!pricing) {
       alert('Please wait for pricing to be calculated');
       return;
+    }
+
+    // Validate and auto-correct threshold to ideal value if invalid
+    let threshold = parseInt(formData.threshold);
+    if (threshold < selectedProduct.minThreshold || threshold > selectedProduct.maxThreshold) {
+      // Try to use ideal threshold if available
+      if (locationRecommendations && locationRecommendations.recommendations && locationRecommendations.recommendations.ideal) {
+        const idealThreshold = locationRecommendations.recommendations.ideal;
+        const clampedIdeal = Math.max(selectedProduct.minThreshold, Math.min(selectedProduct.maxThreshold, idealThreshold));
+        
+        // Auto-correct to ideal threshold and continue
+        threshold = clampedIdeal;
+        setFormData(prev => ({ ...prev, threshold: clampedIdeal.toString() }));
+        
+        // Show info message (non-blocking)
+        if (idealThreshold !== clampedIdeal) {
+          console.log(
+            `Threshold adjusted: The ideal threshold (${idealThreshold}mm) for your location has been adjusted to ${clampedIdeal}mm to match this product's allowed range (${selectedProduct.minThreshold}-${selectedProduct.maxThreshold}mm).`
+          );
+        } else {
+          console.log(`Using ideal threshold of ${clampedIdeal}mm for your location.`);
+        }
+        // Continue with corrected threshold
+      } else {
+        // No ideal threshold available, show error
+        let errorMsg = `Invalid threshold: ${threshold}mm. ` +
+          `This product only accepts thresholds between ${selectedProduct.minThreshold}mm and ${selectedProduct.maxThreshold}mm. ` +
+          `Please adjust your threshold or select a different product.`;
+        alert(errorMsg);
+        return;
+      }
     }
 
     setCreatingPolicy(true);
@@ -161,7 +219,7 @@ const CreatePolicy = () => {
     await triggerExpireSweep();
 
     const durationDays = parseInt(formData.duration);
-    const threshold = parseInt(formData.threshold);
+    // threshold is already validated and corrected above
     
     // Convert premium to wei - handle 0 premium correctly
     let premiumWei;
@@ -259,6 +317,37 @@ const CreatePolicy = () => {
       return;
     }
 
+    // Validate and auto-correct threshold to ideal value if invalid
+    let threshold = parseInt(formData.threshold);
+    if (threshold < selectedProduct.minThreshold || threshold > selectedProduct.maxThreshold) {
+      // Try to use ideal threshold if available
+      if (locationRecommendations && locationRecommendations.recommendations && locationRecommendations.recommendations.ideal) {
+        const idealThreshold = locationRecommendations.recommendations.ideal;
+        const clampedIdeal = Math.max(selectedProduct.minThreshold, Math.min(selectedProduct.maxThreshold, idealThreshold));
+        
+        // Auto-correct to ideal threshold and continue
+        threshold = clampedIdeal;
+        setFormData(prev => ({ ...prev, threshold: clampedIdeal.toString() }));
+        
+        // Show info message (non-blocking)
+        if (idealThreshold !== clampedIdeal) {
+          console.log(
+            `Threshold adjusted: The ideal threshold (${idealThreshold}mm) for your location has been adjusted to ${clampedIdeal}mm to match this product's allowed range (${selectedProduct.minThreshold}-${selectedProduct.maxThreshold}mm).`
+          );
+        } else {
+          console.log(`Using ideal threshold of ${clampedIdeal}mm for your location.`);
+        }
+        // Continue with corrected threshold
+      } else {
+        // No ideal threshold available, show error
+        let errorMsg = `Invalid threshold: ${threshold}mm. ` +
+          `This product only accepts thresholds between ${selectedProduct.minThreshold}mm and ${selectedProduct.maxThreshold}mm. ` +
+          `Please adjust your threshold or select a different product.`;
+        alert(errorMsg);
+        return;
+      }
+    }
+
     setCreatingTestPolicy(true);
     try {
       const contractsResponse = await fetch(`${apiBaseUrl}/api/contracts/addresses`);
@@ -275,7 +364,7 @@ const CreatePolicy = () => {
 
     await triggerExpireSweep();
 
-    const threshold = parseInt(formData.threshold);
+    // threshold is already validated and corrected above
 
     const premiumValue = pricing.premiumFormatted || (pricing.premium ? pricing.premium.toString() : "0");
     const premiumWei = (!premiumValue || premiumValue === "0.0" || premiumValue === "0" || parseFloat(premiumValue) === 0)
@@ -333,11 +422,19 @@ const CreatePolicy = () => {
                 setSelectedProduct(product);
                 if (product) {
                   setFormData(prev => {
-                    // If current threshold is out of range for new product, set to minimum
-                    const currentThreshold = parseInt(prev.threshold) || product.minThreshold;
-                    const newThreshold = (currentThreshold < product.minThreshold || currentThreshold > product.maxThreshold)
-                      ? product.minThreshold
-                      : currentThreshold;
+                    // Prefer ideal threshold from location recommendations if available
+                    let newThreshold;
+                    if (locationRecommendations && locationRecommendations.recommendations && locationRecommendations.recommendations.ideal) {
+                      const idealThreshold = locationRecommendations.recommendations.ideal;
+                      // Clamp ideal threshold to product's valid range
+                      newThreshold = Math.max(product.minThreshold, Math.min(product.maxThreshold, idealThreshold));
+                    } else {
+                      // If no recommendations, use current threshold if valid, otherwise use minimum
+                      const currentThreshold = parseInt(prev.threshold) || product.minThreshold;
+                      newThreshold = (currentThreshold < product.minThreshold || currentThreshold > product.maxThreshold)
+                        ? product.minThreshold
+                        : currentThreshold;
+                    }
                     
                     return {
                     productId: e.target.value,
@@ -435,7 +532,24 @@ const CreatePolicy = () => {
               <div style={{ marginTop: '5px' }}>
                 <button 
                   type="button"
-                  onClick={() => setFormData(prev => ({ ...prev, threshold: locationRecommendations.recommendations.ideal.toString() }))}
+                  onClick={() => {
+                    const idealThreshold = locationRecommendations.recommendations.ideal;
+                    const minThreshold = selectedProduct?.minThreshold || 1;
+                    const maxThreshold = selectedProduct?.maxThreshold || 100;
+                    
+                    // Clamp ideal threshold to product's valid range
+                    const clampedThreshold = Math.max(minThreshold, Math.min(maxThreshold, idealThreshold));
+                    
+                    setFormData(prev => ({ ...prev, threshold: clampedThreshold.toString() }));
+                    
+                    // Show warning if ideal was outside valid range
+                    if (idealThreshold < minThreshold || idealThreshold > maxThreshold) {
+                      alert(
+                        `Note: The ideal threshold (${idealThreshold}mm) is outside this product's valid range (${minThreshold}-${maxThreshold}mm). ` +
+                        `The threshold has been adjusted to ${clampedThreshold}mm to match the product constraints.`
+                      );
+                    }
+                  }}
                   style={{ 
                     background: '#4CAF50', 
                     color: 'white', 
@@ -448,6 +562,14 @@ const CreatePolicy = () => {
                 >
                   Use Ideal ({locationRecommendations.recommendations.ideal}mm)
                 </button>
+                {selectedProduct && (
+                  (locationRecommendations.recommendations.ideal < selectedProduct.minThreshold || 
+                   locationRecommendations.recommendations.ideal > selectedProduct.maxThreshold) && (
+                    <div style={{ marginTop: '5px', color: '#ff9800', fontSize: '11px' }}>
+                      ⚠️ Ideal threshold ({locationRecommendations.recommendations.ideal}mm) is outside product range ({selectedProduct.minThreshold}-{selectedProduct.maxThreshold}mm). Will be adjusted.
+                    </div>
+                  )
+                )}
               </div>
             )}
           </div>
